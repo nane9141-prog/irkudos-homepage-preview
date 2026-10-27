@@ -1,0 +1,628 @@
+@charset "utf-8";
+
+#visual,
+.section1 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden
+}
+
+.section1 .lines .line1:before,
+.section1 .lines .line2>div {
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #007aff 20%, #28c0c0 80%, rgba(0, 0, 0, 0));
+  display: block;
+  content: "";
+  height: 100%
+}
+
+.section1 .lastTxt,
+.section1 .lines,
+.section1 .lines .line2 {
+  z-index: 100;
+  position: absolute
+}
+
+.section2 .textFill .text-line,
+.section3 .textFill .text-line {
+  line-height: 1.3em;
+  background-image: linear-gradient(90deg, #1a1a1a 0, #1a1a1a 0, transparent .1%);
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: rgba(26, 26, 26, 0.1)
+}
+
+.section4,
+.section5 {
+  padding: 140px 0
+}
+
+#visual,
+#visual .tit div,
+.section1,
+.section1 .lines .line2,
+.section5 .conwrap {
+  overflow: hidden
+}
+
+.pcbr {
+  display: block
+}
+
+.dn,
+.mbbr,
+.tbbr {
+  display: none
+}
+
+#visual {
+  width: 100%
+}
+
+#visual .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+#visual .bg video,
+.section2 .conwrap .boxwrap .imgarea video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+#visual .tit {
+  position: absolute;
+  left: 10%;
+  bottom: 100px;
+  z-index: 10;
+  font-size: 4.8vw;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1em
+}
+
+#visual .tit div span {
+  display: inline-block;
+  transform: translateY(100%)
+}
+
+#visual .scroll {
+  position: absolute;
+  right: 3%;
+  bottom: 100px;
+  z-index: 10;
+  text-align: center
+}
+
+#visual .scroll .txt {
+  font-family: "Pretendard Variable";
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600
+}
+
+#visual .scroll .arr {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%
+}
+
+#visual .scroll .arr img {
+  display: block;
+  animation: .6s infinite alternate scrollAni
+}
+
+@keyframes scrollAni {
+  0% {
+    transform: translateY(0)
+  }
+
+  100% {
+    transform: translateY(3px)
+  }
+}
+
+.section1 {
+  width: 100%
+}
+
+.section1 .conwrap {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translate(-50%, 0);
+  background: #fff
+}
+
+.section1 .lines,
+.section1 .lines .line1,
+.section1 .lines .line2>div,
+.section4 .conwrap ul li a .img {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.section1 .lines {
+  width: 100%
+}
+
+.section1 .lines .line1 {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 4px
+}
+
+.section1 .lines .line1:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-50%)
+}
+
+.section1 .lines .line2 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 100%;
+  height: 3px
+}
+
+.section1 .lines .line2>div {
+  position: absolute
+}
+
+.section1 .area1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -120%);
+  width: 50%;
+  text-align: center
+}
+
+.section1 .area1 .tit,
+.section1 .area2 .tit {
+  font-family: Pretendard;
+  font-size: 63px;
+  color: #fff;
+  font-weight: 700;
+  transform: translateY(20px);
+  margin-bottom: 27px
+}
+
+.section1 .area1 .txt,
+.section1 .area2 .txt {
+  font-size: 30px;
+  font-weight: 500;
+  transform: translateY(-20px);
+  font-family: Pretendard;
+  opacity: 0
+}
+
+.section1 .area1 .txt {
+  color: #007aff
+}
+
+.section1 .area2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(50% - 20px));
+  width: 50%;
+  text-align: center
+}
+
+.section1 .area2 .txt {
+  color: #28c0c0
+}
+
+.section1 .lastTxt {
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  font-size: 63px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(.7);
+  opacity: 0
+}
+
+.section2 .textFill,
+.section3 .textFill {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto
+}
+
+.section2 .textFill .text-line {
+  position: relative;
+  font-family: Pretendard;
+  font-size: 63px;
+  color: #dbdbdb;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  background-clip: text
+}
+
+.section2 .conwrap .boxwrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh
+}
+
+.section2 .conwrap .boxwrap:nth-child(odd) {
+  flex-direction: row-reverse
+}
+
+.section2 .conwrap .boxwrap .imgarea {
+  width: 50%;
+  height: 100%
+}
+
+.section2 .conwrap .boxwrap .txtarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  padding: 0 5%;
+  background: #f1f1f1;
+  text-align: center
+}
+
+.section2 .conwrap .boxwrap .txtarea .tit1 {
+  font-size: 22px;
+  color: #007aff;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(40px)
+}
+
+.section2 .conwrap .boxwrap .txtarea .line {
+  width: 1px;
+  height: 40px;
+  margin: 20px auto 15px;
+  background: #007aff;
+  transform: scaleY(0)
+}
+
+.section2 .conwrap .boxwrap .txtarea .tit2 {
+  font-size: 58px;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.1em
+}
+
+.section2 .conwrap .boxwrap .txtarea .txt {
+  margin-top: 20px;
+  font-family: Pretendard;
+  font-size: 25px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5em
+}
+
+.section3 .textFill .text-line {
+  position: relative;
+  font-family: Pretendard;
+  font-size: 63px;
+  color: #888;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  background-clip: text
+}
+
+.section4 {
+  background: #090909
+}
+
+.section4 .titlearea,
+.section5 .titlearea {
+  padding: 0 5%;
+  margin-bottom: 100px;
+  text-align: center
+}
+
+.section4 .titlearea h2 {
+  font-family: Pretendard;
+  font-size: 74px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2em
+}
+
+.section4 .titlearea p {
+  margin-top: 20px;
+  font-family: Pretendard;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500
+}
+
+.section4 .conwrap {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto
+}
+
+.section4 .conwrap ul {
+  border-top: 1px solid #565657
+}
+
+.section4 .conwrap ul li {
+  position: relative;
+  padding: 50px 0
+}
+
+.section4 .conwrap ul li:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #565657;
+  position: absolute;
+  left: 0;
+  bottom: 0
+}
+
+.section4 .conwrap ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.section4 .conwrap ul li a .tit {
+  position: relative;
+  z-index: 10;
+  width: 50%;
+  font-family: Pretendard;
+  font-size: 40px;
+  color: #565657;
+  font-weight: 700;
+  line-height: 1.1em;
+  transition: .4s
+}
+
+.section4 .conwrap ul li a .tit i {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  margin: 2px 0 0;
+  background: url(/irkudos-homepage-preview/images/main/sec4_arr.png) center no-repeat #007aff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .4s
+}
+
+.section4 .conwrap ul li a .exp {
+  position: relative;
+  z-index: 10;
+  width: 50%;
+  font-family: Pretendard;
+  font-size: 22px;
+  color: #565657;
+  font-weight: 500;
+  line-height: 1.5em;
+  text-align: right;
+  transition: .4s
+}
+
+.section4 .conwrap ul li a .img {
+  position: absolute;
+  z-index: 3;
+  width: 280px;
+  height: 280px;
+  opacity: 0;
+  will-change: transform;
+  pointer-events: none;
+  backface-visibility: hidden;
+  transition: transform .4s ease-out
+}
+
+.section4 .conwrap ul li:first-child a .img {
+  background: url(/irkudos-homepage-preview/images/main/sec4_img1.png) center/cover no-repeat
+}
+
+.section4 .conwrap ul li:nth-child(2) a .img {
+  background: url(/irkudos-homepage-preview/images/main/sec4_img2.png) center/cover no-repeat
+}
+
+.section4 .conwrap ul li:nth-child(3) a .img {
+  background: url(/irkudos-homepage-preview/images/main/sec4_img3.png) center/cover no-repeat
+}
+
+.section4 .conwrap ul li:nth-child(4) a .img {
+  background: url(/irkudos-homepage-preview/images/main/sec4_img4.png) center/cover no-repeat
+}
+
+.section4 .conwrap ul li:hover a .exp,
+.section4 .conwrap ul li:hover a .tit {
+  color: #fff
+}
+
+.section4 .conwrap ul li:hover a .img,
+.section4 .conwrap ul li:hover a .tit i {
+  opacity: 1
+}
+
+.section5 .titlearea h2 {
+  font-family: Pretendard;
+  font-size: 74px;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.2em
+}
+
+.section5 .titlearea p {
+  margin-top: 20px;
+  font-family: Pretendard;
+  font-size: 25px;
+  color: #000;
+  font-weight: 500
+}
+
+.section6 a .tit,
+.section6 a .txt {
+  font-family: Pretendard;
+  color: #090909
+}
+
+.section5 .conwrap {
+  width: 100%;
+  margin: 180px auto 0
+}
+
+.section5 .conwrap ul {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 100px;
+  margin-bottom: 100px
+}
+
+.section5 .conwrap ul:last-child {
+  margin-bottom: 0
+}
+
+.section5 .conwrap ul li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 80px
+}
+
+.section5 .conwrap ul li img {
+  height: 100%
+}
+
+.section6 {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd
+}
+
+.section6 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 440px;
+  text-align: center
+}
+
+.section6 a:first-child {
+  border-right: 1px solid #ddd
+}
+
+.section6 a .tit {
+  font-size: 60px;
+  font-weight: 700
+}
+
+.section6 a .tit span {
+  display: inline-block;
+  transform: translateX(23px);
+  transition: .24s
+}
+
+.section6 a .tit i {
+  display: inline-block;
+  width: 45px;
+  height: 39px;
+  background: url(/irkudos-homepage-preview/images/main/sec6_arr.png) no-repeat;
+  transform: translateX(-40px);
+  opacity: 0;
+  transition: .24s
+}
+
+.section6 a:hover .tit span {
+  display: inline-block;
+  transform: translateX(0)
+}
+
+.section6 a:hover .tit i {
+  transform: translateX(0);
+  opacity: 1
+}
+
+.section6 a .txt {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 500
+}
+
+#visual.in-view .tit div span {
+  transform: translateY(0)
+}
+
+#visual.in-view .tit div:first-child span {
+  transition: 1s
+}
+
+#visual.in-view .tit div:nth-child(2) span {
+  transition: 1s .2s
+}
+
+.section2 .conwrap .boxwrap .txtarea .tit2,
+.section2 .conwrap .boxwrap .txtarea .txt,
+.section4 .conwrap,
+.section4 .titlearea h2,
+.section4 .titlearea h2+p,
+.section5 .titlearea h2,
+.section5 .titlearea h2+p {
+  opacity: 0;
+  transform: translateY(40px)
+}
+
+.section2 .conwrap .boxwrap .txtarea .tit1.in-view,
+.section4 .conwrap.in-view,
+.section4 .titlearea.in-view h2,
+.section5 .titlearea.in-view h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s
+}
+
+.section2 .conwrap .boxwrap .txtarea .line.in-view {
+  transform: scaleY(1);
+  transition: 1s .2s
+}
+
+.section2 .conwrap .boxwrap .txtarea .tit2.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s .3s
+}
+
+.section2 .conwrap .boxwrap .txtarea .txt.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s .4s
+}
+
+.section4 .titlearea.in-view h2+p,
+.section5 .titlearea.in-view h2+p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s .2s
+}

@@ -1,0 +1,986 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://hangeul.pstatic.net/hangeul_static/css/NanumGarMaesGeur.css');
+
+/*Common*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%
+}
+
+html {
+	overflow-y: scroll
+}
+
+body {
+	background-color: #fff;
+	word-break: keep-all;
+	-webkit-text-size-adjust: 100% !important;
+	-moz-text-size-adjust: 100% !important;
+	-ms-text-size-adjust: 100% !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+td,
+li,
+dt,
+dd,
+a,
+p,
+input,
+textarea,
+select,
+option,
+button {
+	color: #000;
+	font-family: "Pretendard", Pretendard, "돋움", dotum, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+img,
+fieldset,
+iframe {
+	border: 0 none
+}
+
+ul,
+ol,
+li {
+	list-style: none
+}
+
+em,
+address {
+	font-style: normal
+}
+
+img,
+input,
+select,
+textarea {
+	vertical-align: middle
+}
+
+a {
+	color: #7d7d7d;
+	text-decoration: none;
+	cursor: pointer
+}
+
+a:hover {
+	color: #333;
+	text-decoration: none
+}
+
+button,
+label {
+	cursor: pointer;
+	_cursor
+	/**/
+	: hand
+}
+
+button * {
+	position: relative
+}
+
+textarea {
+	overflow: auto
+}
+
+option {
+	padding-right: 6px
+}
+
+.input_text,
+textarea {
+	*margin: -1px 0;
+	padding-right: 1px
+}
+
+.input_check,
+.input_radio {
+	width: 13px;
+	height: 13px
+}
+
+.blind,
+legend,
+caption {
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden
+}
+
+hr {
+	display: none
+}
+
+legend {
+	*width: 0
+}
+
+:root legend {
+	margin-top: -1px;
+	font-size: 0;
+	line-height: 0
+}
+
+caption {
+	*line-height: 0
+}
+
+img {
+	max-width: 100%;
+}
+
+/*test*/
+.test1 {
+	border: 1px solid red
+}
+
+.test2 {
+	background: #4f7beb
+}
+
+.font1 {
+	font-family: "Wix Madefor Display";
+}
+
+.font2 {
+	font-family: "Pretendard";
+}
+
+
+/*로딩 이미지*/
+#loading_img {
+	text-align: center;
+	display: none;
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+}
+
+/* popup */
+.pop_today_close {
+	padding: 1px 7px 3px 7px;
+	color: #ffffff;
+	background: #303030;
+	vertical-align: middle;
+	border: 0px;
+}
+
+.pop_close {
+	padding: 1px 7px 3px 7px;
+	color: #ffffff;
+	background: #303030;
+	vertical-align: middle;
+	border: 0px;
+}
+
+@media(max-width:767px) {
+
+	/* 메인 레이어 팝업 */
+	.main_layer_popup {
+		width: 96% !important;
+		left: 50% !important;
+		top: 50px !important;
+		transform: translateX(-50%)
+	}
+
+	.main_layer_popup .popupContent {
+		height: 100% !important
+	}
+
+	.main_layer_popup img {
+		width: 100%
+	}
+}
+
+#wrap {
+	overflow: hidden;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #1a1a1a;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ccc;
+}
+
+
+
+/* header */
+#header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100px;
+	transition: all 0.4s;
+}
+
+#header:after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: all 0.4s;
+}
+
+#header.nav-up {
+	transform: translateY(-100%);
+}
+
+.head {
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.head h1 {
+	position: absolute;
+	left: 3%;
+	top: 18px;
+	z-index: 10000;
+}
+
+.head h1 a {
+	display: block;
+	width: 172px;
+	height: 61px;
+	background: url(/irkudos-homepage-preview/images/common/logo1.png) no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+}
+
+.head .pcNav {}
+
+.head .pcNav>ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.head .pcNav>ul>li {
+	margin: 0 40px;
+	position: relative;
+	z-index: 100;
+}
+
+.head .pcNav>ul>li>a {
+	position: relative;
+	display: block;
+	font-family: "Pretendard";
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	line-height: 100px;
+	transition: all 0.4s;
+}
+
+.head .pcNav>ul>li>a:after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	background: #007aff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+	transition: all 0.4s;
+}
+
+.head .pcNav>ul>li.on>a {
+	color: #007aff;
+}
+
+.head .pcNav>ul>li.on>a:after {
+	transform: scaleX(1);
+}
+
+.head .pcNav>ul>li>div {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 700px;
+}
+
+.head .pcNav>ul>li>div>ul {
+	display: flex;
+	height: 70px;
+	align-items: center;
+}
+
+.head .pcNav>ul>li>div>ul>li {
+	margin-right: 60px;
+}
+
+.head .pcNav>ul>li>div>ul>li>a {
+	font-size: 18px;
+	color: #8b8b8b;
+}
+
+.head .pcNav>ul>li>div>ul>li>a:hover {
+	color: #000;
+}
+
+.head .gnb {
+	position: absolute;
+	right: 3%;
+	top: 18px;
+	display: flex;
+	align-items: center;
+}
+
+.head .gnb .btnContact {
+	display: block;
+	position: relative;
+	z-index: 100;
+	overflow: hidden;
+	width: 120px;
+	height: 54px;
+	margin-right: 26px;
+	background: #000;
+	border-radius: 32px;
+	font-family: "Pretendard";
+	font-size: 17px;
+	color: #fff;
+	text-align: center;
+	line-height: 54px;
+}
+
+.head .gnb .btnMenu {
+	position: relative;
+	z-index: 10000;
+	width: 23px;
+	height: 17px;
+	cursor: pointer;
+}
+
+.head .gnb .btnMenu>div {
+	width: 100%;
+	height: 3px;
+	margin-bottom: 4px;
+	background: #fff;
+}
+
+.head .gnb .btnMenu.openmenu>div:nth-child(1) {
+	transform: rotate(45deg) translateY(10px);
+	transition: transform 0.4s ease;
+}
+
+.head .gnb .btnMenu.openmenu>div:nth-child(2) {
+	opacity: 0;
+}
+
+.head .gnb .btnMenu.openmenu>div:nth-child(3) {
+	transform: rotate(-45deg) translateY(-10px);
+	transition: transform 0.4s ease;
+}
+
+
+
+@media(max-width:1399px) {
+
+	.head .pcNav {
+		display: none;
+	}
+
+}
+
+@media(max-width:812px) {
+
+	.head h1 {
+		top: 25px;
+	}
+
+	.head h1 a {
+		width: 106px;
+		height: 50px;
+	}
+
+	.head .gnb {
+		top: 30px;
+	}
+
+	.head .gnb .btnContact {
+		width: 80px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+	}
+
+}
+
+
+
+/*allmenu*/
+.allMenu {
+	transform: scale(0);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100vh;
+}
+
+.allMenu.open {
+	transform: scale(1);
+	transition: transform 0s;
+}
+
+.allMenu:before {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 1);
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.allMenu.open:before {
+	opacity: 1;
+}
+
+.allMenu .menuWrap {
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 5%;
+}
+
+.allMenu .menuWrap:after {
+	display: none;
+	content: "";
+	width: 757px;
+	height: 347px;
+	background: url(/irkudos-homepage-preview/images/common/all_bg.png) no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.allMenu .menuWrap>ul {
+	display: flex;
+	width: 100%;
+}
+
+.allMenu .menuWrap>ul>li {
+	position: relative;
+	box-sizing: border-box;
+	width: 20%;
+	height: 60vh;
+	padding: 5vh 2.5vw;
+	text-align: center;
+}
+
+.allMenu .menuWrap>ul>li:after {
+	display: block;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background: #ddd;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: scaleY(0);
+	transition: all 0.4s;
+}
+
+.allMenu .menuWrap>ul>li:last-child:after {
+	display: none;
+}
+
+.allMenu .menuWrap>ul>li>a {
+	display: block;
+	font-size: 42px;
+	color: #000;
+	font-weight: 600;
+	transition: all 0.4s;
+}
+
+.allMenu .menuWrap>ul>li>a:after {
+	display: block;
+	content: "";
+	width: 7px;
+	height: 7px;
+	background: #c6c6c6;
+	border-radius: 50%;
+	margin: 40px auto;
+	transition: all 0.4s;
+}
+
+.allMenu .menuWrap>ul>li:hover>a {
+	color: #007aff;
+}
+
+.allMenu .menuWrap>ul>li:hover>a:after {
+	background: #007aff;
+}
+
+.allMenu .menuWrap>ul>li>ul {}
+
+.allMenu .menuWrap>ul>li>ul>li {
+	margin-bottom: 1.5vw;
+}
+
+.allMenu .menuWrap>ul>li>ul>li>a {
+	display: block;
+	font-weight: 500;
+	font-size: 24px;
+	color: #898989;
+}
+
+.allMenu .menuWrap>ul>li>ul>li>a:hover {
+	color: #000;
+	font-weight: 600;
+}
+
+
+.allMenu.open .menuWrap>ul>li:before {
+	width: 100%;
+	transition: width 2s ease-in-out;
+}
+
+.allMenu .menuWrap>ul>li {
+	opacity: 0;
+}
+
+.allMenu .menuWrap>ul>li>ul>li {
+	opacity: 0;
+}
+
+.allMenu.open .menuWrap>ul>li {
+	opacity: 1;
+}
+
+.allMenu.open .menuWrap>ul>li:after {
+	transform: scaleY(1);
+	transition: all 0.4s 0.4s;
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li {
+	display: block;
+	animation-name: fadeLeftText;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.1s;
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(4) {
+	animation-delay: 0.4s;
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(5) {
+	animation-delay: 0.5s;
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(6) {
+	animation-delay: 0.6s;
+}
+
+
+
+.allMenu .menuWrap>ul>li>a {
+	opacity: 0;
+}
+
+.allMenu.open .menuWrap>ul>li>a {
+	animation-name: fadeIn;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeLeftText {
+	0% {
+		transform: translate3d(0px, 40px, 0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate3d(0px, 0, 0);
+		opacity: 1;
+	}
+}
+
+
+
+@media(max-width:1399px) {
+
+	.allMenu .menuWrap {
+		display: block;
+	}
+
+	.allMenu .menuWrap>ul {
+		display: block;
+		margin-top: 17vh;
+	}
+
+	.allMenu .menuWrap>ul>li {
+		width: 100%;
+		height: auto;
+		padding: 16px 0;
+		border-bottom: 0;
+		text-align: left;
+	}
+
+	.allMenu .menuWrap>ul>li>a {
+		position: relative;
+		font-size: 32px;
+	}
+
+	.allMenu .menuWrap>ul>li:after {
+		display: none;
+	}
+
+	.allMenu .menuWrap>ul>li.act>a {
+		color: #007aff;
+	}
+
+	.allMenu .menuWrap>ul>li>a:after {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0;
+	}
+
+	.allMenu .menuWrap>ul>li.act>a:after {
+		background: #007aff;
+	}
+
+	.allMenu .menuWrap>ul>li>ul {
+		display: none;
+		margin-top: 30px;
+	}
+
+	.allMenu .menuWrap>ul>li>ul>li {
+		margin-bottom: 4.5vw;
+	}
+
+}
+
+@media(max-width:812px) {
+
+	.allMenu .menuWrap>ul>li>a {
+		font-size: 32px;
+	}
+
+}
+
+
+
+
+
+
+#header.scroll {
+	background: #fff;
+	box-shadow: 0 -1px 0 #e7e7e7 inset;
+}
+
+#header.scroll .head h1 a {
+	background: url(/irkudos-homepage-preview/images/common/logo2.png) no-repeat;
+	background-size: contain;
+}
+
+#header.scroll .head .pcNav>ul>li>a {
+	color: #000;
+}
+
+#header.scroll .head .gnb .btnMenu>div {
+	background: #000;
+}
+
+#header.all {}
+
+#header.all .head h1 a {
+	background: url(/irkudos-homepage-preview/images/common/logo2.png) no-repeat;
+	background-size: contain;
+}
+
+#header.all .head .pcNav>ul>li>a {
+	color: #000;
+}
+
+#header.all .head .gnb .btnMenu>div {
+	background: #000;
+}
+
+#header.bl {
+	background: #fff;
+	box-shadow: 0 -1px 0 #e7e7e7 inset;
+}
+
+#header.on:after {
+	transform: scaleY(1);
+}
+
+#header.bl .head h1 a {
+	background: url(/irkudos-homepage-preview/images/common/logo2.png) no-repeat;
+	background-size: contain;
+}
+
+#header.bl .head .pcNav>ul>li>a {
+	color: #000;
+}
+
+#header.bl .head .pcNav>ul>li.on>a {
+	color: #007aff;
+}
+
+#header.bl .head .gnb .btnMenu>div {
+	background: #000;
+}
+
+
+
+
+
+/* footer */
+#footer {
+	padding: 70px 0 80px;
+	border-top: 1px solid #ddd;
+}
+
+.foot {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	padding: 0 3%;
+}
+
+.foot h1 {
+	width: 134px;
+}
+
+.foot .tm {}
+
+.foot .tm li {}
+
+.foot .tm li a {
+	font-family: "Pretendard";
+	font-size: 20px;
+	color: #333;
+	font-weight: 600;
+}
+
+.foot .info {
+	width: 550px;
+}
+
+.foot .info address {
+	margin-top: 30px;
+	font-family: "Pretendard";
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+	line-height: 1.7em;
+}
+
+.foot .info .copy {
+	margin-top: 10px;
+	font-family: "Pretendard";
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+	line-height: 1.7em;
+}
+
+.foot .family {
+	position: relative;
+	width: 240px;
+	height: 44px;
+}
+
+.foot .family>a {
+	position: relative;
+	z-index: 105;
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #333;
+	font-family: "Pretendard";
+	font-size: 20px;
+	color: #333;
+	font-weight: 500;
+	transition: all 0.24s;
+}
+
+.foot .family>a:after {
+	display: block;
+	content: "";
+	width: 11px;
+	height: 7px;
+	background: url(/irkudos-homepage-preview/images/common/family_arr.png) no-repeat;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: 105;
+	transform: translateY(-50%);
+	transition: all 0.24s;
+}
+
+.foot .family ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 15px 20px 49px;
+	background: #000;
+	border: 1px solid #333;
+	border-radius: 20px 20px 0 0;
+}
+
+.foot .family ul li {}
+
+.foot .family ul li a {
+	font-size: 19px;
+	color: #888;
+	line-height: 44px;
+}
+
+.foot .family ul li:hover a {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+
+.foot .family.act>a {
+	padding: 10px 20px;
+	color: #fff;
+}
+
+.foot .family.act>a:after {
+	right: 20px;
+	background: url(/irkudos-homepage-preview/images/common/family_arr2.png) no-repeat;
+}
+
+
+@media(max-width:812px) {
+
+	#footer {
+		padding: 40px 0 60px;
+	}
+
+	.foot h1 {
+		width: 114px;
+	}
+
+	.foot .info {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.foot .info address {
+		margin-top: 20px;
+		font-size: 14px;
+	}
+
+	.foot .info .copy {
+		font-size: 14px;
+	}
+
+	.foot .family {
+		position: absolute;
+		right: 3%;
+		top: 10px;
+		width: 160px
+	}
+
+	.foot .tm li a {
+		font-size: 18px;
+	}
+
+
+}
+
+
+
+.btnTop {
+	position: fixed;
+	right: 2%;
+	top: calc(100% - 330px);
+	z-index: 2000;
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+}
+
+@media(max-width:812px) {
+
+	.btnTop {
+		display: none !important;
+		opacity: 0;
+		width: 40px;
+		height: 40px;
+		top: calc(100% - 100px);
+	}
+
+}

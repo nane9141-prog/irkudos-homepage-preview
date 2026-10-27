@@ -1,0 +1,852 @@
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css);
+@import url(https://hangeul.pstatic.net/hangeul_static/css/NanumGarMaesGeur.css);
+
+a,
+a:hover {
+  text-decoration: none
+}
+
+#loading_img,
+.allMenu .menuWrap>ul>li:last-child:after,
+hr {
+  display: none
+}
+
+.head .gnb .btnContact,
+.head .pcNav>ul>li {
+  z-index: 100;
+  position: relative
+}
+
+.head,
+.head .gnb .btnMenu,
+.head .pcNav>ul>li,
+.head .pcNav>ul>li>a,
+button * {
+  position: relative
+}
+
+*,
+.allMenu .menuWrap {
+  box-sizing: border-box
+}
+
+#header:after,
+.allMenu .menuWrap>ul>li:after {
+  transform: scaleY(0);
+  transition: .4s;
+  content: ""
+}
+
+.btnTop,
+a,
+button,
+label {
+  cursor: pointer
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%
+}
+
+html {
+  overflow-y: scroll
+}
+
+body {
+  background-color: #fff;
+  word-break: keep-all;
+  -webkit-text-size-adjust: 100% !important;
+  -moz-text-size-adjust: 100% !important;
+  -ms-text-size-adjust: 100% !important
+}
+
+a,
+body,
+button,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+option,
+p,
+select,
+td,
+textarea,
+th {
+  color: #000;
+  font-family: Pretendard, Pretendard, "돋움", dotum, sans-serif;
+  font-size: 14px;
+  font-weight: 400
+}
+
+fieldset,
+iframe,
+img {
+  border: 0
+}
+
+li,
+ol,
+ul {
+  list-style: none
+}
+
+address,
+em {
+  font-style: normal
+}
+
+img,
+input,
+select,
+textarea {
+  vertical-align: middle
+}
+
+a {
+  color: #7d7d7d
+}
+
+a:hover {
+  color: #333
+}
+
+textarea {
+  overflow: auto
+}
+
+option {
+  padding-right: 6px
+}
+
+.input_text,
+textarea {
+  padding-right: 1px
+}
+
+.input_check,
+.input_radio {
+  width: 13px;
+  height: 13px
+}
+
+.blind,
+caption,
+legend {
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden
+}
+
+:root legend {
+  margin-top: -1px;
+  font-size: 0;
+  line-height: 0
+}
+
+img {
+  max-width: 100%
+}
+
+.test1 {
+  border: 1px solid red
+}
+
+.test2 {
+  background: #4f7beb
+}
+
+.font1 {
+  font-family: "Wix Madefor Display"
+}
+
+.font2,
+.head .gnb .btnContact,
+.head .pcNav>ul>li>a {
+  font-family: Pretendard
+}
+
+#loading_img {
+  text-align: center;
+  width: 100%;
+  margin: 10px 0
+}
+
+.pop_close,
+.pop_today_close {
+  padding: 1px 7px 3px;
+  color: #fff;
+  background: #303030;
+  vertical-align: middle;
+  border: 0
+}
+
+@media(max-width:767px) {
+  .main_layer_popup {
+    width: 96% !important;
+    left: 50% !important;
+    top: 50px !important;
+    transform: translateX(-50%)
+  }
+
+  .main_layer_popup .popupContent {
+    height: 100% !important
+  }
+
+  .main_layer_popup img {
+    width: 100%
+  }
+}
+
+#wrap {
+  overflow: hidden
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 10px
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+  transition: .4s
+}
+
+#header:after {
+  display: block;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform-origin: top
+}
+
+#header.nav-up {
+  transform: translateY(-100%)
+}
+
+.head {
+  text-align: center;
+  width: 100%
+}
+
+.head h1 {
+  position: absolute;
+  left: 3%;
+  top: 18px;
+  z-index: 10000
+}
+
+.head h1 a {
+  display: block;
+  width: 172px;
+  height: 61px;
+  background: url(/irkudos-homepage-preview/images/common/logo1.png) 0 0/contain no-repeat;
+  text-indent: -9999px
+}
+
+.head .pcNav>ul {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.head .pcNav>ul>li {
+  margin: 0 40px
+}
+
+.head .pcNav>ul>li>a {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 100px;
+  transition: .4s
+}
+
+.head .pcNav>ul>li>a:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #007aff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: .4s
+}
+
+#header.bl .head .pcNav>ul>li.on>a,
+.allMenu .menuWrap>ul>li:hover>a,
+.head .pcNav>ul>li.on>a {
+  color: #007aff
+}
+
+.head .pcNav>ul>li.on>a:after {
+  transform: scaleX(1)
+}
+
+.head .pcNav>ul>li>div {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 600px
+}
+
+.head .pcNav>ul>li>div>ul {
+  display: flex;
+  height: 70px;
+  align-items: center
+}
+
+.head .pcNav>ul>li>div>ul>li {
+  margin-right: 60px
+}
+
+.head .pcNav>ul>li>div>ul>li>a {
+  font-size: 18px;
+  color: #8b8b8b
+}
+
+#header.all .head .pcNav>ul>li>a,
+#header.bl .head .pcNav>ul>li>a,
+#header.scroll .head .pcNav>ul>li>a,
+.head .pcNav>ul>li>div>ul>li>a:hover {
+  color: #000
+}
+
+.head .gnb {
+  position: absolute;
+  right: 3%;
+  top: 18px;
+  display: flex;
+  align-items: center
+}
+
+.head .gnb .btnContact {
+  display: block;
+  overflow: hidden;
+  width: 120px;
+  height: 54px;
+  margin-right: 26px;
+  background: #000;
+  border-radius: 32px;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  line-height: 54px
+}
+
+.head .gnb .btnMenu {
+  z-index: 10000;
+  width: 23px;
+  height: 17px;
+  cursor: pointer
+}
+
+.head .gnb .btnMenu>div {
+  width: 100%;
+  height: 3px;
+  margin-bottom: 4px;
+  background: #fff
+}
+
+.head .gnb .btnMenu.openmenu>div:first-child {
+  transform: rotate(45deg) translateY(10px);
+  transition: transform .4s
+}
+
+.allMenu .menuWrap>ul>li>,
+.allMenu .menuWrap>ul>li>ul>li,
+.head .gnb .btnMenu.openmenu>div:nth-child(2) {
+  opacity: 0
+}
+
+.head .gnb .btnMenu.openmenu>div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+  transition: transform .4s
+}
+
+.foot .info .copy,
+.foot .info address {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7em;
+  font-family: Pretendard;
+  color: #333
+}
+
+.allMenu {
+  transform: scale(0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh
+}
+
+.allMenu.open {
+  transform: scale(1);
+  transition: transform
+}
+
+.allMenu:before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: .5s
+}
+
+.allMenu.open:before {
+  opacity: 1
+}
+
+.allMenu .menuWrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0 5%
+}
+
+.allMenu .menuWrap:after {
+  display: none;
+  content: "";
+  width: 757px;
+  height: 347px;
+  background: url(/irkudos-homepage-preview/images/common/all_bg.png) no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0
+}
+
+.allMenu .menuWrap>ul {
+  display: flex;
+  width: 100%
+}
+
+.allMenu .menuWrap>ul>li {
+  position: relative;
+  box-sizing: border-box;
+  width: 20%;
+  height: 60vh;
+  padding: 5vh 2.5vw;
+  text-align: center
+}
+
+.allMenu .menuWrap>ul>li:after {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  top: 0
+}
+
+.allMenu .menuWrap>ul>li>a {
+  display: block;
+  font-size: 42px;
+  color: #000;
+  font-weight: 600;
+  transition: .4s;
+  opacity: 0
+}
+
+.allMenu .menuWrap>ul>li>a:after {
+  display: block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #c6c6c6;
+  border-radius: 50%;
+  margin: 40px auto;
+  transition: .4s
+}
+
+.allMenu .menuWrap>ul>li:hover>a:after {
+  background: #007aff
+}
+
+.allMenu .menuWrap>ul>li>ul>li {
+  margin-bottom: 1.5vw
+}
+
+.allMenu .menuWrap>ul>li>ul>li>a {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  color: #898989
+}
+
+.allMenu .menuWrap>ul>li>ul>li>a:hover {
+  color: #000;
+  font-weight: 600
+}
+
+.allMenu.open .menuWrap>ul>li:before {
+  width: 100%;
+  transition: width 2s ease-in-out
+}
+
+.allMenu.open .menuWrap>ul>li:after {
+  transform: scaleY(1);
+  transition: .4s .4s
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li {
+  display: block;
+  animation-name: fadeLeftText;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: .1s
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(2) {
+  animation-delay: .2s
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(3) {
+  animation-delay: .3s
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(4) {
+  animation-delay: .4s
+}
+
+.allMenu.open .menuWrap>ul>li>ul>li:nth-child(5) {
+  animation-delay: .5s
+}
+
+.allMenu.open .menuWrap>ul>li>a {
+  animation-name: fadeIn;
+  animation-duration: .9s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: .4s
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fadeLeftText {
+  0% {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+@media(max-width:1399px) {
+
+  .allMenu .menuWrap>ul>li:after,
+  .head .pcNav {
+    display: none
+  }
+
+  .allMenu .menuWrap {
+    display: block
+  }
+
+  .allMenu .menuWrap>ul {
+    display: block;
+    margin-top: 17vh
+  }
+
+  .allMenu .menuWrap>ul>li {
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+    border-bottom: 0;
+    text-align: left
+  }
+
+  .allMenu .menuWrap>ul>li>a {
+    position: relative;
+    font-size: 32px
+  }
+
+  .allMenu .menuWrap>ul>li.act>a {
+    color: #007aff
+  }
+
+  .allMenu .menuWrap>ul>li>a:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0
+  }
+
+  .allMenu .menuWrap>ul>li.act>a:after {
+    background: #007aff
+  }
+
+  .allMenu .menuWrap>ul>li>ul {
+    display: none;
+    margin-top: 30px
+  }
+
+  .allMenu .menuWrap>ul>li>ul>li {
+    margin-bottom: 4.5vw
+  }
+}
+
+#header.bl,
+#header.scroll {
+  background: #fff;
+  box-shadow: 0 -1px 0 #e7e7e7 inset
+}
+
+#header.all .head h1 a,
+#header.bl .head h1 a,
+#header.scroll .head h1 a {
+  background: url(/irkudos-homepage-preview/images/common/logo2.png) 0 0/contain no-repeat
+}
+
+#header.all .head .gnb .btnMenu>div,
+#header.bl .head .gnb .btnMenu>div,
+#header.scroll .head .gnb .btnMenu>div {
+  background: #000
+}
+
+#header.on:after {
+  transform: scaleY(1)
+}
+
+#footer {
+  padding: 70px 0 80px;
+  border-top: 1px solid #ddd
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 3%
+}
+
+.foot h1 {
+  width: 134px
+}
+
+.foot .tm li a {
+  font-family: Pretendard;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600
+}
+
+.foot .info {
+  width: 550px
+}
+
+.foot .info address {
+  margin-top: 30px
+}
+
+.foot .info .copy {
+  margin-top: 10px
+}
+
+.foot .family {
+  position: relative;
+  width: 240px;
+  height: 44px
+}
+
+.foot .family>a {
+  position: relative;
+  z-index: 105;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  font-family: Pretendard;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+  transition: .24s
+}
+
+.foot .family>a:after {
+  display: block;
+  content: "";
+  width: 11px;
+  height: 7px;
+  background: url(/irkudos-homepage-preview/images/common/family_arr.png) no-repeat;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 105;
+  transform: translateY(-50%);
+  transition: .24s
+}
+
+.foot .family ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 15px 20px 49px;
+  background: #000;
+  border: 1px solid #333;
+  border-radius: 20px 20px 0 0
+}
+
+.foot .family ul li a {
+  font-size: 19px;
+  color: #888;
+  line-height: 44px
+}
+
+.foot .family ul li:hover a {
+  border-bottom: 1px solid #fff;
+  color: #fff
+}
+
+.foot .family.act>a {
+  padding: 10px 20px;
+  color: #fff
+}
+
+.foot .family.act>a:after {
+  right: 20px;
+  background: url(/irkudos-homepage-preview/images/common/family_arr2.png) no-repeat
+}
+
+.btnTop {
+  position: fixed;
+  right: 2%;
+  top: calc(100% - 330px);
+  z-index: 2000;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 50%;
+  display: none
+}
+
+@media(max-width:812px) {
+  .head h1 {
+    top: 25px
+  }
+
+  .head h1 a {
+    width: 106px;
+    height: 50px
+  }
+
+  .head .gnb {
+    top: 30px
+  }
+
+  .head .gnb .btnContact {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px
+  }
+
+  .allMenu .menuWrap>ul>li>a {
+    font-size: 32px
+  }
+
+  #footer {
+    padding: 40px 0 60px
+  }
+
+  .foot h1 {
+    width: 114px
+  }
+
+  .foot .info {
+    width: 100%;
+    margin-top: 30px
+  }
+
+  .foot .info address {
+    margin-top: 20px;
+    font-size: 14px
+  }
+
+  .foot .info .copy {
+    font-size: 14px
+  }
+
+  .foot .family {
+    position: absolute;
+    right: 3%;
+    top: 10px;
+    width: 160px
+  }
+
+  .foot .tm li a {
+    font-size: 18px
+  }
+
+  .btnTop {
+    display: none !important;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    top: calc(100% - 100px)
+  }
+}
