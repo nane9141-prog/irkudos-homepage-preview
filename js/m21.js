@@ -5,7 +5,16 @@ $(function(){
 	
 	m21sec1wrap = document.querySelector('.m21 .sec1');
 
+	/* 2026-10-29: 현재 상단 라벨만 노출 (옆으로 돌아간 라벨의 흰 마스크가 원 점선을 가리는 문제) — ul[data-step] */
+	var m21ul = document.querySelector('.m21 .sec1 .circle ul');
+	function m21SetStep(p){
+		var step = p < 1/3 ? 0 : (p < 2/3 ? 1 : 2);
+		if (m21ul && m21ul.getAttribute('data-step') !== String(step)) m21ul.setAttribute('data-step', step);
+	}
+	m21SetStep(0);
+
 	let m21sec1 = gsap.timeline({
+		onUpdate: function(){ m21SetStep(this.progress()); },
 		scrollTrigger: {
 			trigger: m21sec1wrap,
 			start: "top top",
@@ -49,7 +58,7 @@ $(function(){
 	
 
 	
-	gsap.set('.m21 .sec2 .circle .line', {scale:'0', });
+	gsap.set('.m21 .sec2 .circle .line', {scaleY:0, });	// 2026-10-29: scale → scaleY (가로 두께 1px 유지, 위 선과 동일 두께)
 	gsap.set('.m21 .sec2 .circle .txt', {opacity:'0', y:"-40" });
 
 	let m21sec2 = gsap.timeline({
@@ -62,7 +71,7 @@ $(function(){
 			scrub: 0.5,
 		},
 	});
-	m21sec2.to(".m21 .sec2 .circle .line", {scale:"1", duration: 0.4,});	
+	m21sec2.to(".m21 .sec2 .circle .line", {scaleY:1, duration: 0.4,});	
 	m21sec2.to(".m21 .sec2 .circle .txt", {opacity:"1", y:"0", duration: 0.4,},"<0.2");	
 
 
