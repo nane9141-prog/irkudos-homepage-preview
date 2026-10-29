@@ -249,28 +249,60 @@
       <p class="lead rv d2">컨퍼런스콜 예약부터 사전참가등록, 현장 운영, 사후 결과보고서 제공까지<br>IR 실적발표의 전 과정을 하나의 플랫폼에서 체계적으로 지원합니다.</p>
     </div>
     <div class="diagram rv d2">
-      <svg viewBox="0 0 560 420" font-family="Pretendard,sans-serif" text-anchor="middle" role="img" aria-label="운영자, 주최자, 참석자, 청취자 관계도">
-        <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#000"/></marker></defs>
-        <g fill="#fff" stroke="#E3E5EA" stroke-width="1.5">
-          <circle cx="86" cy="120" r="68"/><circle cx="280" cy="120" r="68"/><circle cx="474" cy="120" r="68"/><circle cx="280" cy="330" r="68"/>
+      <!-- 2026-10-29 관계도 개편: 주최자 허브(브랜드 컬러) + 아이콘 노드 + 흐름 애니메이션 라인 + 라벨 pill -->
+      <svg class="cc-map" viewBox="0 0 640 464" font-family="Pretendard,sans-serif" text-anchor="middle" role="img" aria-label="운영자(IR큐더스)가 회의운영 및 통역, 주최자(상장기업)와 참석자(애널리스트·투자자)가 실적브리핑과 질의응답, 청취자(투자자)는 라이브 웹캐스팅으로 참여">
+        <defs>
+          <marker id="ccAh" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1L9 5L1 9z" fill="#024F2B"/></marker>
+          <filter id="ccSh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#0E1424" flood-opacity=".08"/></filter>
+          <radialGradient id="ccHub" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#0B6A3C"/><stop offset="1" stop-color="#024F2B"/></radialGradient>
+        </defs>
+
+        <!-- 허브 파동 -->
+        <circle cx="320" cy="160" r="94" fill="#E8EFEC" opacity=".6"/>
+        <g class="cc-wave" fill="none" stroke="#024F2B"><circle cx="320" cy="160" r="76"/><circle cx="320" cy="160" r="76"/></g>
+
+        <!-- 연결선 (흐름 애니메이션) -->
+        <g class="cc-flow" fill="none" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round">
+          <path d="M142 160 H218" marker-end="url(#ccAh)"/>
+          <path d="M422 147 H496" marker-end="url(#ccAh)"/>
+          <path d="M496 173 H422" marker-end="url(#ccAh)"/>
+          <path d="M320 262 V320" marker-end="url(#ccAh)"/>
         </g>
-        <g font-size="20" font-weight="700" fill="#000">
-          <text x="86" y="120">운영자</text><text x="280" y="120">주최자</text><text x="474" y="120">참석자</text><text x="280" y="330">청취자</text>
+
+        <!-- 라벨 -->
+        <g class="cc-pill" font-size="12" font-weight="700">
+          <rect x="145.0" y="118" width="88" height="24" rx="12" fill="#fff" stroke="#CFDED7"/><text x="189.0" y="134" fill="#024F2B">회의운영·통역</text>
+          <rect x="412.0" y="106" width="78" height="24" rx="12" fill="#fff" stroke="#CFDED7"/><text x="451.0" y="122" fill="#024F2B">실적브리핑</text>
+          <rect x="416.0" y="190" width="70" height="24" rx="12" fill="#fff" stroke="#CFDED7"/><text x="451.0" y="206" fill="#024F2B">질의응답</text>
+          <rect x="332.0" y="279.0" width="100" height="24" rx="12" fill="#fff" stroke="#CFDED7"/><text x="382" y="295.0" fill="#024F2B">라이브 웹캐스팅</text>
         </g>
-        <g font-size="12" font-weight="600" fill="#3B3F47">
-          <text x="86" y="141">(IR큐더스)</text><text x="280" y="141">(상장기업)</text><text x="474" y="141">(애널리스트 및 투자자)</text><text x="280" y="351">(투자자)</text>
-        </g>
-        <g stroke="#000" stroke-width="1.4" fill="none">
-          <path d="M158 120 H204" marker-end="url(#ah)"/>
-          <path d="M352 110 H400" marker-end="url(#ah)"/>
-          <path d="M400 132 H352" marker-end="url(#ah)"/>
-          <path d="M280 192 V256" marker-end="url(#ah)"/>
-        </g>
-        <g font-size="11.5" font-weight="700" fill="#000">
-          <text x="181" y="106">회의운영</text><text x="181" y="146">및 통역</text>
-          <text x="376" y="98">실적브리핑</text><text x="376" y="154">질의응답</text>
-          <text x="294" y="218" text-anchor="start">라이브</text><text x="294" y="234" text-anchor="start">웹캐스팅</text>
-        </g>
+
+        <!-- 주최자 (허브) -->
+        <circle cx="320" cy="160" r="76" fill="url(#ccHub)" filter="url(#ccSh)"/>
+        <g transform="translate(308 112)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="12" rx="4"/><path d="M4 11a8 8 0 0 0 16 0M12 19v3"/></g>
+        <text x="320" y="172" font-size="25" font-weight="800" fill="#fff">주최자</text>
+        <text x="320" y="194" font-size="13" font-weight="600" fill="#B4CBC0">상장기업</text>
+
+        <g filter="url(#ccSh)"><circle cx="72" cy="160" r="62" fill="#fff"/></g>
+        <circle cx="72" cy="160" r="62" fill="none" stroke="#E3E8E5"/>
+        <circle cx="72" cy="128" r="16" fill="#E8EFEC"/>
+        <g transform="translate(61.5 117.5) scale(.875)" fill="none" stroke="#024F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4.5" height="7" rx="1.6"/><rect x="17" y="13" width="4.5" height="7" rx="1.6"/></g>
+        <text x="72" y="168" font-size="19" font-weight="800" fill="#090909">운영자</text>
+        <text x="72" y="188" font-size="11.5" font-weight="600" fill="#6B7079">IR큐더스</text>
+
+        <g filter="url(#ccSh)"><circle cx="568" cy="160" r="62" fill="#fff"/></g>
+        <circle cx="568" cy="160" r="62" fill="none" stroke="#E3E8E5"/>
+        <circle cx="568" cy="128" r="16" fill="#E8EFEC"/>
+        <g transform="translate(557.5 117.5) scale(.875)" fill="none" stroke="#024F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.6"/><path d="M15.6 14.4A5 5 0 0 1 21.5 19"/></g>
+        <text x="568" y="168" font-size="19" font-weight="800" fill="#090909">참석자</text>
+        <text x="568" y="188" font-size="11.5" font-weight="600" fill="#6B7079">애널리스트·투자자</text>
+
+        <g filter="url(#ccSh)"><circle cx="320" cy="392" r="62" fill="#fff"/></g>
+        <circle cx="320" cy="392" r="62" fill="none" stroke="#E3E8E5"/>
+        <circle cx="320" cy="360" r="16" fill="#E8EFEC"/>
+        <g transform="translate(309.5 349.5) scale(.875)" fill="none" stroke="#024F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8"/><path d="M10.2 8.3v5.4l4.6-2.7z" fill="#024F2B"/></g>
+        <text x="320" y="400" font-size="19" font-weight="800" fill="#090909">청취자</text>
+        <text x="320" y="420" font-size="11.5" font-weight="600" fill="#6B7079">투자자</text>
       </svg>
     </div>
   </div>
@@ -600,7 +632,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-29 16:27</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-29 16:37</div>
 </body>
 </html>
 
