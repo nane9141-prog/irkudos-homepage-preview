@@ -69,7 +69,7 @@
 	content: "";
 	width: 100%;
 	height: 3px;
-	background: #007aff;
+	background: #024F2B;
 	position: absolute;
 	left: 0;
 	top: 115%;
@@ -328,7 +328,7 @@
 
 .m11 .sec2 .conwrap div .tit span {
 	font-size: 26px;
-	color: #b7e7ff;
+	color: #B8CEC4;
 	font-weight: 400;
 }
 
@@ -542,7 +542,7 @@
 	margin: 110px auto 0;
 	padding: 50px;
 	border-radius: 15px;
-	background: linear-gradient(to bottom, #e6f2ff, #eaf9f9);
+	background: linear-gradient(to bottom, #E6EEEA, #eaf9f9);
 }
 
 .m11 .sec3 .value h5 {
@@ -570,7 +570,7 @@
 	z-index: -1;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to top, #28c0c0, #007aff);
+	background: linear-gradient(to top, #28c0c0, #024F2B);
 	border-radius: 15px;
 	transform: rotate(45deg);
 }
@@ -714,7 +714,7 @@
 	content: "";
 	width: 100%;
 	height: 100%;
-	/*background: linear-gradient(to top, #28c0c0, #007aff);*/
+	/*background: linear-gradient(to top, #28c0c0, #024F2B);*/
 	background: #16469e;
 	position: absolute;
 	left: -100%;
@@ -896,7 +896,7 @@
 .m13 .sec1 .historyWrap .title .tit1 {
 	margin: 30px 0 15px;
 	font-size: 54px;
-	color: #007aff;
+	color: #024F2B;
 	font-weight: 700;
 	line-height: 1.1em;
 }
@@ -1014,7 +1014,7 @@
 	content: "";
 	width: 6px;
 	height: 6px;
-	background: #1283ff;
+	background: #024F2B;
 	border-radius: 50%;
 	position: absolute;
 	top: 10px;
@@ -1275,7 +1275,7 @@
 	margin: 25px auto 0;
 	background: #000;
 	font-size: 28px;
-	color: #007aff;
+	color: #024F2B;
 	text-align: center;
 }
 
@@ -1493,7 +1493,7 @@
 
 .m20 .sec2 .conwrap .txtwrap .txt1 strong {
 	font-weight: 700;
-	color: #007aff;
+	color: #024F2B;
 }
 
 .m20 .sec2 .conwrap .txtwrap .txt2 {
@@ -1726,9 +1726,9 @@
 .m22 .sec2 .conwrap .graph .mtms dl dt {
 	padding-bottom: 20px;
 	font-size: 30px;
-	color: #007aff;
+	color: #024F2B;
 	font-weight: 700;
-	border-bottom: 1px solid #007aff;
+	border-bottom: 1px solid #024F2B;
 }
 
 .m22 .sec2 .conwrap .graph .mtms dl dd {
@@ -1750,12 +1750,12 @@
 	position:relative;
 	width:272px;height:70px;
 	margin-top:-20px;	
-	font-family: 'NanumGarMaesGeur';font-size:70px;color:#007aff;text-align:center;font-weight:400;
+	font-family: 'NanumGarMaesGeur';font-size:70px;color:#024F2B;text-align:center;font-weight:400;
 }
 .m22 .sec3 .is .word-wrapper:after{
 	display:block;content:"";
 	width:100%;height:4px;
-	background:#007aff;
+	background:#024F2B;
 	position:absolute;left:0;top:calc(100% + 15px);
 }
 .m22 .sec3 .is .word-wrapper .word{
@@ -1773,7 +1773,7 @@
 	margin-right:30px;
 	border-radius:20px;
 }
-.m22 .sec3 ul li:nth-child(5n - 4){background:#e8f4ff;}
+.m22 .sec3 ul li:nth-child(5n - 4){background:#E8EFEC;}
 .m22 .sec3 ul li:nth-child(5n - 3){background:#f4f4f4;}
 .m22 .sec3 ul li:nth-child(5n - 2){background:#fce8e9;}
 .m22 .sec3 ul li:nth-child(5n - 1){background:#dcf9f5;}
@@ -1915,7 +1915,7 @@
 	align-content: space-between;
 	box-sizing: border-box;
 	padding: 60px 0 45px;
-	background: #007aff;
+	background: #024F2B;
 }
 
 .m22 .sec3>div .message ul li .back {
@@ -1959,9 +1959,9 @@
 	width: 100%;
 	padding: 10px 0 30px;
 	margin-bottom: 30px;
-	border-bottom: 1px solid #007aff;
+	border-bottom: 1px solid #024F2B;
 	font-size: 48px;
-	color: #007aff;
+	color: #024F2B;
 	font-weight: 600;
 }
 
@@ -2027,14 +2027,14 @@
 
 .m22 .sec4 .mtms dl dt {
 	padding: 0 0 25px;
-	border-bottom: 1px solid #007aff;
+	border-bottom: 1px solid #024F2B;
 }
 
 .m22 .sec4 .mtms dl dt .abb {
 	width: 48px;
 	height: 48px;
 	margin: 0 auto 25px;
-	background: #007aff;
+	background: #024F2B;
 	border-radius: 50%;
 	font-size: 21px;
 	color: #fff;
@@ -2045,7 +2045,7 @@
 
 .m22 .sec4 .mtms dl dt .tit {
 	font-size: 37px;
-	color: #007aff;
+	color: #024F2B;
 	font-weight: 700;
 }
 
@@ -2149,7 +2149,7 @@
 	width: 408px;
 	height: 408px;
 	border-radius: 50%;
-	background: linear-gradient(90deg, rgba(0, 122, 255, 1) 0%, rgba(40, 192, 192, 1) 100%);
+	background: linear-gradient(90deg, rgba(2, 79, 43, 1) 0%, rgba(40, 192, 192, 1) 100%);
 }
 
 .m23 .sec2 .conwrap .graph .circlewrap .innerText {
@@ -2333,7 +2333,7 @@
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt1 {
-	background: #007aff;
+	background: #024F2B;
 	left: 50%;
 	top: 380px;
 	transform: translate(-50%, -50%);
@@ -2361,7 +2361,7 @@
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt1 .cc_line {
-	background: #007aff;
+	background: #024F2B;
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt2 .cc_line {
@@ -2380,7 +2380,7 @@
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt1 .cc_line:before {
-	background: #007aff;
+	background: #024F2B;
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt2 .cc_line:before {
@@ -2395,8 +2395,8 @@
 	transform: translateX(-50%) rotate(45deg);
 	width: 9px;
 	height: 9px;
-	border-right: 3px solid #007aff;
-	border-bottom: 3px solid #007aff;
+	border-right: 3px solid #024F2B;
+	border-bottom: 3px solid #024F2B;
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt2 .cc_line:after {
@@ -2441,7 +2441,7 @@
 	transform: translateY(-50%);
 	width: 8px;
 	height: 8px;
-	background: #007aff;
+	background: #024F2B;
 	border-radius: 50%;
 }
 
@@ -2552,7 +2552,7 @@
 }
 
 .m24 .sec2 .circlewrap .circle.circle5 {
-	background: #007aff;
+	background: #024F2B;
 }
 
 .m24 .sec2 .circlewrap .circle:after {
@@ -2627,7 +2627,7 @@
 	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
-	background: #007aff;
+	background: #024F2B;
 }
 
 .m24 .sec3 .titwrap .boxwrap .box.box2 .box_tit {
@@ -2955,8 +2955,8 @@
 }
 
 .m32 .sec1 .conwrap .banner a:hover {
-	border: 2px solid #007aff;
-	background: #007aff;
+	border: 2px solid #024F2B;
+	background: #024F2B;
 }
 
 .m32 .sec1 .conwrap .banner .txt,
@@ -3099,7 +3099,7 @@
 
 .m41 .sec2 .conwrap div .tit span:nth-child(2) {
 	font-size: 26px;
-	color: #b7e7ff;
+	color: #B8CEC4;
 }
 
 .m41 .sec2 .conwrap div.praise {
@@ -3507,7 +3507,7 @@
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists .swiper-container .swiper-slide:nth-child(4n - 3) {
-	background: #e8f4ff;
+	background: #E8EFEC;
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists .swiper-container .swiper-slide:nth-child(4n - 2) {
@@ -3596,7 +3596,7 @@
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists.list5>div ul li:nth-child(4n - 3) {
-	background: #e8f4ff;
+	background: #E8EFEC;
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists.list5>div ul li:nth-child(4n - 2) {
@@ -4011,7 +4011,7 @@
 	box-sizing: border-box;
 	width: 40px;
 	height: 40px;
-	color: #007aff;
+	color: #024F2B;
 	font-size: 19px;
 	line-height: 40px;
 	font-weight: 600;

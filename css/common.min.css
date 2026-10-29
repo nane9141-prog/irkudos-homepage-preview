@@ -301,7 +301,7 @@ img {
   content: "";
   width: 100%;
   height: 3px;
-  background: #007aff;
+  background: #024F2B;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -312,7 +312,7 @@ img {
 #header.bl .head .pcNav>ul>li.on>a,
 .allMenu .menuWrap>ul>li:hover>a,
 .head .pcNav>ul>li.on>a {
-  color: #007aff
+  color: #024F2B
 }
 
 .head .pcNav>ul>li.on>a:after {
@@ -509,7 +509,7 @@ img {
 }
 
 .allMenu .menuWrap>ul>li:hover>a:after {
-  background: #007aff
+  background: #024F2B
 }
 
 .allMenu .menuWrap>ul>li>ul>li {
@@ -623,7 +623,7 @@ img {
   }
 
   .allMenu .menuWrap>ul>li.act>a {
-    color: #007aff
+    color: #024F2B
   }
 
   .allMenu .menuWrap>ul>li>a:after {
@@ -635,7 +635,7 @@ img {
   }
 
   .allMenu .menuWrap>ul>li.act>a:after {
-    background: #007aff
+    background: #024F2B
   }
 
   .allMenu .menuWrap>ul>li>ul {

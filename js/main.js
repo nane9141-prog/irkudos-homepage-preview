@@ -64,8 +64,8 @@ $(function(){
 		tl1.to(".section1 .area2 .txt", {transform:"translateY(0)", opacity:1, duration: 0.4, ease: 'power1.out'},"<");	
 		tl1.to({}, {duration: 0.25});
 		
-		tl1.to(".section1 .lines .line1", {width: "110px", background: "linear-gradient(to right, rgba(0,122,255,1) 20%, rgba(40,192,192,1) 80%)", duration: 0.4, ease: 'power1.out'});
-		tl1.to(".section1 .lines .line2", {width: "110px", background: "linear-gradient(to right, rgba(0,122,255,1) 20%, rgba(40,192,192,1) 80%)", duration: 0.4, ease: 'power1.out'},"<");
+		tl1.to(".section1 .lines .line1", {width: "110px", background: "linear-gradient(to right, rgba(2,79,43,1) 20%, rgba(40,192,192,1) 80%)", duration: 0.4, ease: 'power1.out'});
+		tl1.to(".section1 .lines .line2", {width: "110px", background: "linear-gradient(to right, rgba(2,79,43,1) 20%, rgba(40,192,192,1) 80%)", duration: 0.4, ease: 'power1.out'},"<");
 		tl1.to({}, {duration: 0.25});
 		
 		tl1.to(".section1 .lines", {scale: "1", opacity: "0", duration: 0.4, ease: 'power1.out'});

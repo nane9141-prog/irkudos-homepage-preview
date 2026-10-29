@@ -95,7 +95,7 @@
   content: "";
   width: 100%;
   height: 3px;
-  background: #007aff;
+  background: #024F2B;
   position: absolute;
   left: 0;
   top: 115%
@@ -357,7 +357,7 @@
 
 .m11 .sec2 .conwrap div .tit span {
   font-size: 26px;
-  color: #b7e7ff;
+  color: #B8CEC4;
   font-weight: 400
 }
 
@@ -536,7 +536,7 @@
   margin: 110px auto 0;
   padding: 50px;
   border-radius: 15px;
-  background: linear-gradient(to bottom, #e6f2ff, #eaf9f9)
+  background: linear-gradient(to bottom, #E6EEEA, #eaf9f9)
 }
 
 .m11 .sec3 .value h5 {
@@ -561,7 +561,7 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #28c0c0, #007aff);
+  background: linear-gradient(to top, #28c0c0, #024F2B);
   border-radius: 15px;
   transform: rotate(45deg)
 }
@@ -855,7 +855,7 @@
 .m13 .sec1 .historyWrap .title .tit1 {
   margin: 30px 0 15px;
   font-size: 54px;
-  color: #007aff;
+  color: #024F2B;
   font-weight: 700;
   line-height: 1.1em
 }
@@ -964,7 +964,7 @@
   content: "";
   width: 6px;
   height: 6px;
-  background: #1283ff;
+  background: #024F2B;
   border-radius: 50%;
   position: absolute;
   top: 10px
@@ -1194,7 +1194,7 @@
   margin: 25px 0 0;
   background: #000;
   font-size: 30px;
-  color: #007aff;
+  color: #024F2B;
   text-align: center
 }
 
@@ -1379,7 +1379,7 @@
 
 .m20 .sec2 .conwrap .txtwrap .txt1 strong {
   font-weight: 700;
-  color: #007aff
+  color: #024F2B
 }
 
 .m20 .sec2 .conwrap .txtwrap .txt2 {
@@ -1599,9 +1599,9 @@
 .m22 .sec2 .conwrap .graph .mtms dl dt {
   padding-bottom: 20px;
   font-size: 30px;
-  color: #007aff;
+  color: #024F2B;
   font-weight: 700;
-  border-bottom: 1px solid #007aff
+  border-bottom: 1px solid #024F2B
 }
 
 .m22 .sec2 .conwrap .graph .mtms dl dd {
@@ -1697,7 +1697,7 @@
   align-content: space-between;
   box-sizing: border-box;
   padding: 60px 0 45px;
-  background: #007aff
+  background: #024F2B
 }
 
 .m22 .sec3>div .message ul li .back {
@@ -1736,9 +1736,9 @@
   width: 100%;
   padding: 10px 0 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #007aff;
+  border-bottom: 1px solid #024F2B;
   font-size: 48px;
-  color: #007aff;
+  color: #024F2B;
   font-weight: 600
 }
 
@@ -1799,14 +1799,14 @@
 
 .m22 .sec4 .mtms dl dt {
   padding: 0 0 25px;
-  border-bottom: 1px solid #007aff
+  border-bottom: 1px solid #024F2B
 }
 
 .m22 .sec4 .mtms dl dt .abb {
   width: 48px;
   height: 48px;
   margin: 0 auto 25px;
-  background: #007aff;
+  background: #024F2B;
   border-radius: 50%;
   font-size: 21px;
   color: #fff;
@@ -1817,7 +1817,7 @@
 
 .m22 .sec4 .mtms dl dt .tit {
   font-size: 37px;
-  color: #007aff;
+  color: #024F2B;
   font-weight: 700
 }
 
@@ -1894,7 +1894,7 @@
   width: 508px;
   height: 508px;
   border-radius: 50%;
-  background: linear-gradient(90deg, #007aff 0, #28c0c0 100%)
+  background: linear-gradient(90deg, #024F2B 0, #28c0c0 100%)
 }
 
 .m23 .sec2 .conwrap .graph .circlewrap .innerText {
@@ -2063,7 +2063,7 @@
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt1 {
-  background: #007aff;
+  background: #024F2B;
   left: 27%
 }
 
@@ -2089,7 +2089,7 @@
 .m23 .sec3 .circlewrap .cc_txt.txt1 .cc_line,
 .m23 .sec3 .circlewrap .cc_txt.txt1 .cc_line:before,
 .m24 .sec2 .circlewrap .circle.circle5 {
-  background: #007aff
+  background: #024F2B
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt2 .cc_line,
@@ -2117,8 +2117,8 @@
   transform: translateY(-50%) rotate(-45deg);
   width: 9px;
   height: 9px;
-  border-right: 3px solid #007aff;
-  border-bottom: 3px solid #007aff
+  border-right: 3px solid #024F2B;
+  border-bottom: 3px solid #024F2B
 }
 
 .m23 .sec3 .circlewrap .cc_txt.txt2 .cc_line:after {
@@ -2166,7 +2166,7 @@
   transform: translateY(-50%);
   width: 8px;
   height: 8px;
-  background: #007aff;
+  background: #024F2B;
   border-radius: 50%
 }
 
@@ -2328,7 +2328,7 @@
   font-size: 30px;
   font-weight: 700;
   color: #fff;
-  background: #007aff
+  background: #024F2B
 }
 
 .m24 .sec3 .titwrap .boxwrap .box ul {
@@ -2580,8 +2580,8 @@
 }
 
 .m32 .sec1 .conwrap .banner a:hover {
-  border: 2px solid #007aff;
-  background: #007aff
+  border: 2px solid #024F2B;
+  background: #024F2B
 }
 
 .m32 .sec1 .conwrap .banner .txt,
@@ -2653,7 +2653,7 @@
 
 .m41 .sec2 .conwrap div .tit span:nth-child(2) {
   font-size: 26px;
-  color: #b7e7ff
+  color: #B8CEC4
 }
 
 .m41 .sec2 .conwrap div.praise {
@@ -2981,7 +2981,7 @@
 
 .m42 .sec1 .conwrap .boxwrap .lists .swiper-container .swiper-slide:nth-child(4n-3),
 .m42 .sec1 .conwrap .boxwrap .lists.list5>div ul li:nth-child(4n-3) {
-  background: #e8f4ff
+  background: #E8EFEC
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists .swiper-container .swiper-slide:nth-child(4n-2),
@@ -3327,7 +3327,7 @@
   display: inline-block;
   width: 40px;
   height: 40px;
-  color: #007aff;
+  color: #024F2B;
   font-weight: 600
 }
 

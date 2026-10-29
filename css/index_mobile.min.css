@@ -18,7 +18,7 @@
 .section1 .lines .line1:before,
 .section1 .lines .line2>div {
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), #007aff 20%, #28c0c0 80%, rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #024F2B 20%, #28c0c0 80%, rgba(0, 0, 0, 0));
   content: ""
 }
 
@@ -205,7 +205,7 @@
 }
 
 .section1 .area1 .txt {
-  color: #007aff
+  color: #024F2B
 }
 
 .section1 .area2 {
@@ -286,7 +286,7 @@
 
 .section2 .conwrap .boxwrap .txtarea .tit1 {
   font-size: 14px;
-  color: #007aff;
+  color: #024F2B;
   font-weight: 700;
   opacity: 0;
   transform: translateY(40px)
