@@ -5,6 +5,14 @@
 	var secs = [].slice.call(document.querySelectorAll('.ly-c'));
 	if (!secs.length) return;
 	var mq = window.matchMedia('(min-width: 1101px)');
+	/* 패널형: 활성 패널이 고정 화면 높이를 넘으면 축소(zoom) */
+	function fit(sec) {
+		var on = sec.querySelector('.ly-c-item.is-on .ly-c-pnl'), st = sec.querySelector('.ly-c-sticky > .wrap');
+		if (!on || !st) return;
+		on.style.zoom = 1;
+		var over = st.scrollHeight - sec.querySelector('.ly-c-sticky').clientHeight + 24;
+		if (over > 0) on.style.zoom = Math.max(.6, (on.offsetHeight - over) / on.offsetHeight);
+	}
 	function update() {
 		if (!mq.matches) return;
 		secs.forEach(function (sec) {
@@ -13,6 +21,7 @@
 			var p = range > 0 ? Math.min(1, Math.max(0, -r.top / range)) : 0;
 			var idx = Math.min(n - 1, Math.floor(p * n));
 			for (var i = 0; i < n; i++) items[i].classList.toggle('is-on', i === idx);
+			if (sec.classList.contains('ly-c--panel') && sec._idx !== idx) { sec._idx = idx; fit(sec); }
 		});
 	}
 	secs.forEach(function (sec) {
@@ -25,6 +34,6 @@
 		});
 	});
 	window.addEventListener('scroll', update, { passive: true });
-	window.addEventListener('resize', update);
+	window.addEventListener('resize', function () { secs.forEach(function (s) { s._idx = -1; }); update(); });
 	update();
 })();

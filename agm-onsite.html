@@ -265,8 +265,9 @@
 </section>
 
 <!-- ========== OVERVIEW ========== -->
-<section>
+<section class="ly-a">
   <div class="wrap">
+    <p class="ly-eb">OVERVIEW</p>
     <h4 class="pageTitle1">주주총회 현장의 출석과 표결을<br>전자적 방법으로 처리합니다</h4>
     <p class="lead">NFC와 비콘을 통해 현장투표앱 하나로 입장부터 표결까지 진행합니다.</p>
 
@@ -318,20 +319,18 @@
 </section>
 
 <!-- ========== FOR ISSUERS ========== -->
-<section class="bg-gray">
-  <div class="wrap">
-    <h4 class="pageTitle1">관리자 페이지에서<br>현장 참석자를 등록합니다</h4>
-    <p class="lead">주주 검색부터 출입증·의결권 부여까지 차례로 진행합니다.</p>
-
-    <div class="tabs" role="tablist" aria-label="현장 참석자 등록 단계">
-      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true"><span class="n">1</span>주주 검색</button>
-      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="n">2</span>본인 확인</button>
-      <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="n">3</span>참석자 등록</button>
-      <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="n">4</span>출입증·의결권 부여</button>
-    </div>
-
-    <!-- 1 -->
-    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+<!-- 레이아웃 C: 스크롤 롤오버 (탭 → 스크롤 진행에 따라 단계 전환, js/digital/dg-layout.js) -->
+<section class="ly-c ly-c--panel bg-gray" style="--n:4">
+  <div class="ly-c-sticky">
+    <div class="wrap">
+      <div class="ly-c-top">
+        <div><p class="ly-eb">FOR ISSUERS</p><h4 class="pageTitle1">관리자 페이지에서<br>현장 참석자를 등록합니다</h4></div>
+        <div><p class="lead">주주 검색부터 출입증·의결권 부여까지 차례로 진행합니다.</p></div>
+      </div>
+      <ol class="ly-c-list">
+        <li class="ly-c-item is-on">
+          <h5 class="ly-c-h"><span class="ly-c-n">01</span>주주 검색</h5>
+          <div class="ly-c-pnl panel" id="p1">
       <div>
         <h3>참석자 관리에서<br>주주를 검색합니다</h3>
         <p>참석한 주주를 주주명부에서 찾습니다.</p>
@@ -351,9 +350,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 2 -->
-    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">02</span>본인 확인</h5>
+          <div class="ly-c-pnl panel" id="p2">
       <div>
         <h3>신분증으로<br>본인 여부를 확인합니다</h3>
         <p>신분증으로 본인을, 위임장으로 대리인을 확인합니다.</p>
@@ -372,9 +372,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 3 -->
-    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">03</span>참석자 등록</h5>
+          <div class="ly-c-pnl panel" id="p3">
       <div>
         <h3>사전 행사 이력을 확인하고<br>참석자로 등록합니다</h3>
         <p>사전 행사 이력이 있으면 철회한 뒤 등록합니다.</p>
@@ -406,9 +407,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 4 -->
-    <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">04</span>출입증·의결권 부여</h5>
+          <div class="ly-c-pnl panel" id="p4">
       <div>
         <h3>출입증과 의결권을<br>부여합니다</h3>
         <p>NFC 태깅으로 주주의 현장투표앱에 출입증과 의결권을 등록합니다.</p>
@@ -437,12 +439,17 @@
         </div>
       </div>
     </div>
+        </li>
+      </ol>
+      
+    </div>
   </div>
 </section>
 
 <!-- ========== FOR SHAREHOLDERS ========== -->
-<section>
+<section class="ly-a">
   <div class="wrap">
+    <p class="ly-eb">FOR SHAREHOLDERS</p>
     <h4 class="pageTitle1">주주는 현장투표앱으로<br>총회장에서 표결합니다</h4>
     <p class="lead">출입증을 받은 뒤 의안이 상정될 때마다 표결하고, 행사 내역을 확인합니다.</p>
 
@@ -509,8 +516,9 @@
 </section>
 
 <!-- ========== LIVE COUNTING ========== -->
-<section class="bg-gray">
+<section class="ly-a bg-gray">
   <div class="wrap">
+    <p class="ly-eb">LIVE COUNTING</p>
     <h4 class="pageTitle1">현장 표결 현황을<br>실시간으로 확인합니다</h4>
     <p class="lead">주주총회 중에는 참석과 표결 현황을, 주주총회가 끝난 뒤에는 현장 집계 결과를 확인합니다.</p>
 
@@ -556,8 +564,9 @@
 </section>
 
 <!-- ========== AGGREGATION ========== -->
-<section class="agg-sec">
+<section class="ly-a agg-sec">
   <div class="wrap">
+    <p class="ly-eb">AGGREGATION</p>
     <h4 class="pageTitle1">현장 표결은 사전 행사와 함께<br>총회 당일 집계에 합산됩니다</h4>
     <p class="lead">전자투표·전자위임, 서면위임장, 서면투표, 현장 전자표결, 온라인 투표가 하나의 집계 시스템으로 모입니다.</p>
 
@@ -615,6 +624,7 @@
 
 </div>
 <script type="text/javascript" src="/irkudos-homepage-preview/js/digital/agm-onsite.js?v=20261026" defer></script>
+<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/dg-layout.js?v=20261030" defer></script>
 </div><!--/contents-->
 	<div class="btnTop"><img src="/irkudos-homepage-preview/images/common/btn_top.png" alt="상단 바로가기"></div>
 </div><!--//container-->
@@ -655,7 +665,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 11:07</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 12:07</div>
 </body>
 </html>
 

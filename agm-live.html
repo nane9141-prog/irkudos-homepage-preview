@@ -265,8 +265,9 @@
 </section>
 
 <!-- ========== OVERVIEW ========== -->
-<section>
+<section class="ly-a">
   <div class="wrap">
+    <p class="ly-eb">OVERVIEW</p>
     <h4 class="pageTitle1">주주총회 현장을<br>실시간으로 공개합니다</h4>
     <p class="lead">주주총회에 직접 참석하지 못한 주주도 온라인으로 현장을 시청할 수 있습니다.</p>
 
@@ -307,20 +308,18 @@
 </section>
 
 <!-- ========== FOR ISSUERS ========== -->
-<section class="bg-gray">
-  <div class="wrap">
-    <h4 class="pageTitle1">전용 페이지 개설부터 송출까지<br>생중계 운영을 함께합니다</h4>
-    <p class="lead">라이브 스트리밍 전문 파트너와 함께 촬영 장비, 송출, 현장 인력을 일괄 지원합니다.</p>
-
-    <div class="tabs" role="tablist" aria-label="생중계 운영 단계">
-      <button class="tab" role="tab" id="t0" aria-controls="p0" aria-selected="true"><span class="n">1</span>전용 페이지 개설</button>
-      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="false" tabindex="-1"><span class="n">2</span>사전 리허설</button>
-      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="n">3</span>현장 촬영</button>
-      <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="n">4</span>송출·모니터링</button>
-    </div>
-
-    <!-- 0 전용 페이지 -->
-    <div class="panel" role="tabpanel" id="p0" aria-labelledby="t0">
+<!-- 레이아웃 C: 스크롤 롤오버 (탭 → 스크롤 진행에 따라 단계 전환, js/digital/dg-layout.js) -->
+<section class="ly-c ly-c--panel bg-gray" style="--n:4">
+  <div class="ly-c-sticky">
+    <div class="wrap">
+      <div class="ly-c-top">
+        <div><p class="ly-eb">FOR ISSUERS</p><h4 class="pageTitle1">전용 페이지 개설부터 송출까지<br>생중계 운영을 함께합니다</h4></div>
+        <div><p class="lead">라이브 스트리밍 전문 파트너와 함께 촬영 장비, 송출, 현장 인력을 일괄 지원합니다.</p></div>
+      </div>
+      <ol class="ly-c-list">
+        <li class="ly-c-item is-on">
+          <h5 class="ly-c-h"><span class="ly-c-n">01</span>전용 페이지 개설</h5>
+          <div class="ly-c-pnl panel" id="p0">
       <div>
         <h3>기업별 전용<br>생중계 페이지를 제공합니다</h3>
         <p>기업별 전용 링크를 통해 주주인증부터 생중계 시청까지 하나의 페이지에서 운영됩니다.</p>
@@ -343,9 +342,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 1 사전 리허설 : 캘린더 -->
-    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">02</span>사전 리허설</h5>
+          <div class="ly-c-pnl panel" id="p1">
       <div>
         <h3>주주총회 전에<br>현장을 미리 점검합니다</h3>
         <p>주주총회장 환경을 살피고, 리허설을 통해 실제 송출 상태를 확인합니다.</p>
@@ -369,9 +369,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 2 현장 촬영 : 배치도 -->
-    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">03</span>현장 촬영</h5>
+          <div class="ly-c-pnl panel" id="p2">
       <div>
         <h3>주주총회 진행을<br>현장에서 촬영합니다</h3>
         <p>주주총회장 규모와 구조에 맞춰 카메라를 배치하고, 진행 흐름에 따라 화면을 전환합니다.</p>
@@ -406,9 +407,10 @@
         </svg>
       </div>
     </div>
-
-    <!-- 3 송출·모니터링 : 당일 타임라인 -->
-    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">04</span>송출·모니터링</h5>
+          <div class="ly-c-pnl panel" id="p3">
       <div>
         <h3>주주총회가 끝날 때까지<br>송출 상태를 지켜봅니다</h3>
         <p>현장 기술 인력이 영상·음성·자막 송출을 실시간으로 모니터링합니다.</p>
@@ -425,12 +427,17 @@
         </div>
       </div>
     </div>
+        </li>
+      </ol>
+      
+    </div>
   </div>
 </section>
 
 <!-- ========== FOR SHAREHOLDERS ========== -->
-<section>
+<section class="ly-a">
   <div class="wrap">
+    <p class="ly-eb">FOR SHAREHOLDERS</p>
     <h4 class="pageTitle1">주주인증은 정해진 기간에,<br>시청은 당일 바로</h4>
     <p class="lead">주주는 기업 전용 페이지에서 정해진 기간에 주주인증을 마치고, 주주총회 당일 로그인해 시청합니다.</p>
 
@@ -495,10 +502,11 @@
 </section>
 
 <!-- ========== LIVE SUBTITLES ========== -->
-<section class="bg-gray">
+<section class="ly-a bg-gray">
   <div class="wrap">
     <div class="subs-grid">
     <div class="subs-text">
+    <p class="ly-eb">LIVE SUBTITLES</p>
     <h4 class="pageTitle1">실시간 자막으로<br>언어의 장벽을 낮춥니다</h4>
     <p class="lead">생중계 화면에서 한국어·영어·중국어·일본어 자막을 실시간으로 제공합니다.</p>
     </div>
@@ -591,6 +599,7 @@
 
 </div>
 <script type="text/javascript" src="/irkudos-homepage-preview/js/digital/agm-live.js?v=20261026" defer></script>
+<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/dg-layout.js?v=20261030" defer></script>
 </div><!--/contents-->
 	<div class="btnTop"><img src="/irkudos-homepage-preview/images/common/btn_top.png" alt="상단 바로가기"></div>
 </div><!--//container-->
@@ -631,7 +640,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 11:07</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 12:07</div>
 </body>
 </html>
 
