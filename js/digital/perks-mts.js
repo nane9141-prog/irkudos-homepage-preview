@@ -6,7 +6,7 @@
 	ROOT.addEventListener('click', function (e) { var a = e.target.closest('a[href="#"]'); if (a) e.preventDefault(); });
 
 	(function(){
-	  const tabs=[...document.querySelectorAll('[role="tab"]')];
+	  const tabs=[...ROOT.querySelectorAll('[role="tab"]')];   /* 2026-10-30: ROOT 범위로 한정 (주주우대 페이지 통합 대응) */
 	  function select(tab){
 	    tabs.forEach(t=>{
 	      const on=t===tab;
@@ -28,9 +28,9 @@
 	  });
 	})();
 	(function(){
-	  const ph=document.querySelector('.demo-ph'); if(!ph) return;
+	  const ph=ROOT.querySelector('.demo-ph'); if(!ph) return;
 	  const scr=[...ph.querySelectorAll('.scr')], tap=ph.querySelector('.tap');
-	  const steps=[...document.querySelectorAll('.demo-steps li')], dots=[...document.querySelectorAll('.bk-dots span')];
+	  const steps=[...ROOT.querySelectorAll('.demo-steps li')], dots=[...ROOT.querySelectorAll('.bk-dots span')];
 	  const names=['A','B','C']; let b=0;
 	  function show(i){scr.forEach((s,k)=>{s.classList.toggle('on',k===i);s.classList.toggle('out',k<i);});steps.forEach((s,k)=>s.classList.toggle('on',k===i));}
 	  function broker(n){ph.querySelectorAll('.bk').forEach(e=>e.textContent=names[n]+'증권');ph.querySelector('.bk-l').textContent=names[n];dots.forEach((d,k)=>d.classList.toggle('on',k===n));}
