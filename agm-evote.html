@@ -265,13 +265,14 @@
 </section>
 
 <!-- ========== OVERVIEW ========== -->
+<!-- 레이아웃 A-vis -->
 <section class="ly-a">
   <div class="wrap">
     <p class="ly-eb">OVERVIEW</p>
     <h4 class="pageTitle1">사전에 의결권을<br>행사하는 두 가지 방법</h4>
     <p class="lead">전자투표·전자위임은 총회 당일이 아닌,<br><span style="color:var(--blue);font-weight:700">총회 전</span>에 정해진 기간 동안 의결권을 행사하는 방식입니다.</p>
-
-    <div class="timeline">
+    <div class="ly-a-vis">
+      <div class="timeline">
       <div class="tl-spacer"></div>
       <div class="tl-track">
         <div class="tl-node"><span class="tl-dot"></span><span class="tl-label">행사 개시</span></div>
@@ -281,8 +282,7 @@
       </div>
       <div class="tl-spacer"></div>
     </div>
-
-    <div class="methods">
+      <div class="methods">
       <div class="method">
         <div class="method-illu" aria-hidden="true">
           <svg width="90" height="72" viewBox="0 0 90 72" fill="none">
@@ -312,7 +312,7 @@
         <p>주주총회 전 정해진 기간 동안<br>대리인에게 의결권 행사를 온라인으로 위임합니다.</p>
       </div>
     </div>
-
+    </div>
   </div>
 </section>
 
@@ -475,13 +475,14 @@
 </section>
 
 <!-- ========== FOR SHAREHOLDERS ========== -->
+<!-- 레이아웃 A-body -->
 <section class="ly-a">
   <div class="wrap">
     <p class="ly-eb">FOR SHAREHOLDERS</p>
     <h4 class="pageTitle1">주주는 간편하게<br>의결권을 행사합니다</h4>
     <p class="lead">전자투표·전자위임 기간 동안 스마트폰이나 PC에서 언제 어디서든 의안별로 투표하거나 위임할 수 있습니다.</p>
-
-    <div class="steps">
+    <div class="ly-a-body">
+      <div class="steps">
       <div class="step">
         <div class="phone" aria-hidden="true">
           <div class="ph-top">진행 중인 주주총회 <span>⋮</span></div>
@@ -535,24 +536,26 @@
             <strong>○○주식회사 제○기 정기주주총회</strong>
             <span>총 6건 의안에 대해 1,000주 권리행사</span>
           </div>
-          <div class="ph-btns"><div class="ph-btn" style="background:#fff;color:var(--ink);border:1px solid var(--ink)">홈으로</div><div class="ph-btn ghost" style="border-color:#2B6BF0;color:#2B6BF0">투표 철회하기</div></div>
+          <div class="ph-btns"><div class="ph-btn" style="background:#fff;color:var(--ink);border:1px solid var(--ink)">홈으로</div><div class="ph-btn ghost" style="border-color:var(--blue);color:var(--blue)">투표 철회하기</div></div>
         </div>
         <div class="step-cap"><span class="n">3</span><b>행사 완료</b><p>투표를 마치면 행사 내용을 확인하고, 필요하면 투표를 철회할 수 있습니다.</p></div>
       </div>
     </div>
     </div>
+  </div>
   
 </section>
 
 <!-- ========== VOTE STATUS ========== -->
-<section class="ly-a bg-gray">
+<!-- 레이아웃 B-split -->
+<section class="ly-b bg-gray">
   <div class="wrap">
-    <p class="ly-eb">RESULT</p>
-    <h4 class="pageTitle1">전자투표·전자위임 현황을<br>실시간으로 확인합니다</h4>
-    <p class="lead">진행 중에는 의안별·주주별 행사 내역을, 종료 후에는 확정된 집계 결과를 확인합니다.</p>
-
-    <div class="live">
-      <div class="live-list">
+    <div class="ly-b-grid">
+      <div class="ly-b-txt">
+        <p class="ly-eb">RESULT</p>
+        <h4 class="pageTitle1">전자투표·전자위임 현황을<br>실시간으로 확인합니다</h4>
+        <p class="lead">진행 중에는 의안별·주주별 행사 내역을, 종료 후에는 확정된 집계 결과를 확인합니다.</p>
+        <div class="ly-b-split live"><div class="live-list">
         <p class="live-h on" data-g="0">전자투표·전자위임 진행 중</p>
         <ul class="live-items">
           <li><b>의안별 행사 내역</b>의안마다 찬성·반대·기권·중립 수 확인</li>
@@ -564,8 +567,10 @@
           <li><b>결과 확인 및 다운로드</b>확정된 집계 결과를 확인하고 파일로 내려받기</li>
           <li><b>결과확인증 다운로드</b>전자투표·전자위임 결과확인증 내려받기</li>
         </ul>
+      </div></div>
       </div>
-      <div class="live-stage" id="liveStage">
+      <div class="ly-b-vis">
+        <div class="ly-b-split live"><div class="live-stage" id="liveStage">
         <div class="live-screen on"><div class="cx" aria-hidden="true">
         <div class="cx-bar"><span class="ic"></span><span class="sep"></span><span>전자투표/위임장 내역</span><span class="hist"></span></div>
         <div class="cx-body">
@@ -600,20 +605,22 @@
           </table></div>
         </div>
       </div></div>
+      </div></div>
+        <p class="agg-note">화면의 수치는 이해를 돕기 위한 예시입니다.</p>
       </div>
     </div>
-    <p class="agg-note">화면의 수치는 이해를 돕기 위한 예시입니다.</p>
   </div>
 </section>
 
 <!-- ========== AGGREGATION ========== -->
+<!-- 레이아웃 A-vis -->
 <section class="ly-a">
   <div class="wrap">
     <p class="ly-eb">AGGREGATION</p>
     <h4 class="pageTitle1">미리 행사된 의결권은<br>총회 당일 집계에 합산됩니다</h4>
     <p class="lead">총회 전 전자투표·전자위임과 서면위임장, 총회 당일 행사된 의결권이 하나의 집계 시스템으로 모입니다.</p>
-
-    <div class="agg">
+    <div class="ly-a-vis">
+      <div class="agg">
       <div class="agg-sources">
         <div class="src on"><div class="src-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5" y="2" width="10" height="16" rx="2" stroke="#024F2B" stroke-width="1.6"/><path d="M8.5 15h3" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><span class="when">총회 전</span><b>전자투표·전자위임</b><p>총회 전 정해진 기간에 온라인으로 행사된 의결권</p></div></div>
         <div class="src"><div class="src-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 2h7l4 4v12H5z" stroke="#024F2B" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 2v4h4" stroke="#024F2B" stroke-width="1.6" stroke-linejoin="round"/></svg></div><div><span class="when">총회 전</span><b>서면위임장</b><p>프록시 서비스로 확보한 위임장으로 행사된 의결권</p></div></div>
@@ -633,27 +640,28 @@
         <div class="row total"><span>합계</span><b>9,000,000</b></div>
       </div>
     </div>
-
-    <p class="agg-note">화면의 수치는 이해를 돕기 위한 예시입니다.</p>
+      <p class="agg-note">화면의 수치는 이해를 돕기 위한 예시입니다.</p>
+    </div>
   </div>
 </section>
 
 <!-- ========== PROCESS ========== -->
+<!-- 레이아웃 A-body -->
 <section class="ly-a bg-gray">
   <div class="wrap">
     <p class="ly-eb">PROCESS</p>
     <h4 class="pageTitle1">전자투표/전자위임<br>진행 절차</h4>
     <p class="lead">주주총회일을 기준으로, 계약부터 주주총회까지 이렇게 진행됩니다.</p>
-
-    <ol class="proc">
+    <div class="ly-a-body">
+      <ol class="proc">
       <li><span class="d">D-25</span><b>계약 및 이사회 결의</b><ul><li>IR큐더스와 위탁계약 체결</li><li>전자투표 채택 이사회 결의</li></ul></li>
       <li><span class="d">D-15</span><b>소집공고 공시</b><ul><li>전자투표/전자위임장 내용을 포함한 소집공고 공시</li><li>전자위임장 이용 시 권유 참고서류 공시</li></ul></li>
       <li><span class="d">D-14</span><b>전자투표/전자위임 설정</b><ul><li>관리자 페이지를 통해 주주총회 정보 입력 및 설정</li></ul></li>
       <li><span class="d">D-10~D-1</span><b>전자투표/전자위임 행사 기간</b><ul><li>주주의 전자투표·전자위임 행사</li></ul></li>
       <li><span class="d">D-day</span><b>주주총회</b><ul><li>사전·당일 행사분 합산 집계</li></ul></li>
     </ol>
-
-    <p class="proc-note">제시된 일정은 최소 기간 기준입니다. 원활한 진행을 위해 여유를 두고 준비하시길 권장합니다.</p>
+      <p class="proc-note">제시된 일정은 최소 기간 기준입니다. 원활한 진행을 위해 여유를 두고 준비하시길 권장합니다.</p>
+    </div>
   </div>
 </section>
 
@@ -669,18 +677,6 @@
 <section class="cta-sec bg-gray">
   <div class="wrap">
     <div class="cta">
-      <svg class="net" viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <g stroke="#5670C8" stroke-opacity=".35" stroke-width="1">
-          <line x1="80" y1="60" x2="210" y2="140"/><line x1="210" y1="140" x2="140" y2="250"/><line x1="210" y1="140" x2="360" y2="90"/>
-          <line x1="640" y1="70" x2="780" y2="150"/><line x1="780" y1="150" x2="900" y2="80"/><line x1="780" y1="150" x2="860" y2="250"/>
-          <line x1="440" y1="30" x2="520" y2="20"/><line x1="520" y1="20" x2="560" y2="60"/>
-        </g>
-        <g fill="#B6B6B6">
-          <circle cx="80" cy="60" r="2.5"/><circle cx="210" cy="140" r="3"/><circle cx="140" cy="250" r="2"/><circle cx="360" cy="90" r="2"/>
-          <circle cx="640" cy="70" r="2"/><circle cx="780" cy="150" r="3"/><circle cx="900" cy="80" r="2.5"/><circle cx="860" cy="250" r="2"/>
-          <circle cx="440" cy="30" r="2"/><circle cx="520" cy="20" r="2.5"/><circle cx="560" cy="60" r="2"/>
-        </g>
-      </svg>
       <h2>의결권 행사의 편의성을 높이는<br>디지털 사전투표·위임 서비스, 전자투표/전자위임장</h2>
       <a href="https://www.irkudos.co.kr/_contact.php" class="js-contact">문의하기</a>
     </div>
@@ -730,7 +726,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 12:07</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 12:17</div>
 </body>
 </html>
 
