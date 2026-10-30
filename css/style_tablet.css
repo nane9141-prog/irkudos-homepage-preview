@@ -3519,7 +3519,7 @@
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists .swiper-container .swiper-slide:nth-child(4n) {
-	background: #f0e8ff;
+	background: #EDEDED;
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists .swiper-container .swiper-slide.empty {
@@ -3608,7 +3608,7 @@
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists.list5>div ul li:nth-child(4n) {
-	background: #f0e8ff;
+	background: #EDEDED;
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists.list5>div ul li img {

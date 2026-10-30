@@ -45,7 +45,7 @@
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_pc.min.css" media="screen and (min-width:1400px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_tablet.min.css" media="screen and (min-width:813px) and (max-width:1399px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_mobile.min.css" media="screen and (max-width:812px)" />
-<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-live.css?v=20261026" />
+<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-live.css?v=20261030g" />
 <script language="javascript" src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -265,19 +265,21 @@
 </section>
 
 <!-- ========== OVERVIEW ========== -->
-<section>
+<!-- 레이아웃 A-vis -->
+<section class="ly-a">
   <div class="wrap">
-    <h2>주주총회 현장을<br>실시간으로 공개합니다</h2>
+    <p class="ly-eb">OVERVIEW</p>
+    <h4 class="pageTitle1">주주총회 현장을<br>실시간으로 공개합니다</h4>
     <p class="lead">주주총회에 직접 참석하지 못한 주주도 온라인으로 현장을 시청할 수 있습니다.</p>
-
-    <div class="pipe">
+    <div class="ly-a-vis">
+      <div class="pipe">
       <div class="pnode">
-        <div class="pic" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="11" rx="2"/><path d="M15.5 10.5l5-3v9l-5-3"/></svg></div>
+        <div class="pic" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="11" rx="2"/><path d="M15.5 10.5l5-3v9l-5-3"/></svg></div>
         <b>주주총회 현장</b><span>촬영</span>
       </div>
       <div class="plink" aria-hidden="true"><i></i></div>
       <div class="pnode">
-        <div class="pic" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></svg></div>
+        <div class="pic" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#16181C" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></svg></div>
         <b>실시간 송출</b><span>송출 · 모니터링</span>
       </div>
       <div class="plink" aria-hidden="true"><i></i></div>
@@ -286,8 +288,7 @@
         <b>주주 PC · 모바일</b><span>시청</span>
       </div>
     </div>
-
-    <div class="compare">
+      <div class="compare">
       <div class="cmp on">
         <p class="cmp-when">주주총회 생중계</p>
         <b>온라인으로 주주총회 <em class="kw">시청</em></b>
@@ -302,25 +303,23 @@
         <a class="more" href="/irkudos-homepage-preview/agm-online.html">전자주주총회 보기 →</a>
       </div>
     </div>
-
+    </div>
   </div>
 </section>
 
 <!-- ========== FOR ISSUERS ========== -->
-<section class="bg-gray">
-  <div class="wrap">
-    <h2>전용 페이지 개설부터 송출까지<br>생중계 운영을 함께합니다</h2>
-    <p class="lead">라이브 스트리밍 전문 파트너와 함께 촬영 장비, 송출, 현장 인력을 일괄 지원합니다.</p>
-
-    <div class="tabs" role="tablist" aria-label="생중계 운영 단계">
-      <button class="tab" role="tab" id="t0" aria-controls="p0" aria-selected="true"><span class="n">1</span>전용 페이지 개설</button>
-      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="false" tabindex="-1"><span class="n">2</span>사전 리허설</button>
-      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="n">3</span>현장 촬영</button>
-      <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="n">4</span>송출·모니터링</button>
-    </div>
-
-    <!-- 0 전용 페이지 -->
-    <div class="panel" role="tabpanel" id="p0" aria-labelledby="t0">
+<!-- 레이아웃 C: 스크롤 롤오버 (탭 → 스크롤 진행에 따라 단계 전환, js/digital/dg-layout.js) -->
+<section class="ly-c ly-c--panel bg-gray" style="--n:4">
+  <div class="ly-c-sticky">
+    <div class="wrap">
+      <div class="ly-c-top">
+        <div><p class="ly-eb">FOR ISSUERS</p><h4 class="pageTitle1">전용 페이지 개설부터 송출까지<br>생중계 운영을 함께합니다</h4></div>
+        <div><p class="lead">라이브 스트리밍 전문 파트너와 함께 촬영 장비, 송출, 현장 인력을 일괄 지원합니다.</p></div>
+      </div>
+      <ol class="ly-c-list">
+        <li class="ly-c-item is-on">
+          <h5 class="ly-c-h"><span class="ly-c-n">01</span>전용 페이지 개설</h5>
+          <div class="ly-c-pnl panel" id="p0">
       <div>
         <h3>기업별 전용<br>생중계 페이지를 제공합니다</h3>
         <p>기업별 전용 링크를 통해 주주인증부터 생중계 시청까지 하나의 페이지에서 운영됩니다.</p>
@@ -343,9 +342,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 1 사전 리허설 : 캘린더 -->
-    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">02</span>사전 리허설</h5>
+          <div class="ly-c-pnl panel" id="p1">
       <div>
         <h3>주주총회 전에<br>현장을 미리 점검합니다</h3>
         <p>주주총회장 환경을 살피고, 리허설을 통해 실제 송출 상태를 확인합니다.</p>
@@ -369,9 +369,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 2 현장 촬영 : 배치도 -->
-    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">03</span>현장 촬영</h5>
+          <div class="ly-c-pnl panel" id="p2">
       <div>
         <h3>주주총회 진행을<br>현장에서 촬영합니다</h3>
         <p>주주총회장 규모와 구조에 맞춰 카메라를 배치하고, 진행 흐름에 따라 화면을 전환합니다.</p>
@@ -380,11 +381,11 @@
         <svg class="plan" viewBox="0 0 520 340" fill="none">
           <rect x="1" y="1" width="518" height="338" rx="18" fill="#fff" stroke="#E3E5EA"/>
           <!-- 시야 -->
-          <path d="M260 296L170 70H350Z" fill="#024F2B" fill-opacity=".08"/>
-          <path d="M54 170L190 50 L240 74Z" fill="#024F2B" fill-opacity=".08"/>
-          <path d="M466 128L300 74 L360 44Z" fill="#024F2B" fill-opacity=".08"/>
+          <path d="M260 296L170 70H350Z" fill="#16181C" fill-opacity=".08"/>
+          <path d="M54 170L190 50 L240 74Z" fill="#16181C" fill-opacity=".08"/>
+          <path d="M466 128L300 74 L360 44Z" fill="#16181C" fill-opacity=".08"/>
           <!-- 단상 -->
-          <rect x="150" y="26" width="220" height="44" rx="8" fill="#E9EDF7"/>
+          <rect x="150" y="26" width="220" height="44" rx="8" fill="#EDEDED"/>
           <text x="260" y="53" text-anchor="middle" font-size="13" font-weight="700" fill="#3B3F47">단상 · 의장석</text>
           <!-- 좌석 -->
           <g fill="#DCE1EC">
@@ -394,11 +395,11 @@
           <text x="260" y="186" text-anchor="middle" font-size="11" font-weight="600" fill="#80858F">객석</text>
           <!-- 카메라 -->
           <g font-size="11" font-weight="700" text-anchor="middle">
-            <circle cx="260" cy="296" r="15" fill="#024F2B"/><text x="260" y="300" fill="#fff">1</text>
-            <circle cx="54" cy="170" r="15" fill="#024F2B"/><text x="54" y="174" fill="#fff">2</text>
-            <circle cx="466" cy="128" r="15" fill="#024F2B"/><text x="466" y="132" fill="#fff">3</text>
+            <circle cx="260" cy="296" r="15" fill="#16181C"/><text x="260" y="300" fill="#fff">1</text>
+            <circle cx="54" cy="170" r="15" fill="#16181C"/><text x="54" y="174" fill="#fff">2</text>
+            <circle cx="466" cy="128" r="15" fill="#16181C"/><text x="466" y="132" fill="#fff">3</text>
           </g>
-          <g font-size="11" font-weight="700" fill="#024F2B">
+          <g font-size="11" font-weight="700" fill="#16181C">
             <text x="282" y="300">CAM 1 · 전경</text>
             <text x="30" y="204">CAM 2 · 의장석</text>
             <text x="490" y="162" text-anchor="end">CAM 3 · 발언</text>
@@ -406,9 +407,10 @@
         </svg>
       </div>
     </div>
-
-    <!-- 3 송출·모니터링 : 당일 타임라인 -->
-    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">04</span>송출·모니터링</h5>
+          <div class="ly-c-pnl panel" id="p3">
       <div>
         <h3>주주총회가 끝날 때까지<br>송출 상태를 지켜봅니다</h3>
         <p>현장 기술 인력이 영상·음성·자막 송출을 실시간으로 모니터링합니다.</p>
@@ -425,22 +427,27 @@
         </div>
       </div>
     </div>
+        </li>
+      </ol>
+      
+    </div>
   </div>
 </section>
 
 <!-- ========== FOR SHAREHOLDERS ========== -->
-<section>
+<!-- 레이아웃 A-body -->
+<section class="ly-a">
   <div class="wrap">
-    <h2>주주인증은 정해진 기간에,<br>시청은 당일 바로</h2>
+    <p class="ly-eb">FOR SHAREHOLDERS</p>
+    <h4 class="pageTitle1">주주인증은 정해진 기간에,<br>시청은 당일 바로</h4>
     <p class="lead">주주는 기업 전용 페이지에서 정해진 기간에 주주인증을 마치고, 주주총회 당일 로그인해 시청합니다.</p>
-
-    <div class="phase">
+    <div class="ly-a-body">
+      <div class="phase">
       <div class="ph-card"><span class="when">주주인증 기간</span><b>주주인증 완료</b></div>
       <div class="ph-arrow" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
       <div class="ph-card on"><span class="when">주주총회 당일</span><b>로그인 후 시청</b></div>
     </div>
-
-    <div class="steps four">
+      <div class="steps four">
       <div class="step">
         <div class="phone" aria-hidden="true">
           <div class="ph-top">주주인증 <span>⋮</span></div>
@@ -448,7 +455,7 @@
           <p class="ph-lbl">주주 유형</p>
           <div class="seg" style="grid-template-columns:1fr 1fr"><b class="on">개인</b><b>법인</b></div>
           <p class="ph-lbl">인증 방법</p>
-          <div class="auth on"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#024F2B" stroke-width="2" stroke-linecap="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18h3"/></svg></i>휴대폰 인증</div>
+          <div class="auth on"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16181C" stroke-width="2" stroke-linecap="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18h3"/></svg></i>휴대폰 인증</div>
           <div class="auth"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#80858F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></i>공동인증서</div>
           <div class="ph-btn" style="margin-top:auto">인증하기</div>
         </div>
@@ -482,7 +489,7 @@
       <div class="step">
         <div class="phone" aria-hidden="true">
           <div class="ph-top">예시홀딩스 <span>제00기 정기주주총회</span></div>
-          <div class="vid"><svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%"><rect width="320" height="200" fill="#121831"/><rect x="28" y="18" width="264" height="104" rx="4" fill="#0E1328" stroke="#2C3561"/><rect x="148" y="32" width="24" height="3" rx="1.5" fill="#5B74E8"/><text x="160" y="66" text-anchor="middle" font-size="19" font-weight="700" fill="#fff" font-family="Pretendard,sans-serif">제00기 정기주주총회</text><text x="160" y="86" text-anchor="middle" font-size="8" fill="#AEB8E0" font-family="Pretendard,sans-serif">Annual General Meeting of Shareholders</text><rect y="168" width="320" height="32" fill="#0A0D19"/><path d="M122 200l8-74h60l8 74z" fill="#353C5C"/><rect x="130" y="122" width="60" height="5" rx="1" fill="#4A5279"/><path d="M154 122l-6-16M166 122l6-16" stroke="#7A82A3" stroke-width="1.5" stroke-linecap="round"/></svg><span class="live-tag"><i></i>LIVE</span></div>
+          <div class="vid"><svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%"><rect width="320" height="200" fill="#19191C"/><rect x="28" y="18" width="264" height="104" rx="4" fill="#141417" stroke="#37373A"/><rect x="148" y="32" width="24" height="3" rx="1.5" fill="#16181C"/><text x="160" y="66" text-anchor="middle" font-size="19" font-weight="700" fill="#fff" font-family="Pretendard,sans-serif">제00기 정기주주총회</text><text x="160" y="86" text-anchor="middle" font-size="8" fill="#BABABA" font-family="Pretendard,sans-serif">Annual General Meeting of Shareholders</text><rect y="168" width="320" height="32" fill="#0D0D10"/><path d="M122 200l8-74h60l8 74z" fill="#3E3E41"/><rect x="130" y="122" width="60" height="5" rx="1" fill="#545457"/><path d="M154 122l-6-16M166 122l6-16" stroke="#7A82A3" stroke-width="1.5" stroke-linecap="round"/></svg><span class="live-tag"><i></i>LIVE</span></div>
           <div class="sub"><small>자막 · 한국어</small>지금부터 제1호 의안을 상정하겠습니다.</div>
           <div class="hist" style="margin-top:10px"><span class="ph-tag">제1호 의안</span><b>재무제표 승인의 건</b></div>
           <div class="hist"><span class="ph-tag">제2호 의안</span><b>정관 일부 변경의 건</b></div>
@@ -490,16 +497,17 @@
         <div class="step-cap"><span class="n">4</span><b>생중계 시청</b><p>상정 의안과 실시간 자막을 함께 보며 시청합니다.</p></div>
       </div>
     </div>
-    <p class="note">화면은 이해를 돕기 위한 예시입니다.</p>
+    </div>
   </div>
 </section>
 
 <!-- ========== LIVE SUBTITLES ========== -->
-<section class="bg-gray">
+<section class="ly-a bg-gray">
   <div class="wrap">
     <div class="subs-grid">
     <div class="subs-text">
-    <h2>실시간 자막으로<br>언어의 장벽을 낮춥니다</h2>
+    <p class="ly-eb">LIVE SUBTITLES</p>
+    <h4 class="pageTitle1">실시간 자막으로<br>언어의 장벽을 낮춥니다</h4>
     <p class="lead">생중계 화면에서 한국어·영어·중국어·일본어 자막을 실시간으로 제공합니다.</p>
     </div>
     <div class="lv">
@@ -511,20 +519,20 @@
       <div class="lv-stage" aria-hidden="true">
         <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
           <defs>
-            <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2140"/><stop offset="1" stop-color="#0B0F1E"/></linearGradient>
-            <radialGradient id="spot" cx=".5" cy=".55" r=".5"><stop offset="0" stop-color="#3B4C8F" stop-opacity=".55"/><stop offset="1" stop-color="#3B4C8F" stop-opacity="0"/></radialGradient>
-            <linearGradient id="pod" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A4160"/><stop offset="1" stop-color="#232842"/></linearGradient>
+            <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222225"/><stop offset="1" stop-color="#101013"/></linearGradient>
+            <radialGradient id="spot" cx=".5" cy=".55" r=".5"><stop offset="0" stop-color="#4F4F52" stop-opacity=".55"/><stop offset="1" stop-color="#4F4F52" stop-opacity="0"/></radialGradient>
+            <linearGradient id="pod" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#424245"/><stop offset="1" stop-color="#29292C"/></linearGradient>
           </defs>
           <rect width="1600" height="900" fill="url(#bg)"/>
-          <rect x="140" y="70" width="1320" height="520" rx="14" fill="#121831" stroke="#2C3561"/>
+          <rect x="140" y="70" width="1320" height="520" rx="14" fill="#19191C" stroke="#37373A"/>
           <ellipse cx="800" cy="480" rx="700" ry="380" fill="url(#spot)"/>
-          <rect x="740" y="140" width="120" height="14" rx="7" fill="#5B74E8"/>
+          <rect x="740" y="140" width="120" height="14" rx="7" fill="#16181C"/>
           <text x="800" y="300" text-anchor="middle" font-size="104" font-weight="700" fill="#fff" font-family="Pretendard,sans-serif">제00기 정기주주총회</text>
-          <text x="800" y="400" text-anchor="middle" font-size="46" font-weight="600" fill="#AEB8E0" font-family="Pretendard,sans-serif">The 00th Annual General Meeting of Shareholders</text>
-          <rect x="0" y="760" width="1600" height="140" fill="#0A0D19"/>
+          <text x="800" y="400" text-anchor="middle" font-size="46" font-weight="600" fill="#BABABA" font-family="Pretendard,sans-serif">The 00th Annual General Meeting of Shareholders</text>
+          <rect x="0" y="760" width="1600" height="140" fill="#0D0D10"/>
           <path d="M610 900L650 600H950L990 900Z" fill="url(#pod)"/>
-          <rect x="650" y="588" width="300" height="22" rx="4" fill="#4A5279"/>
-          <rect x="745" y="690" width="110" height="10" rx="5" fill="#5B74E8"/>
+          <rect x="650" y="588" width="300" height="22" rx="4" fill="#545457"/>
+          <rect x="745" y="690" width="110" height="10" rx="5" fill="#16181C"/>
           <path d="M770 588l-30-80M830 588l30-80" stroke="#7A82A3" stroke-width="6" stroke-linecap="round"/>
           <circle cx="738" cy="502" r="11" fill="#7A82A3"/><circle cx="862" cy="502" r="11" fill="#7A82A3"/>
         </svg>
@@ -555,7 +563,6 @@
       </div>
     </div>
     </div>
-    <p class="note">화면은 이해를 돕기 위한 예시입니다.</p>
   </div>
 </section>
 
@@ -567,22 +574,12 @@
   </div>
 </section>
 
+
+<p class="dg-disclaimer"><span class="wrap">페이지의 화면과 수치는 이해를 돕기 위한 예시입니다.</span></p>
 <!-- ========== CTA ========== -->
 <section class="cta-sec bg-gray">
   <div class="wrap">
     <div class="cta">
-      <svg class="net" viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <g stroke="#5670C8" stroke-opacity=".35" stroke-width="1">
-          <line x1="80" y1="60" x2="210" y2="140"/><line x1="210" y1="140" x2="140" y2="250"/><line x1="210" y1="140" x2="360" y2="90"/>
-          <line x1="640" y1="70" x2="780" y2="150"/><line x1="780" y1="150" x2="900" y2="80"/><line x1="780" y1="150" x2="860" y2="250"/>
-          <line x1="440" y1="30" x2="520" y2="20"/><line x1="520" y1="20" x2="560" y2="60"/>
-        </g>
-        <g fill="#9FB4FF">
-          <circle cx="80" cy="60" r="2.5"/><circle cx="210" cy="140" r="3"/><circle cx="140" cy="250" r="2"/><circle cx="360" cy="90" r="2"/>
-          <circle cx="640" cy="70" r="2"/><circle cx="780" cy="150" r="3"/><circle cx="900" cy="80" r="2.5"/><circle cx="860" cy="250" r="2"/>
-          <circle cx="440" cy="30" r="2"/><circle cx="520" cy="20" r="2.5"/><circle cx="560" cy="60" r="2"/>
-        </g>
-      </svg>
       <h2>주주총회 현장을 그대로 담은<br>실시간 중계 서비스, 주주총회 생중계</h2>
       <a href="https://www.irkudos.co.kr/_contact.php" class="js-contact">문의하기</a>
     </div>
@@ -591,6 +588,7 @@
 
 </div>
 <script type="text/javascript" src="/irkudos-homepage-preview/js/digital/agm-live.js?v=20261026" defer></script>
+<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/dg-layout.js?v=20261030" defer></script>
 </div><!--/contents-->
 	<div class="btnTop"><img src="/irkudos-homepage-preview/images/common/btn_top.png" alt="상단 바로가기"></div>
 </div><!--//container-->
@@ -631,7 +629,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 14:47</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 15:37</div>
 </body>
 </html>
 

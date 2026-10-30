@@ -45,7 +45,7 @@
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_pc.min.css" media="screen and (min-width:1400px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_tablet.min.css" media="screen and (min-width:813px) and (max-width:1399px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_mobile.min.css" media="screen and (max-width:812px)" />
-<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/conference-call.css?v=20261026" />
+<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/conference-call.css?v=20261030g" />
 <script language="javascript" src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -241,49 +241,83 @@
 <!-- HERO -->
 
 <!-- SERVICE OVERVIEW -->
-<section class="overview">
+<section class="ly-a overview">
   <div class="wrap">
     <div>
-      <h2 class="rv d1">IR 컨퍼런스콜</h2>
+      <p class="ly-eb">SERVICE OVERVIEW</p>
+    <h4 class="pageTitle1 rv d1">IR 컨퍼런스콜</h4>
       <p class="lead rv d2">IR 컨퍼런스콜은 <b>사전참가등록한 참가자</b>를 대상으로<br>주최자가 <b>브리핑과 질의응답 세션</b>을 진행하는 <b>다자간 통화 서비스</b>입니다.</p>
       <p class="lead rv d2">컨퍼런스콜 예약부터 사전참가등록, 현장 운영, 사후 결과보고서 제공까지<br>IR 실적발표의 전 과정을 하나의 플랫폼에서 체계적으로 지원합니다.</p>
     </div>
     <div class="diagram rv d2">
-      <svg viewBox="0 0 560 420" font-family="Pretendard,sans-serif" text-anchor="middle" role="img" aria-label="운영자, 주최자, 참석자, 청취자 관계도">
-        <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#000"/></marker></defs>
-        <g fill="#fff" stroke="#E3E5EA" stroke-width="1.5">
-          <circle cx="86" cy="120" r="68"/><circle cx="280" cy="120" r="68"/><circle cx="474" cy="120" r="68"/><circle cx="280" cy="330" r="68"/>
+      <!-- 2026-10-29 관계도 개편: 주최자 허브(브랜드 컬러) + 아이콘 노드 + 흐름 애니메이션 라인 + 라벨 pill -->
+      <svg class="cc-map" viewBox="0 0 640 464" font-family="Pretendard,sans-serif" text-anchor="middle" role="img" aria-label="운영자(IR큐더스)가 회의운영 및 통역, 주최자(상장기업)와 참석자(애널리스트·투자자)가 실적브리핑과 질의응답, 청취자(투자자)는 라이브 웹캐스팅으로 참여">
+        <defs>
+          <marker id="ccAh" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1L9 5L1 9z" fill="#024F2B"/></marker>
+          <filter id="ccSh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#141417" flood-opacity=".08"/></filter>
+          <radialGradient id="ccHub" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#2A2D33"/><stop offset="1" stop-color="#090909"/></radialGradient>
+        </defs>
+
+        <!-- 허브 파동 -->
+        <circle cx="320" cy="160" r="94" fill="#F0F1F3" opacity=".9"/>
+        <g class="cc-wave" fill="none" stroke="#090909"><circle cx="320" cy="160" r="76"/><circle cx="320" cy="160" r="76"/></g>
+
+        <!-- 연결선 (흐름 애니메이션) -->
+        <g class="cc-flow" fill="none" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round">
+          <path d="M142 160 H218" marker-end="url(#ccAh)"/>
+          <path d="M422 147 H496" marker-end="url(#ccAh)"/>
+          <path d="M496 173 H422" marker-end="url(#ccAh)"/>
+          <path d="M320 262 V320" marker-end="url(#ccAh)"/>
         </g>
-        <g font-size="20" font-weight="700" fill="#000">
-          <text x="86" y="120">운영자</text><text x="280" y="120">주최자</text><text x="474" y="120">참석자</text><text x="280" y="330">청취자</text>
+
+        <!-- 라벨 -->
+        <g class="cc-pill" font-size="12" font-weight="700">
+          <rect x="145.0" y="118" width="88" height="24" rx="12" fill="#fff" stroke="#D5D8DE"/><text x="189.0" y="134" fill="#3B3F47">회의운영·통역</text>
+          <rect x="412.0" y="106" width="78" height="24" rx="12" fill="#fff" stroke="#D5D8DE"/><text x="451.0" y="122" fill="#3B3F47">실적브리핑</text>
+          <rect x="416.0" y="190" width="70" height="24" rx="12" fill="#fff" stroke="#D5D8DE"/><text x="451.0" y="206" fill="#3B3F47">질의응답</text>
+          <rect x="332.0" y="279.0" width="100" height="24" rx="12" fill="#fff" stroke="#D5D8DE"/><text x="382" y="295.0" fill="#3B3F47">라이브 웹캐스팅</text>
         </g>
-        <g font-size="12" font-weight="600" fill="#3B3F47">
-          <text x="86" y="141">(IR큐더스)</text><text x="280" y="141">(상장기업)</text><text x="474" y="141">(애널리스트 및 투자자)</text><text x="280" y="351">(투자자)</text>
-        </g>
-        <g stroke="#000" stroke-width="1.4" fill="none">
-          <path d="M158 120 H204" marker-end="url(#ah)"/>
-          <path d="M352 110 H400" marker-end="url(#ah)"/>
-          <path d="M400 132 H352" marker-end="url(#ah)"/>
-          <path d="M280 192 V256" marker-end="url(#ah)"/>
-        </g>
-        <g font-size="11.5" font-weight="700" fill="#000">
-          <text x="181" y="106">회의운영</text><text x="181" y="146">및 통역</text>
-          <text x="376" y="98">실적브리핑</text><text x="376" y="154">질의응답</text>
-          <text x="294" y="218" text-anchor="start">라이브</text><text x="294" y="234" text-anchor="start">웹캐스팅</text>
-        </g>
+
+        <!-- 주최자 (허브) -->
+        <circle cx="320" cy="160" r="76" fill="url(#ccHub)" filter="url(#ccSh)"/>
+        <g transform="translate(308 112)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="12" rx="4"/><path d="M4 11a8 8 0 0 0 16 0M12 19v3"/></g>
+        <text x="320" y="172" font-size="25" font-weight="800" fill="#fff">주최자</text>
+        <text x="320" y="194" font-size="13" font-weight="600" fill="#A9AEB8">상장기업</text>
+
+        <g filter="url(#ccSh)"><circle cx="72" cy="160" r="62" fill="#fff"/></g>
+        <circle cx="72" cy="160" r="62" fill="none" stroke="#E6E8EC"/>
+        <circle cx="72" cy="128" r="16" fill="#F0F1F3"/>
+        <g transform="translate(61.5 117.5) scale(.875)" fill="none" stroke="#090909" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4.5" height="7" rx="1.6"/><rect x="17" y="13" width="4.5" height="7" rx="1.6"/></g>
+        <text x="72" y="168" font-size="19" font-weight="800" fill="#090909">운영자</text>
+        <text x="72" y="188" font-size="11.5" font-weight="600" fill="#6B7079">IR큐더스</text>
+
+        <g filter="url(#ccSh)"><circle cx="568" cy="160" r="62" fill="#fff"/></g>
+        <circle cx="568" cy="160" r="62" fill="none" stroke="#E6E8EC"/>
+        <circle cx="568" cy="128" r="16" fill="#F0F1F3"/>
+        <g transform="translate(557.5 117.5) scale(.875)" fill="none" stroke="#090909" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.6"/><path d="M15.6 14.4A5 5 0 0 1 21.5 19"/></g>
+        <text x="568" y="168" font-size="19" font-weight="800" fill="#090909">참석자</text>
+        <text x="568" y="188" font-size="11.5" font-weight="600" fill="#6B7079">애널리스트·투자자</text>
+
+        <g filter="url(#ccSh)"><circle cx="320" cy="392" r="62" fill="#fff"/></g>
+        <circle cx="320" cy="392" r="62" fill="none" stroke="#E6E8EC"/>
+        <circle cx="320" cy="360" r="16" fill="#F0F1F3"/>
+        <g transform="translate(309.5 349.5) scale(.875)" fill="none" stroke="#090909" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8"/><path d="M10.2 8.3v5.4l4.6-2.7z" fill="#090909"/></g>
+        <text x="320" y="400" font-size="19" font-weight="800" fill="#090909">청취자</text>
+        <text x="320" y="420" font-size="11.5" font-weight="600" fill="#6B7079">투자자</text>
       </svg>
     </div>
   </div>
 </section>
 
 <!-- WHY IR KUDOS -->
-<section class="why bg-gray">
+<section class="ly-a why bg-gray">
   <div class="wrap">
-    <h2 class="rv d1">안정적인 IR 커뮤니케이션을 위한<br>다양한 서비스를 제공합니다.</h2>
+    <p class="ly-eb">WHY IR KUDOS</p>
+    <h4 class="pageTitle1 rv d1">안정적인 IR 커뮤니케이션을 위한<br>다양한 서비스를 제공합니다.</h4>
     <div class="why-grid">
       <article class="rv d1">
         <div class="why-illu" aria-hidden="true"><svg viewBox="0 0 200 140">
-          <g fill="#024F2B"><rect x="50" y="56" width="8" height="28" rx="4" opacity=".5"/><rect x="66" y="42" width="8" height="56" rx="4" opacity=".7"/><rect x="82" y="30" width="8" height="80" rx="4"/><rect x="98" y="46" width="8" height="48" rx="4"/><rect x="114" y="34" width="8" height="72" rx="4"/><rect x="130" y="50" width="8" height="40" rx="4" opacity=".7"/><rect x="146" y="60" width="8" height="20" rx="4" opacity=".5"/></g>
+          <g fill="#16181C"><rect x="50" y="56" width="8" height="28" rx="4" opacity=".5"/><rect x="66" y="42" width="8" height="56" rx="4" opacity=".7"/><rect x="82" y="30" width="8" height="80" rx="4"/><rect x="98" y="46" width="8" height="48" rx="4"/><rect x="114" y="34" width="8" height="72" rx="4"/><rect x="130" y="50" width="8" height="40" rx="4" opacity=".7"/><rect x="146" y="60" width="8" height="20" rx="4" opacity=".5"/></g>
           <path d="M20 70h22M158 70h22" stroke="#C9CFE0" stroke-width="2" stroke-linecap="round"/>
         </svg></div>
         <h3>끊김 없는 최상의 통화품질</h3>
@@ -297,7 +331,7 @@
           <circle cx="100" cy="72" r="38" fill="none" stroke="#3B3F47" stroke-width="2.5"/>
           <path d="M62 72h76M100 34c14 12 14 64 0 76M100 34c-14 12-14 64 0 76" fill="none" stroke="#3B3F47" stroke-width="2.5"/>
           <rect x="44" y="18" width="36" height="36" rx="10" fill="#fff" stroke="#3B3F47" stroke-width="2"/><text x="62" y="43" font-size="20" fill="#000">ㅎ</text>
-          <rect x="120" y="88" width="36" height="36" rx="10" fill="#024F2B"/><text x="138" y="113" font-size="20" fill="#fff">A</text>
+          <rect x="120" y="88" width="36" height="36" rx="10" fill="#16181C"/><text x="138" y="113" font-size="20" fill="#fff">A</text>
         </svg></div>
         <h3>국문에서 영문까지, 통역 지원</h3>
         <ul>
@@ -308,8 +342,8 @@
       <article class="rv d3">
         <div class="why-illu" aria-hidden="true"><svg viewBox="0 0 200 140">
           <rect x="30" y="20" width="140" height="92" rx="8" fill="#fff" stroke="#3B3F47" stroke-width="2.5"/>
-          <rect x="40" y="30" width="78" height="72" rx="4" fill="#E8EFEC"/>
-          <path d="M70 52v28l22-14z" fill="#024F2B"/>
+          <rect x="40" y="30" width="78" height="72" rx="4" fill="#F4F5F7"/>
+          <path d="M70 52v28l22-14z" fill="#16181C"/>
           <g fill="#E3E5EA"><rect x="126" y="32" width="36" height="6" rx="3"/><rect x="126" y="44" width="28" height="6" rx="3"/><rect x="126" y="56" width="32" height="6" rx="3"/></g>
           <circle cx="132" cy="92" r="4" fill="#E0453A"/><rect x="140" y="89" width="20" height="6" rx="3" fill="#E3E5EA"/>
           <path d="M80 126h40M100 112v14" stroke="#3B3F47" stroke-width="2.5" stroke-linecap="round"/>
@@ -322,11 +356,11 @@
       </article>
       <article class="rv d4">
         <div class="why-illu" aria-hidden="true"><svg viewBox="0 0 200 140">
-          <path d="M40 100l60-22 60 22-60 18z" fill="#E8EFEC" stroke="#3B3F47" stroke-width="2.5" stroke-linejoin="round"/>
-          <circle cx="100" cy="98" r="7" fill="#024F2B"/>
+          <path d="M40 100l60-22 60 22-60 18z" fill="#F4F5F7" stroke="#3B3F47" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="100" cy="98" r="7" fill="#16181C"/>
           <rect x="88" y="24" width="24" height="44" rx="12" fill="#fff" stroke="#3B3F47" stroke-width="2.5"/>
           <path d="M78 50a22 22 0 0 0 44 0" fill="none" stroke="#3B3F47" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M138 34c6 6 6 20 0 26M148 26c11 11 11 31 0 42M62 34c-6 6-6 20 0 26M52 26c-11 11-11 31 0 42" fill="none" stroke="#024F2B" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M138 34c6 6 6 20 0 26M148 26c11 11 11 31 0 42M62 34c-6 6-6 20 0 26M52 26c-11 11-11 31 0 42" fill="none" stroke="#16181C" stroke-width="2.5" stroke-linecap="round"/>
         </svg></div>
         <h3>맞춤형 음향장비</h3>
         <ul>
@@ -339,9 +373,10 @@
 </section>
 
 <!-- FOR HOSTS -->
-<section>
+<section class="ly-a">
   <div class="wrap">
-    <h2 class="rv d1"><em>주최자</em>는 간편하고 정확하게<br>컨퍼런스콜을 운영할 수 있습니다.</h2>
+    <p class="ly-eb">FOR HOSTS</p>
+    <h4 class="pageTitle1 rv d1"><em>주최자</em>는 간편하고 정확하게<br>컨퍼런스콜을 운영할 수 있습니다.</h4>
     <p class="lead rv d2">회의시작에서부터 참가자 및 질문자 내역조회, 웹캐스팅조작까지,<br>원활한 회의진행을 위한 실시간 모니터링 시스템을 제공드립니다.</p>
 
     <div class="feat-row">
@@ -354,34 +389,34 @@
     </div>
 
     <div class="console rv d2" aria-hidden="true"><svg viewBox="0 0 1080 420">
-        <rect x="0" y="0" width="1080" height="44" rx="12" fill="#F3F6FC"/>
-        <circle cx="22" cy="22" r="5" fill="#CBD5E1"/><circle cx="40" cy="22" r="5" fill="#CBD5E1"/><circle cx="58" cy="22" r="5" fill="#CBD5E1"/>
-        <rect x="90" y="16" width="160" height="12" rx="6" fill="#DDE1F5"/>
-        <rect x="900" y="13" width="76" height="18" rx="9" fill="#024F2B"/><rect x="986" y="13" width="76" height="18" rx="9" fill="#E2E8F0"/>
+        <rect x="0" y="0" width="1080" height="44" rx="12" fill="#F4F5F7"/>
+        <circle cx="22" cy="22" r="5" fill="#D5D8DD"/><circle cx="40" cy="22" r="5" fill="#D5D8DD"/><circle cx="58" cy="22" r="5" fill="#D5D8DD"/>
+        <rect x="90" y="16" width="160" height="12" rx="6" fill="#E3E5E9"/>
+        <rect x="900" y="13" width="76" height="18" rx="9" fill="#16181C"/><rect x="986" y="13" width="76" height="18" rx="9" fill="#E6E8EC"/>
         <!-- participants -->
-        <rect x="0" y="60" width="520" height="360" rx="14" fill="#fff" stroke="#E2E8F0"/>
-        <rect x="20" y="78" width="70" height="22" rx="11" fill="#024F2B"/><rect x="98" y="78" width="70" height="22" rx="11" fill="#F1F5F9"/>
+        <rect x="0" y="60" width="520" height="360" rx="14" fill="#fff" stroke="#E6E8EC"/>
+        <rect x="20" y="78" width="70" height="22" rx="11" fill="#16181C"/><rect x="98" y="78" width="70" height="22" rx="11" fill="#F1F2F4"/>
         <g id="rows">
-          <g><circle cx="34" cy="132" r="5" fill="#22C55E"/><rect x="50" y="127" width="60" height="10" rx="5" fill="#E2E8F0"/><rect x="140" y="127" width="110" height="10" rx="5" fill="#E2E8F0"/><rect x="290" y="127" width="140" height="10" rx="5" fill="#F1F5F9"/></g>
+          <g><circle cx="34" cy="132" r="5" fill="#22C55E"/><rect x="50" y="127" width="60" height="10" rx="5" fill="#E6E8EC"/><rect x="140" y="127" width="110" height="10" rx="5" fill="#E6E8EC"/><rect x="290" y="127" width="140" height="10" rx="5" fill="#F1F2F4"/></g>
         </g>
         <use href="#rows" y="34"/><use href="#rows" y="68"/><use href="#rows" y="102"/><use href="#rows" y="136"/><use href="#rows" y="170"/><use href="#rows" y="204"/><use href="#rows" y="238"/>
-        <rect x="14" y="227" width="492" height="30" rx="8" fill="#024F2B" opacity=".07"/>
+        <rect x="14" y="219" width="492" height="30" rx="8" fill="#16181C" opacity=".07"/>
         <!-- questions -->
-        <rect x="536" y="60" width="260" height="360" rx="14" fill="#fff" stroke="#E2E8F0"/>
-        <rect x="556" y="78" width="90" height="22" rx="11" fill="#F1F5F9"/>
+        <rect x="536" y="60" width="260" height="360" rx="14" fill="#fff" stroke="#E6E8EC"/>
+        <rect x="556" y="78" width="90" height="22" rx="11" fill="#F1F2F4"/>
         <g>
-          <rect x="556" y="118" width="220" height="56" rx="10" fill="#E8EFEC"/>
-          <circle cx="580" cy="146" r="11" fill="#024F2B"/><rect x="600" y="136" width="100" height="9" rx="4.5" fill="#A3ABF0"/><rect x="600" y="152" width="140" height="8" rx="4" fill="#D3D8F5"/>
-          <rect x="556" y="184" width="220" height="56" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
-          <circle cx="580" cy="212" r="11" fill="#CBD5E1"/><rect x="600" y="202" width="90" height="9" rx="4.5" fill="#E2E8F0"/><rect x="600" y="218" width="130" height="8" rx="4" fill="#F1F5F9"/>
-          <rect x="556" y="250" width="220" height="56" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
-          <circle cx="580" cy="278" r="11" fill="#CBD5E1"/><rect x="600" y="268" width="110" height="9" rx="4.5" fill="#E2E8F0"/><rect x="600" y="284" width="120" height="8" rx="4" fill="#F1F5F9"/>
+          <rect x="556" y="118" width="220" height="56" rx="10" fill="#F4F5F7"/>
+          <circle cx="580" cy="146" r="11" fill="#16181C"/><rect x="600" y="136" width="100" height="9" rx="4.5" fill="#6F9583"/><rect x="600" y="152" width="140" height="8" rx="4" fill="#C3D6CC"/>
+          <rect x="556" y="184" width="220" height="56" rx="10" fill="#F8F9FA" stroke="#E6E8EC"/>
+          <circle cx="580" cy="212" r="11" fill="#D5D8DD"/><rect x="600" y="202" width="90" height="9" rx="4.5" fill="#E6E8EC"/><rect x="600" y="218" width="130" height="8" rx="4" fill="#F1F2F4"/>
+          <rect x="556" y="250" width="220" height="56" rx="10" fill="#F8F9FA" stroke="#E6E8EC"/>
+          <circle cx="580" cy="278" r="11" fill="#D5D8DD"/><rect x="600" y="268" width="110" height="9" rx="4.5" fill="#E6E8EC"/><rect x="600" y="284" width="120" height="8" rx="4" fill="#F1F2F4"/>
         </g>
-        <g><rect x="556" y="372" width="60" height="28" rx="8" fill="#F1F5F9"/><rect x="624" y="372" width="60" height="28" rx="8" fill="#F1F5F9"/><rect x="692" y="372" width="84" height="28" rx="8" fill="#024F2B"/></g>
+        <g><rect x="556" y="372" width="60" height="28" rx="8" fill="#F1F2F4"/><rect x="624" y="372" width="60" height="28" rx="8" fill="#F1F2F4"/><rect x="692" y="372" width="84" height="28" rx="8" fill="#16181C"/></g>
         <!-- live / chat -->
-        <rect x="812" y="60" width="268" height="190" rx="14" fill="#0E1424"/>
-        <circle cx="836" cy="82" r="5" fill="#EF4444"/><rect x="848" y="77" width="40" height="10" rx="5" fill="#334155"/>
-        <g fill="#024F2B">
+        <rect x="812" y="60" width="268" height="190" rx="14" fill="#1B1D22"/>
+        <circle cx="836" cy="82" r="5" fill="#EF4444"/><rect x="848" y="77" width="40" height="10" rx="5" fill="#3A3D44"/>
+        <g fill="#16181C">
           <rect class="wave-bar" x="890" y="130" width="8" height="56" rx="4"/>
           <rect class="wave-bar" x="908" y="118" width="8" height="80" rx="4" style="animation-delay:-.4s"/>
           <rect class="wave-bar" x="926" y="110" width="8" height="96" rx="4" style="animation-delay:-.8s"/>
@@ -389,10 +424,10 @@
           <rect class="wave-bar" x="962" y="114" width="8" height="88" rx="4" style="animation-delay:-.6s"/>
           <rect class="wave-bar" x="980" y="132" width="8" height="52" rx="4" style="animation-delay:-1s"/>
         </g>
-        <rect x="812" y="262" width="268" height="158" rx="14" fill="#fff" stroke="#E2E8F0"/>
-        <rect x="830" y="282" width="150" height="34" rx="12" fill="#F1F5F9"/>
-        <rect x="900" y="326" width="160" height="34" rx="12" fill="#E8EFEC"/>
-        <rect x="830" y="370" width="230" height="32" rx="10" fill="#fff" stroke="#E2E8F0"/>
+        <rect x="812" y="262" width="268" height="158" rx="14" fill="#fff" stroke="#E6E8EC"/>
+        <rect x="830" y="282" width="150" height="34" rx="12" fill="#F1F2F4"/>
+        <rect x="900" y="326" width="160" height="34" rx="12" fill="#F4F5F7"/>
+        <rect x="830" y="370" width="230" height="32" rx="10" fill="#fff" stroke="#E6E8EC"/>
       </svg></div>
 
     <div class="benefits">
@@ -404,53 +439,54 @@
 </section>
 
 <!-- FOR PARTICIPANTS -->
-<section class="bg-gray">
+<section class="ly-a bg-gray">
   <div class="wrap">
-    <h2 class="rv d1"><em>투자자</em>는 쉽고 편하게<br>컨퍼런스콜에 참가할 수 있습니다.</h2>
+    <p class="ly-eb">FOR PARTICIPANTS</p>
+    <h4 class="pageTitle1 rv d1"><em>투자자</em>는 쉽고 편하게<br>컨퍼런스콜에 참가할 수 있습니다.</h4>
     <p class="lead rv d2">사전참가등록에서 컨퍼런스콜 참가까지,<br>모든 디바이스 및 브라우저 대상 자동화 시스템을 지원합니다.</p>
 
     <div class="steps">
       <div class="step rv d1"><div class="step-no">① 사전참가등록</div><div class="phone"><svg viewBox="0 0 150 260" aria-hidden="true">
           <rect x="2" y="2" width="146" height="256" rx="22" fill="#fff" stroke="#CBD5E1" stroke-width="2"/>
-          <rect x="55" y="12" width="40" height="6" rx="3" fill="#E2E8F0"/>
-          <rect x="18" y="40" width="70" height="10" rx="5" fill="#0E1424"/>
-          <rect x="18" y="58" width="100" height="6" rx="3" fill="#E2E8F0"/>
-          <rect x="18" y="80" width="114" height="26" rx="6" fill="#fff" stroke="#024F2B" stroke-width="1.5"/>
-          <rect x="26" y="90" width="50" height="6" rx="3" fill="#A3ABF0"/>
-          <g fill="#E2E8F0"><rect x="18" y="122" width="10" height="10" rx="2"/><rect x="34" y="124" width="70" height="6" rx="3"/><rect x="18" y="140" width="10" height="10" rx="2"/><rect x="34" y="142" width="60" height="6" rx="3"/><rect x="18" y="158" width="10" height="10" rx="2"/><rect x="34" y="160" width="76" height="6" rx="3"/></g>
-          <rect x="18" y="214" width="114" height="28" rx="8" fill="#024F2B"/>
+          <rect x="55" y="12" width="40" height="6" rx="3" fill="#E7E7E7"/>
+          <rect x="18" y="40" width="70" height="10" rx="5" fill="#141417"/>
+          <rect x="18" y="58" width="100" height="6" rx="3" fill="#E7E7E7"/>
+          <rect x="18" y="80" width="114" height="26" rx="6" fill="#fff" stroke="#16181C" stroke-width="1.5"/>
+          <rect x="26" y="90" width="50" height="6" rx="3" fill="#B0B0B0"/>
+          <g fill="#E7E7E7"><rect x="18" y="122" width="10" height="10" rx="2"/><rect x="34" y="124" width="70" height="6" rx="3"/><rect x="18" y="140" width="10" height="10" rx="2"/><rect x="34" y="142" width="60" height="6" rx="3"/><rect x="18" y="158" width="10" height="10" rx="2"/><rect x="34" y="160" width="76" height="6" rx="3"/></g>
+          <rect x="18" y="214" width="114" height="28" rx="8" fill="#16181C"/>
         </svg></div><p>사전참가등록페이지 접속 후<br>회의번호 및 참가정보 입력</p></div>
       <div class="step rv d2"><div class="step-no">② 사전참가등록 완료</div><div class="phone"><svg viewBox="0 0 150 260" aria-hidden="true">
           <rect x="2" y="2" width="146" height="256" rx="22" fill="#fff" stroke="#CBD5E1" stroke-width="2"/>
-          <rect x="55" y="12" width="40" height="6" rx="3" fill="#E2E8F0"/>
-          <circle cx="75" cy="88" r="30" fill="#E8EFEC"/><path d="M62 88l9 9 18-18" fill="none" stroke="#024F2B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-          <rect x="35" y="136" width="80" height="10" rx="5" fill="#0E1424"/>
-          <rect x="25" y="154" width="100" height="6" rx="3" fill="#E2E8F0"/>
-          <rect x="18" y="178" width="114" height="44" rx="10" fill="#F3F6FC"/>
-          <g fill="#024F2B"><circle cx="45" cy="200" r="4"/><circle cx="60" cy="200" r="4"/><circle cx="75" cy="200" r="4"/><circle cx="90" cy="200" r="4"/><circle cx="105" cy="200" r="4"/></g>
+          <rect x="55" y="12" width="40" height="6" rx="3" fill="#E7E7E7"/>
+          <circle cx="75" cy="88" r="30" fill="#F4F5F7"/><path d="M62 88l9 9 18-18" fill="none" stroke="#16181C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="35" y="136" width="80" height="10" rx="5" fill="#141417"/>
+          <rect x="25" y="154" width="100" height="6" rx="3" fill="#E7E7E7"/>
+          <rect x="18" y="178" width="114" height="44" rx="10" fill="#F6F6F6"/>
+          <g fill="#16181C"><circle cx="45" cy="200" r="4"/><circle cx="60" cy="200" r="4"/><circle cx="75" cy="200" r="4"/><circle cx="90" cy="200" r="4"/><circle cx="105" cy="200" r="4"/></g>
         </svg></div><p>사전참가등록 완료 시 참가등록 내역<br>이메일 &amp; 카카오톡 자동 발송</p></div>
       <div class="step rv d3"><div class="step-no">③ 컨퍼런스콜 시작 안내</div><div class="phone"><svg viewBox="0 0 150 260" aria-hidden="true">
           <rect x="2" y="2" width="146" height="256" rx="22" fill="#fff" stroke="#CBD5E1" stroke-width="2"/>
-          <rect x="55" y="12" width="40" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="55" y="12" width="40" height="6" rx="3" fill="#E7E7E7"/>
           <circle cx="24" cy="50" r="9" fill="#FDE047"/>
-          <rect x="40" y="38" width="94" height="96" rx="10" fill="#F3F6FC"/>
+          <rect x="40" y="38" width="94" height="96" rx="10" fill="#F6F6F6"/>
           <rect x="40" y="38" width="94" height="18" rx="10" fill="#FDE047"/><rect x="40" y="48" width="94" height="8" fill="#FDE047"/>
           <g fill="#CBD5E1"><rect x="48" y="66" width="70" height="6" rx="3"/><rect x="48" y="78" width="60" height="6" rx="3"/><rect x="48" y="90" width="76" height="6" rx="3"/></g>
-          <rect x="48" y="108" width="78" height="16" rx="5" fill="#fff" stroke="#E2E8F0"/>
-          <rect x="40" y="146" width="94" height="58" rx="10" fill="#F3F6FC"/>
+          <rect x="48" y="108" width="78" height="16" rx="5" fill="#fff" stroke="#E7E7E7"/>
+          <rect x="40" y="146" width="94" height="58" rx="10" fill="#F6F6F6"/>
           <g fill="#CBD5E1"><rect x="48" y="158" width="64" height="6" rx="3"/><rect x="48" y="170" width="74" height="6" rx="3"/><rect x="48" y="182" width="50" height="6" rx="3"/></g>
         </svg></div><p>주최자 입장 시 카카오톡으로<br>컨퍼런스콜 시작 안내 메시지 자동발송</p></div>
       <div class="step rv d4"><div class="step-no">④ 컨퍼런스콜 참가</div><div class="phone"><svg viewBox="0 0 150 260" aria-hidden="true">
-          <rect x="2" y="2" width="146" height="256" rx="22" fill="#1E2537" stroke="#1E2537" stroke-width="2"/>
-          <rect x="55" y="12" width="40" height="6" rx="3" fill="#334155"/>
-          <g fill="#024F2B">
+          <rect x="2" y="2" width="146" height="256" rx="22" fill="#252528" stroke="#252528" stroke-width="2"/>
+          <rect x="55" y="12" width="40" height="6" rx="3" fill="#3F3F42"/>
+          <g fill="#16181C">
             <rect class="wave-bar" x="49" y="58" width="6" height="34" rx="3"/>
             <rect class="wave-bar" x="61" y="50" width="6" height="50" rx="3" style="animation-delay:-.3s"/>
             <rect class="wave-bar" x="73" y="44" width="6" height="62" rx="3" style="animation-delay:-.6s"/>
             <rect class="wave-bar" x="85" y="52" width="6" height="46" rx="3" style="animation-delay:-.9s"/>
             <rect class="wave-bar" x="97" y="60" width="6" height="30" rx="3" style="animation-delay:-.2s"/>
           </g>
-          <g fill="#334155"><circle cx="40" cy="150" r="13"/><circle cx="75" cy="150" r="13"/><circle cx="110" cy="150" r="13"/><circle cx="40" cy="188" r="13"/><circle cx="75" cy="188" r="13"/><circle cx="110" cy="188" r="13"/></g>
+          <g fill="#3F3F42"><circle cx="40" cy="150" r="13"/><circle cx="75" cy="150" r="13"/><circle cx="110" cy="150" r="13"/><circle cx="40" cy="188" r="13"/><circle cx="75" cy="188" r="13"/><circle cx="110" cy="188" r="13"/></g>
           <circle cx="75" cy="228" r="15" fill="#EF4444"/>
           <path d="M67 229c5-4 11-4 16 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
         </svg></div><p>컨퍼런스콜 접속 후 회의참가<br>or 라이브웹캐스팅 접속</p></div>
@@ -459,78 +495,89 @@
 </section>
 
 <!-- HOW IT WORKS -->
-<section>
+<!-- 레이아웃 C 아코디언형(.ly-c--acc, 2026-10-30): 제목 영역은 스크롤되고, 단계 목록만 고정된 채 스크롤에 따라 펼침·접힘 (js/digital/dg-layout.js) -->
+<section class="ly-c ly-c--acc hiw" style="--n:4">
   <div class="wrap">
-    <h2 class="rv d1">준비부터 진행, 사후 관리까지<br>전 과정을 체계적으로 지원합니다.</h2>
-
-    <div class="tabs rv d2" role="tablist">
-      <button class="tab" role="tab" aria-selected="true" aria-controls="pn1" id="tb1">① 컨퍼런스콜 예약</button>
-      <span class="tab-arr" aria-hidden="true"><svg width="30" height="12" viewBox="0 0 30 12"><path d="M0 6h28M23 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="pn2" id="tb2">② 사전참가등록</button>
-      <span class="tab-arr" aria-hidden="true"><svg width="30" height="12" viewBox="0 0 30 12"><path d="M0 6h28M23 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="pn3" id="tb3">③ 컨퍼런스콜 진행</button>
-      <span class="tab-arr" aria-hidden="true"><svg width="30" height="12" viewBox="0 0 30 12"><path d="M0 6h28M23 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="pn4" id="tb4">④ 컨퍼런스콜 종료</button>
+    <div class="ly-c-top">
+      <div><p class="ly-eb">HOW IT WORKS</p><h4 class="pageTitle1 rv d1">준비부터 진행, 사후 관리까지<br>전 과정을 체계적으로 지원합니다.</h4></div>
+      <div><p class="lead">예약부터 종료 후 정산까지,<br>단계별로 무엇이 진행되는지 확인하세요.</p></div>
     </div>
-
-    <div class="panel" id="pn1" role="tabpanel" aria-labelledby="tb1">
-      <h3>컨퍼런스콜 예약</h3>
-      <p>주최자가 원하는 컨퍼런스콜 일정이 확정되면, <b>'컨퍼런스콜 참석자 사전등록 사이트'</b>와 <b>'사전등록자 확인 사이트'</b> 두 가지가 생성됩니다.<br>참석자 사전등록 사이트에는 <b>회의번호</b>가, 사전등록자 확인 사이트에는 접속에 필요한 <b>아이디와 비밀번호</b>가 함께 제공됩니다.</p>
-    </div>
-
-    <div class="panel" id="pn2" role="tabpanel" aria-labelledby="tb2" hidden>
-      <h3>사전참가등록</h3>
-      <p><b>참가자(투자자)</b>는 <b>회의번호와 참가정보</b>를 '참석자 사전등록 사이트'에 입력하여 <b>등록</b>을 완료합니다.<br>등록이 완료되면 카카오톡으로 안내가 발송됩니다.</p>
-      <div class="pair" aria-hidden="true">
-        <div class="scr"><svg viewBox="0 0 400 240"><rect width="400" height="240" fill="#F3F6FC"/><rect x="110" y="22" width="180" height="200" rx="10" fill="#fff" stroke="#E3E5EA"/><rect x="126" y="40" width="56" height="10" rx="3" fill="#024F2B"/><rect x="126" y="62" width="110" height="9" rx="4" fill="#000"/><rect x="126" y="78" width="148" height="6" rx="3" fill="#E3E5EA"/><rect x="126" y="96" width="148" height="22" rx="4" fill="#fff" stroke="#C9CFE0"/><g fill="#E3E5EA"><rect x="126" y="130" width="8" height="8" rx="2"/><rect x="140" y="131" width="90" height="6" rx="3"/><rect x="126" y="146" width="8" height="8" rx="2"/><rect x="140" y="147" width="80" height="6" rx="3"/><rect x="126" y="162" width="8" height="8" rx="2"/><rect x="140" y="163" width="96" height="6" rx="3"/></g><rect x="126" y="192" width="148" height="18" rx="4" fill="#C9CFE0"/></svg></div><i class="play"></i><div class="scr"><svg viewBox="0 0 400 240"><rect width="400" height="240" fill="#F3F6FC"/><rect x="110" y="22" width="180" height="200" rx="10" fill="#fff" stroke="#E3E5EA"/><rect x="126" y="40" width="40" height="10" rx="3" fill="#C9CFE0"/><rect x="126" y="62" width="120" height="9" rx="4" fill="#000"/><rect x="126" y="76" width="90" height="9" rx="4" fill="#000"/><rect x="126" y="96" width="148" height="14" rx="3" fill="#fff" stroke="#E3E5EA"/><rect x="126" y="116" width="148" height="14" rx="3" fill="#fff" stroke="#E3E5EA"/><rect x="126" y="136" width="148" height="14" rx="3" fill="#fff" stroke="#E3E5EA"/><rect x="126" y="156" width="148" height="14" rx="3" fill="#fff" stroke="#E3E5EA"/><rect x="126" y="192" width="148" height="18" rx="4" fill="#024F2B"/></svg></div>
-      </div>
-      <p><b>주최자(상장기업)</b>는 '사전등록자 확인 사이트'에서 아이디와 비밀번호를 입력하여 <b>참가자 정보</b>와 <b>사전등록 현황</b>을 실시간으로 <b>확인</b>할 수 있습니다.</p>
-      <div class="pair" aria-hidden="true">
-        <div class="scr"><svg viewBox="0 0 400 240"><rect width="400" height="240" fill="#F3F6FC"/><rect x="120" y="30" width="160" height="180" rx="10" fill="#fff" stroke="#E3E5EA"/><rect x="152" y="50" width="96" height="10" rx="4" fill="#3B3F47"/><rect x="140" y="80" width="30" height="6" rx="3" fill="#C9CFE0"/><rect x="140" y="90" width="120" height="16" rx="3" fill="#fff" stroke="#E3E5EA"/><rect x="140" y="116" width="36" height="6" rx="3" fill="#C9CFE0"/><rect x="140" y="126" width="120" height="16" rx="3" fill="#fff" stroke="#E3E5EA"/><rect x="140" y="154" width="120" height="16" rx="3" fill="#C9CFE0"/><rect x="160" y="182" width="80" height="12" rx="3" fill="#fff" stroke="#E3E5EA"/></svg></div><i class="play"></i><div class="scr"><svg viewBox="0 0 400 240"><rect width="400" height="240" fill="#F3F6FC"/><rect x="40" y="20" width="320" height="200" rx="8" fill="#fff" stroke="#E3E5EA"/><rect x="56" y="34" width="60" height="8" rx="3" fill="#3B3F47"/><rect x="76" y="62" width="40" height="14" rx="3" fill="#E3E5EA"/><rect x="120" y="62" width="40" height="14" rx="3" fill="#000"/><rect x="76" y="88" width="248" height="16" rx="3" fill="#fff" stroke="#EEF0F3"/><rect x="84" y="93" width="50" height="6" rx="3" fill="#C9CFE0"/><rect x="146" y="93" width="70" height="6" rx="3" fill="#E3E5EA"/><rect x="230" y="93" width="40" height="6" rx="3" fill="#E3E5EA"/><rect x="290" y="92" width="24" height="8" rx="2" fill="#E8EFEC"/><rect x="76" y="110" width="248" height="16" rx="3" fill="#F3F6FC" stroke="#EEF0F3"/><rect x="84" y="115" width="50" height="6" rx="3" fill="#C9CFE0"/><rect x="146" y="115" width="70" height="6" rx="3" fill="#E3E5EA"/><rect x="230" y="115" width="40" height="6" rx="3" fill="#E3E5EA"/><rect x="290" y="114" width="24" height="8" rx="2" fill="#E8EFEC"/><rect x="76" y="132" width="248" height="16" rx="3" fill="#fff" stroke="#EEF0F3"/><rect x="84" y="137" width="50" height="6" rx="3" fill="#C9CFE0"/><rect x="146" y="137" width="70" height="6" rx="3" fill="#E3E5EA"/><rect x="230" y="137" width="40" height="6" rx="3" fill="#E3E5EA"/><rect x="290" y="136" width="24" height="8" rx="2" fill="#E8EFEC"/><rect x="76" y="154" width="248" height="16" rx="3" fill="#F3F6FC" stroke="#EEF0F3"/><rect x="84" y="159" width="50" height="6" rx="3" fill="#C9CFE0"/><rect x="146" y="159" width="70" height="6" rx="3" fill="#E3E5EA"/><rect x="230" y="159" width="40" height="6" rx="3" fill="#E3E5EA"/><rect x="290" y="158" width="24" height="8" rx="2" fill="#E8EFEC"/><rect x="76" y="176" width="248" height="16" rx="3" fill="#fff" stroke="#EEF0F3"/><rect x="84" y="181" width="50" height="6" rx="3" fill="#C9CFE0"/><rect x="146" y="181" width="70" height="6" rx="3" fill="#E3E5EA"/><rect x="230" y="181" width="40" height="6" rx="3" fill="#E3E5EA"/><rect x="290" y="180" width="24" height="8" rx="2" fill="#E8EFEC"/></svg></div>
-      </div>
-      <div class="notify">
-        <h4>* 카카오톡 알림 서비스</h4>
-        <div class="notify-grid">
-          <div>
-            <div class="ng-title"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>참가자 (투자자) 대상</div>
-            <div class="ng-cards">
-              <div class="ntf"><div class="when">사전참가등록 완료 시</div><div class="what">참가등록 완료 안내</div><div class="via">(이메일 &amp; 카카오톡)</div></div>
-              <div class="ntf"><div class="when">컨퍼런스콜 시작 시</div><div class="what">컨퍼런스콜 시작 안내</div><div class="via">(카카오톡)</div></div>
-            </div>
-          </div>
-          <div>
-            <div class="ng-title"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>주최자 (상장기업) 대상</div>
-            <div class="ng-cards">
-              <div class="ntf"><div class="when">컨퍼런스콜 예약완료 시</div><div class="what">컨퍼런스콜 예약 완료 안내</div><div class="via">(이메일)</div></div>
-              <div class="ntf"><div class="when">컨퍼런스콜 종료 후</div><div class="what">정산보고서 안내</div><div class="via">(이메일)</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel" id="pn3" role="tabpanel" aria-labelledby="tb3" hidden>
-      <h3>컨퍼런스콜 진행</h3>
-      <p>컨퍼런스콜은 전문 오퍼레이터의 진행 아래 인사말, 실적 발표 브리핑, 질의응답(Q&amp;A) 순으로 진행됩니다.</p>
-      <div class="timeline">
-        <div class="tl"><div class="tl-box">현장점검 및<br>리허설</div></div>
-        <div class="tl"><div class="tl-box">오퍼레이터의<br>인사말</div><q>안녕하십니까? 지금부터 202X년X분기 컨퍼런스콜을 시작하겠습니다.</q></div>
-        <div class="tl"><div class="tl-box">주최자의<br>실적발표 브리핑</div><q>지금부터 이번 분기 실적에 대해 말씀드리겠습니다. 매출액은 전년 동기 대비…</q></div>
-        <div class="tl"><div class="tl-box">질의응답<br>접수</div><q>지금부터 질의응답을 진행하겠습니다. 질문을 하실 분은 전화기의 *표와 3번을 눌러주십시오.</q></div>
-        <div class="tl"><div class="tl-box">질의응답<br>진행</div><q>질문기회 주셔서 감사합니다. 이번 매출이 전년동기…</q></div>
-        <div class="tl"><div class="tl-box">오퍼레이터의<br>종료 멘트</div><q>이상으로 202X년X분기 컨퍼런스콜을 마치겠습니다. 감사합니다.</q></div>
-      </div>
-    </div>
-
-    <div class="panel" id="pn4" role="tabpanel" aria-labelledby="tb4" hidden>
-      <h3>컨퍼런스콜 종료</h3>
-      <p>컨퍼런스콜 종료 시, 컨퍼런스콜 참석자내역, 요금내역, 녹음파일까지 모든 내역을 정리해드립니다.<br>(모니터링 시스템에서도 조회 가능합니다.)</p>
-      <div class="end-flow">
-        <div class="ef on">컨퍼런스콜 종료</div>
-        <span class="ef-arr" aria-hidden="true"><svg width="40" height="12" viewBox="0 0 40 12"><path d="M0 6h38M33 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
-        <div class="ef">시스템정산 및<br>녹음파일 교정</div>
-        <span class="ef-arr" aria-hidden="true"><svg width="40" height="12" viewBox="0 0 40 12"><path d="M0 6h38M33 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
-        <div class="ef">모니터링시스템<br>업로드 및<br>자동메일발송</div>
+  </div>
+  <div class="ly-c-track">
+    <div class="ly-c-sticky">
+      <div class="wrap">
+        <ol class="ly-c-list">
+          <li class="ly-c-item is-on">
+            <h5 class="ly-c-h"><span class="ly-c-n">01</span>컨퍼런스콜 예약</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <p class="ly-c-p">일정이 확정되면 전용 사이트 두 개가 만들어집니다.<br>투자자는 회의번호로 등록하고,<br>주최자는 등록 현황을 확인합니다.</p>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div>
+              <div class="ly-c-vis hv-book">
+                <div class="hv-root">일정 확정</div>
+                <div class="hv-branch" aria-hidden="true"></div>
+                <div class="hv-sites">
+                  <div class="hv-site"><span class="hv-tag">투자자용</span><b>참석자 사전등록 사이트</b><p>회의번호 제공</p></div>
+                  <div class="hv-site"><span class="hv-tag">주최자용</span><b>사전등록자 확인 사이트</b><p>아이디 · 비밀번호 제공</p></div>
+                </div>
+              </div>
+            </div></div>
+          </li>
+          <li class="ly-c-item">
+            <h5 class="ly-c-h"><span class="ly-c-n">02</span>사전참가등록</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <dl class="hv-roles">
+                <div><dt>참가자 (투자자)</dt><dd>회의번호와 참가 정보를 입력해 등록</dd></div>
+                <div><dt>주최자 (상장기업)</dt><dd>참가자 정보와 등록 현황을 실시간 확인</dd></div>
+              </dl>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div>
+              <div class="ly-c-vis hv-noti">
+                <p class="hv-cap">단계별 자동 알림</p>
+                <ol class="hv-nlist">
+                  <li><span class="hv-when">예약 완료</span><b>예약 완료 안내</b><span class="hv-to">주최자</span><span class="hv-ch">이메일</span></li>
+                  <li><span class="hv-when">등록 완료</span><b>참가등록 완료 안내</b><span class="hv-to">참가자</span><span class="hv-ch">이메일 · 카카오톡</span></li>
+                  <li><span class="hv-when">시작</span><b>컨퍼런스콜 시작 안내</b><span class="hv-to">참가자</span><span class="hv-ch">카카오톡</span></li>
+                  <li><span class="hv-when">종료 후</span><b>정산보고서 안내</b><span class="hv-to">주최자</span><span class="hv-ch">이메일</span></li>
+                </ol>
+              </div>
+            </div></div>
+          </li>
+          <li class="ly-c-item">
+            <h5 class="ly-c-h"><span class="ly-c-n">03</span>컨퍼런스콜 진행</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <p class="ly-c-p">전문 오퍼레이터가 리허설부터 종료까지 진행을 맡습니다.<br>주최자는 실적 발표와 답변에만 집중하면 됩니다.</p>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div>
+              <div class="ly-c-vis hv-run">
+                <ol class="hv-steps">
+                  <li><b>현장 점검 · 리허설</b><span class="hv-who">오퍼레이터 · 주최자</span><q>시작 전 음질과 발표 순서를 점검합니다.</q></li>
+                  <li><b>인사말</b><span class="hv-who">오퍼레이터</span><q>202X년 X분기 컨퍼런스콜을 시작하겠습니다.</q></li>
+                  <li class="is-key"><b>실적 발표</b><span class="hv-who">주최자</span><q>이번 분기 실적에 대해 말씀드리겠습니다.</q></li>
+                  <li class="is-key"><b>질의응답</b><span class="hv-who">참가자 → 주최자</span><q>질문은 전화기의 *, 3번을 눌러주십시오.</q></li>
+                  <li><b>종료</b><span class="hv-who">오퍼레이터</span><q>이상으로 컨퍼런스콜을 마치겠습니다.</q></li>
+                </ol>
+              </div>
+            </div></div>
+          </li>
+          <li class="ly-c-item">
+            <h5 class="ly-c-h"><span class="ly-c-n">04</span>컨퍼런스콜 종료</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <p class="ly-c-p">참석자 내역, 요금 내역, 녹음 파일을 정리해<br>모니터링 시스템에 올리고 메일로 안내합니다.</p>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div>
+              <div class="ly-c-vis hv-end">
+                <div class="hv-flow">
+                  <div class="hv-fs is-on">종료</div><i><svg viewBox="0 0 40 12" aria-hidden="true"><path d="M0 6h37M32 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></i>
+                  <div class="hv-fs">시스템 정산<br>녹음 파일 교정</div><i><svg viewBox="0 0 40 12" aria-hidden="true"><path d="M0 6h37M32 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></i>
+                  <div class="hv-fs">모니터링 시스템 업로드<br>자동 메일 발송</div>
+                </div>
+                <p class="hv-cap">정리해 드리는 자료</p>
+                <ul class="hv-docs"><li>참석자 내역</li><li>요금 내역</li><li>녹음 파일</li></ul>
+              </div>
+            </div></div>
+          </li>
+        </ol>
       </div>
     </div>
   </div>
@@ -540,18 +587,6 @@
 <section class="cta-sec" id="contact">
   <div class="wrap">
     <div class="cta rv">
-      <svg class="net" viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <g stroke="#5670C8" stroke-opacity=".35" stroke-width="1">
-          <line x1="80" y1="60" x2="210" y2="140"/><line x1="210" y1="140" x2="140" y2="250"/><line x1="210" y1="140" x2="360" y2="90"/>
-          <line x1="640" y1="70" x2="780" y2="150"/><line x1="780" y1="150" x2="900" y2="80"/><line x1="780" y1="150" x2="860" y2="250"/>
-          <line x1="440" y1="30" x2="520" y2="20"/><line x1="520" y1="20" x2="560" y2="60"/>
-        </g>
-        <g fill="#9FB4FF">
-          <circle cx="80" cy="60" r="2.5"/><circle cx="210" cy="140" r="3"/><circle cx="140" cy="250" r="2"/><circle cx="360" cy="90" r="2"/>
-          <circle cx="640" cy="70" r="2"/><circle cx="780" cy="150" r="3"/><circle cx="900" cy="80" r="2.5"/><circle cx="860" cy="250" r="2"/>
-          <circle cx="440" cy="30" r="2"/><circle cx="520" cy="20" r="2.5"/><circle cx="560" cy="60" r="2"/>
-        </g>
-      </svg>
       <h2>상장기업의 실적발표를 위한<br>전화회의 서비스, IR 컨퍼런스콜</h2>
       <a href="https://www.irkudos.co.kr/_contact.php" class="js-contact">문의하기</a>
     </div>
@@ -560,6 +595,7 @@
 
 </div>
 <script type="text/javascript" src="/irkudos-homepage-preview/js/digital/conference-call.js?v=20261026" defer></script>
+<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/dg-layout.js?v=20261030s" defer></script>
 </div><!--/contents-->
 	<div class="btnTop"><img src="/irkudos-homepage-preview/images/common/btn_top.png" alt="상단 바로가기"></div>
 </div><!--//container-->
@@ -600,7 +636,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 14:47</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 15:37</div>
 </body>
 </html>
 

@@ -45,7 +45,7 @@
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_pc.min.css" media="screen and (min-width:1400px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_tablet.min.css" media="screen and (min-width:813px) and (max-width:1399px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_mobile.min.css" media="screen and (max-width:812px)" />
-<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-onsite.css?v=20261026" />
+<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-onsite.css?v=20261030g" />
 <script language="javascript" src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -265,19 +265,21 @@
 </section>
 
 <!-- ========== OVERVIEW ========== -->
-<section>
+<!-- 레이아웃 A-vis -->
+<section class="ly-a">
   <div class="wrap">
-    <h2>주주총회 현장의 출석과 표결을<br>전자적 방법으로 처리합니다</h2>
+    <p class="ly-eb">OVERVIEW</p>
+    <h4 class="pageTitle1">주주총회 현장의 출석과 표결을<br>전자적 방법으로 처리합니다</h4>
     <p class="lead">NFC와 비콘을 통해 현장투표앱 하나로 입장부터 표결까지 진행합니다.</p>
-
-    <div class="zone">
+    <div class="ly-a-vis">
+      <div class="zone">
       <div class="zone-side">
         <span class="where">총회장 밖</span>
         <div class="mini" aria-hidden="true"><div class="pass"><i style="width:44px"></i><i style="width:62px"></i></div><span class="sk"></span><span class="sk" style="width:70%"></span></div>
         <b>출입증 화면</b>
       </div>
       <div class="zone-mid">
-        <div class="beacon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#024F2B" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></svg></div>
+        <div class="beacon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16181C" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></svg></div>
         <span>비콘 감지</span>
       </div>
       <div class="zone-side in">
@@ -286,17 +288,16 @@
         <b>의결권 행사 화면</b>
       </div>
     </div>
-
-    <div class="methods">
+      <div class="methods">
       <div class="method">
         <div class="method-illu" aria-hidden="true">
           <svg width="170" height="64" viewBox="0 0 170 64" fill="none">
             <rect x="0" y="6" width="84" height="52" rx="8" fill="#000"/>
             <path d="M12 22a6 6 0 0 1 0 9M17 18a11 11 0 0 1 0 17" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            <path d="M96 32h26m0 0l-5-5m5 5l-5 5" stroke="#024F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M96 32h26m0 0l-5-5m5 5l-5 5" stroke="#16181C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <rect x="134.5" y=".5" width="35" height="63" rx="7" fill="#fff" stroke="#DCE1EC"/>
-            <rect x="139" y="7" width="26" height="22" rx="3" fill="#024F2B"/>
-            <rect x="139" y="34" width="20" height="3" rx="1.5" fill="#E3E8F4"/>
+            <rect x="139" y="7" width="26" height="22" rx="3" fill="#16181C"/>
+            <rect x="139" y="34" width="20" height="3" rx="1.5" fill="#E8E8E8"/>
           </svg>
         </div>
         <h3>NFC</h3>
@@ -306,32 +307,31 @@
         <div class="method-illu" aria-hidden="true">
           <svg width="130" height="56" viewBox="0 0 130 56" fill="none">
             <rect x=".5" y="6.5" width="59" height="43" rx="10" fill="#fff" stroke="#DCE1EC"/>
-            <circle cx="30" cy="28" r="4" fill="#024F2B"/>
-            <path d="M84 19a12 12 0 0 1 0 18M92 13a20 20 0 0 1 0 30M100 7a28 28 0 0 1 0 42" stroke="#9DB0F0" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="30" cy="28" r="4" fill="#16181C"/>
+            <path d="M84 19a12 12 0 0 1 0 18M92 13a20 20 0 0 1 0 30M100 7a28 28 0 0 1 0 42" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </div>
         <h3>비콘</h3>
         <p>총회장에 설치된 비콘이 주주의 위치를 감지해, 총회장 밖에서는 출입증, 안에서는 의결권 행사 화면을 보여줍니다.</p>
       </div>
     </div>
+    </div>
   </div>
 </section>
 
 <!-- ========== FOR ISSUERS ========== -->
-<section class="bg-gray">
-  <div class="wrap">
-    <h2>관리자 페이지에서<br>현장 참석자를 등록합니다</h2>
-    <p class="lead">주주 검색부터 출입증·의결권 부여까지 차례로 진행합니다.</p>
-
-    <div class="tabs" role="tablist" aria-label="현장 참석자 등록 단계">
-      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true"><span class="n">1</span>주주 검색</button>
-      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="n">2</span>본인 확인</button>
-      <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="n">3</span>참석자 등록</button>
-      <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="n">4</span>출입증·의결권 부여</button>
-    </div>
-
-    <!-- 1 -->
-    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+<!-- 레이아웃 C: 스크롤 롤오버 (탭 → 스크롤 진행에 따라 단계 전환, js/digital/dg-layout.js) -->
+<section class="ly-c ly-c--panel bg-gray" style="--n:4">
+  <div class="ly-c-sticky">
+    <div class="wrap">
+      <div class="ly-c-top">
+        <div><p class="ly-eb">FOR ISSUERS</p><h4 class="pageTitle1">관리자 페이지에서<br>현장 참석자를 등록합니다</h4></div>
+        <div><p class="lead">주주 검색부터 출입증·의결권 부여까지 차례로 진행합니다.</p></div>
+      </div>
+      <ol class="ly-c-list">
+        <li class="ly-c-item is-on">
+          <h5 class="ly-c-h"><span class="ly-c-n">01</span>주주 검색</h5>
+          <div class="ly-c-pnl panel" id="p1">
       <div>
         <h3>참석자 관리에서<br>주주를 검색합니다</h3>
         <p>참석한 주주를 주주명부에서 찾습니다.</p>
@@ -339,7 +339,7 @@
       <div class="admin" aria-hidden="true">
         <div class="admin-main">
           <div class="admin-h"><b>참석자 관리</b><span class="ghost">현장투표 태그 ID <em>NFC-1001</em></span></div><div class="a-tabs"><span class="on">현장참석자 등록</span><span>전자주총 참석자</span><span>참석자 전체</span></div>
-          <div class="search"><span>투표권자 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#80858F" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span><span class="q"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#024F2B" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>홍길동</span><span class="sbtn">대리인·위임주주 등록</span><span class="sbtn dark">비주주 등록</span></div>
+          <div class="search"><span>투표권자 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#80858F" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span><span class="q"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16181C" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>홍길동</span><span class="sbtn">대리인·위임주주 등록</span><span class="sbtn dark">비주주 등록</span></div>
           <table>
             <thead><tr><th style="text-align:left">투표권자</th><th>주주번호</th><th>사전투표</th><th>보유주식수</th><th>현장 참석</th></tr></thead>
             <tbody>
@@ -351,9 +351,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 2 -->
-    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">02</span>본인 확인</h5>
+          <div class="ly-c-pnl panel" id="p2">
       <div>
         <h3>신분증으로<br>본인 여부를 확인합니다</h3>
         <p>신분증으로 본인을, 위임장으로 대리인을 확인합니다.</p>
@@ -372,9 +373,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 3 -->
-    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">03</span>참석자 등록</h5>
+          <div class="ly-c-pnl panel" id="p3">
       <div>
         <h3>사전 행사 이력을 확인하고<br>참석자로 등록합니다</h3>
         <p>사전 행사 이력이 있으면 철회한 뒤 등록합니다.</p>
@@ -406,9 +408,10 @@
         </div>
       </div>
     </div>
-
-    <!-- 4 -->
-    <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+        </li>
+        <li class="ly-c-item">
+          <h5 class="ly-c-h"><span class="ly-c-n">04</span>출입증·의결권 부여</h5>
+          <div class="ly-c-pnl panel" id="p4">
       <div>
         <h3>출입증과 의결권을<br>부여합니다</h3>
         <p>NFC 태깅으로 주주의 현장투표앱에 출입증과 의결권을 등록합니다.</p>
@@ -422,11 +425,11 @@
               <p class="pop-desc">NFC 기기에 참석자의 현장투표앱을 태깅해 주세요</p>
               <div class="nfc-illu">
                 <svg width="150" height="78" viewBox="0 0 150 78" fill="none">
-                  <circle cx="44" cy="40" r="30" fill="#E8EFEC" stroke="#C9D3FB"/>
-                  <path d="M36 34a8 8 0 0 1 0 12M41 30a14 14 0 0 1 0 20" stroke="#024F2B" stroke-width="2.2" stroke-linecap="round"/>
-                  <text x="44" y="62" text-anchor="middle" font-size="8" font-weight="700" fill="#024F2B">NFC</text>
-                  <rect x="88" y="6" width="38" height="66" rx="8" fill="#fff" stroke="#C9D3FB" stroke-width="1.5" transform="rotate(10 107 39)"/>
-                  <rect x="97" y="24" width="20" height="20" rx="5" fill="#024F2B" transform="rotate(10 107 39)"/>
+                  <circle cx="44" cy="40" r="30" fill="#F4F5F7" stroke="#D5D5D5"/>
+                  <path d="M36 34a8 8 0 0 1 0 12M41 30a14 14 0 0 1 0 20" stroke="#16181C" stroke-width="2.2" stroke-linecap="round"/>
+                  <text x="44" y="62" text-anchor="middle" font-size="8" font-weight="700" fill="#16181C">NFC</text>
+                  <rect x="88" y="6" width="38" height="66" rx="8" fill="#fff" stroke="#D5D5D5" stroke-width="1.5" transform="rotate(10 107 39)"/>
+                  <rect x="97" y="24" width="20" height="20" rx="5" fill="#16181C" transform="rotate(10 107 39)"/>
                 </svg>
               </div>
               <div class="btns" style="justify-content:flex-end"><span>현장 참석자 등록</span><span class="pri dark">태깅완료</span></div>
@@ -437,16 +440,22 @@
         </div>
       </div>
     </div>
+        </li>
+      </ol>
+      
+    </div>
   </div>
 </section>
 
 <!-- ========== FOR SHAREHOLDERS ========== -->
-<section>
+<!-- 레이아웃 A-body -->
+<section class="ly-a">
   <div class="wrap">
-    <h2>주주는 현장투표앱으로<br>총회장에서 표결합니다</h2>
+    <p class="ly-eb">FOR SHAREHOLDERS</p>
+    <h4 class="pageTitle1">주주는 현장투표앱으로<br>총회장에서 표결합니다</h4>
     <p class="lead">출입증을 받은 뒤 의안이 상정될 때마다 표결하고, 행사 내역을 확인합니다.</p>
-
-    <div class="steps four">
+    <div class="ly-a-body">
+      <div class="steps four">
       <div class="step">
         <div class="phone" aria-hidden="true">
           <div class="pass-card">
@@ -481,8 +490,8 @@
           <div style="text-align:center;margin-top:34px"><b style="font-size:12px">비밀번호 입력</b><p style="font-size:9px;opacity:.85;margin-top:3px">확인을 위해 한 번 더 입력해 주세요</p><div class="pw-dots"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
           <div class="sheet" style="color:var(--body)">
             <div style="display:flex;gap:16px">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M9 10v1M15 10v1M12 10v3h-1M9.5 15.5a3.5 3.5 0 0 0 5 0"/></svg>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round"><path d="M18.9 7a8 8 0 0 1 1.1 5v1a6 6 0 0 0 .8 3M8 11a4 4 0 0 1 8 0v1a10 10 0 0 0 2 6M12 11v2a14 14 0 0 0 2.5 8M8 15a18 18 0 0 0 1.8 6M4.9 19a22 22 0 0 1-.9-7v-1a8 8 0 0 1 12-6.95"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16181C" stroke-width="1.6" stroke-linecap="round"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M9 10v1M15 10v1M12 10v3h-1M9.5 15.5a3.5 3.5 0 0 0 5 0"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16181C" stroke-width="1.6" stroke-linecap="round"><path d="M18.9 7a8 8 0 0 1 1.1 5v1a6 6 0 0 0 .8 3M8 11a4 4 0 0 1 8 0v1a10 10 0 0 0 2 6M12 11v2a14 14 0 0 0 2.5 8M8 15a18 18 0 0 0 1.8 6M4.9 19a22 22 0 0 1-.9-7v-1a8 8 0 0 1 12-6.95"/></svg>
             </div>
             <b style="font-size:10.5px;color:var(--ink)">생체인증을 사용하시겠습니까?</b>
             <div class="ph-btn" style="width:100%">생체인증 사용하기</div>
@@ -504,18 +513,20 @@
         <div class="step-cap"><span class="n">4</span><b>행사 내역 확인</b><p>의안별 결과와 내 행사 내역 확인</p></div>
       </div>
     </div>
-    <p class="note">화면은 이해를 돕기 위한 예시입니다.</p>
+    </div>
   </div>
 </section>
 
 <!-- ========== LIVE COUNTING ========== -->
-<section class="bg-gray">
+<!-- 레이아웃 B-split -->
+<section class="ly-b bg-gray">
   <div class="wrap">
-    <h2>현장 표결 현황을<br>실시간으로 확인합니다</h2>
-    <p class="lead">주주총회 중에는 참석과 표결 현황을, 주주총회가 끝난 뒤에는 현장 집계 결과를 확인합니다.</p>
-
-    <div class="count">
-      <div class="live-groups">
+    <div class="ly-b-grid">
+      <div class="ly-b-txt">
+        <p class="ly-eb">LIVE COUNTING</p>
+        <h4 class="pageTitle1">현장 표결 현황을<br>실시간으로 확인합니다</h4>
+        <p class="lead">주주총회 중에는 참석과 표결 현황을, 주주총회가 끝난 뒤에는 현장 집계 결과를 확인합니다.</p>
+        <div class="ly-b-split count"><div class="live-groups">
         <div class="live-group">
           <p class="lg-when"><span class="live-dot" aria-hidden="true"></span>주주총회 진행 중</p>
           <ul class="spec">
@@ -530,8 +541,10 @@
             <li><strong>내역 다운로드</strong>현장 표결 내역과 집계 결과를 파일로 내려받기</li>
           </ul>
         </div>
+      </div></div>
       </div>
-      <div class="admin" aria-hidden="true">
+      <div class="ly-b-vis">
+        <div class="ly-b-split count"><div class="admin" aria-hidden="true">
         <div class="admin-main">
           <div class="admin-h"><b>현장 투표 현황</b><span class="live-badge"><span class="live-dot"></span>실시간</span></div>
           <div class="kpis">
@@ -549,64 +562,38 @@
             </tbody>
           </table>
         </div>
+      </div></div>
       </div>
     </div>
-    <p class="note">화면의 수치는 이해를 돕기 위한 예시입니다.</p>
   </div>
 </section>
 
 <!-- ========== AGGREGATION ========== -->
-<section class="agg-sec">
+<!-- 레이아웃 A-vis -->
+<section class="ly-a agg-sec">
   <div class="wrap">
-    <h2>현장 표결은 사전 행사와 함께<br>총회 당일 집계에 합산됩니다</h2>
+    <p class="ly-eb">AGGREGATION</p>
+    <h4 class="pageTitle1">현장 표결은 사전 행사와 함께<br>총회 당일 집계에 합산됩니다</h4>
     <p class="lead">전자투표·전자위임, 서면위임장, 서면투표, 현장 전자표결, 온라인 투표가 하나의 집계 시스템으로 모입니다.</p>
-
-    <div class="agg">
-      <div class="agg-sources">
-        <div class="src"><div class="src-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5" y="2" width="10" height="16" rx="2" stroke="#024F2B" stroke-width="1.6"/><path d="M8.5 15h3" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><span class="when">총회 전</span><b>전자투표·전자위임</b><p>총회 전 정해진 기간에 온라인으로 행사된 의결권</p></div></div>
-        <div class="src"><div class="src-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 2h7l4 4v12H5z" stroke="#024F2B" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 2v4h4" stroke="#024F2B" stroke-width="1.6" stroke-linejoin="round"/></svg></div><div><span class="when">총회 전</span><b>서면위임장</b><p>프록시 서비스로 확보한 위임장으로 행사된 의결권</p></div></div><div class="src"><div class="src-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="2.5" width="12" height="15" rx="2" stroke="#024F2B" stroke-width="1.6"/><path d="M7 7h6M7 10h6M7 13h4" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><span class="when">총회 당일</span><b>서면투표</b><p>총회 당일 서면으로 행사된 의결권</p></div></div>
-        <div class="src current"><div class="src-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2.5" y="4" width="15" height="12" rx="2" stroke="#024F2B" stroke-width="1.6"/><path d="M6 10l2.5 2.5L14 7" stroke="#024F2B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><span class="when">총회 당일</span><b>현장 전자표결</b><p>총회장에서 현장투표앱으로 행사된 의결권</p></div></div>
-        <div class="src"><div class="src-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#024F2B" stroke-width="1.6"/><path d="M2.5 10h15M10 2.5a11 11 0 0 1 0 15M10 2.5a11 11 0 0 0 0 15" stroke="#024F2B" stroke-width="1.6"/></svg></div><div><span class="when">총회 당일</span><b>온라인 투표</b><p>총회 당일 온라인으로 행사된 의결권</p></div></div>
-      </div>
-      <div class="agg-arrow" aria-hidden="true">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 14h16m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="agg-result">
-        <p class="t">제1호 의안</p>
-        <h3>주주총회 통합 집계</h3>
-        <div class="row"><span>전자투표·전자위임</span><b>4,780,800</b></div>
-        <div class="row"><span>서면위임장</span><b>1,402,600</b></div>
-        <div class="row"><span>서면투표</span><b>501,600</b></div>
-        <div class="row cur"><span>현장 전자표결</span><b>2,015,000</b></div>
-        <div class="row"><span>온라인 투표</span><b>300,000</b></div>
-        <div class="row total"><span>합계</span><b>9,000,000</b></div>
-      </div>
-    </div>
-    <p class="note">화면의 수치는 이해를 돕기 위한 예시입니다.</p>
-
-    <div class="closing">
+    <div class="ly-a-vis">
+      <a class="agg-link" href="/irkudos-homepage-preview/agm-proxy.html#meeting">
+        <span><b>사전·당일 의결권 통합 집계 방식</b><small>전자투표·전자위임, 서면위임장, 서면투표, 현장 전자표결, 온라인 투표가 하나의 집계 시스템으로 합산되는 구조를 확인하세요.</small></span>
+        <em aria-hidden="true">→</em>
+      </a>
+      <div class="closing">
       <p class="closing-sub">현장에서 행사된 한 표까지 정확하게</p>
       <p class="closing-main"><mark>주주총회의 신뢰</mark>를 높이고<br><mark>주주의 의결권</mark>을 지킵니다.</p>
+    </div>
     </div>
   </div>
 </section>
 
+
+<p class="dg-disclaimer"><span class="wrap">페이지의 화면과 수치는 이해를 돕기 위한 예시입니다.</span></p>
 <!-- ========== CTA ========== -->
 <section class="cta-sec bg-gray">
   <div class="wrap">
     <div class="cta">
-      <svg class="net" viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <g stroke="#5670C8" stroke-opacity=".35" stroke-width="1">
-          <line x1="80" y1="60" x2="210" y2="140"/><line x1="210" y1="140" x2="140" y2="250"/><line x1="210" y1="140" x2="360" y2="90"/>
-          <line x1="640" y1="70" x2="780" y2="150"/><line x1="780" y1="150" x2="900" y2="80"/><line x1="780" y1="150" x2="860" y2="250"/>
-          <line x1="440" y1="30" x2="520" y2="20"/><line x1="520" y1="20" x2="560" y2="60"/>
-        </g>
-        <g fill="#9FB4FF">
-          <circle cx="80" cy="60" r="2.5"/><circle cx="210" cy="140" r="3"/><circle cx="140" cy="250" r="2"/><circle cx="360" cy="90" r="2"/>
-          <circle cx="640" cy="70" r="2"/><circle cx="780" cy="150" r="3"/><circle cx="900" cy="80" r="2.5"/><circle cx="860" cy="250" r="2"/>
-          <circle cx="440" cy="30" r="2"/><circle cx="520" cy="20" r="2.5"/><circle cx="560" cy="60" r="2"/>
-        </g>
-      </svg>
       <h2>거수·박수·서면을 넘어선<br>주주총회 표결의 디지털 전환, 현장전자표결</h2>
       <a href="https://www.irkudos.co.kr/_contact.php" class="js-contact">문의하기</a>
     </div>
@@ -615,6 +602,7 @@
 
 </div>
 <script type="text/javascript" src="/irkudos-homepage-preview/js/digital/agm-onsite.js?v=20261026" defer></script>
+<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/dg-layout.js?v=20261030" defer></script>
 </div><!--/contents-->
 	<div class="btnTop"><img src="/irkudos-homepage-preview/images/common/btn_top.png" alt="상단 바로가기"></div>
 </div><!--//container-->
@@ -655,7 +643,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 14:47</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 15:37</div>
 </body>
 </html>
 
