@@ -1847,7 +1847,7 @@
 	width: 49%;
 	margin: 3px 0;
 	padding: 25px 10px;
-	background: #F3F3F3;
+	background: #ebf4ff;
 	border-radius: 10px;
 }
 
@@ -3413,7 +3413,7 @@
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists .swiper-container .swiper-slide:nth-child(4n) {
-	background: #EDEDED;
+	background: #f0e8ff;
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists .swiper-container .swiper-slide.empty {
@@ -3501,7 +3501,7 @@
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists.list5>div ul li:nth-child(4n) {
-	background: #EDEDED;
+	background: #f0e8ff;
 }
 
 .m42 .sec1 .conwrap .boxwrap .lists.list5>div ul li img {
