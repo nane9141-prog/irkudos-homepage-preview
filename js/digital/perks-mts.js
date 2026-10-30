@@ -21,8 +21,8 @@
 	    t.addEventListener('click',()=>select(t));
 	    t.addEventListener('keydown',e=>{
 	      let n=null;
-	      if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];
-	      if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];
+	      if(e.key==='ArrowRight'||e.key==='ArrowDown')n=tabs[(i+1)%tabs.length];
+	      if(e.key==='ArrowLeft'||e.key==='ArrowUp')n=tabs[(i-1+tabs.length)%tabs.length];
 	      if(n){e.preventDefault();select(n);n.focus();}
 	    });
 	  });
