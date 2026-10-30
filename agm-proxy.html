@@ -305,32 +305,13 @@
     <h4 class="pageTitle1">IR큐더스의 프록시 서비스</h4>
     <p class="lead">상장기업이 안정적인 주주총회 운영에 필요한 의결권을 확보할 수 있도록,<br>주주와의 커뮤니케이션부터 위임장 확보까지 체계적으로 지원합니다.</p>
     <div class="ly-a-body">
-      <p class="sub-h">개인주주와 기관주주,<br>각각의 방식으로 의결권을 확보합니다</p>
-      <div class="cards">
-      <a class="card" href="#individual">
-        <span class="tag">SERVICE 01</span>
-        <h3>개인주주</h3>
-        <p>데이터 기반 타겟팅과 검증된 현장 운영으로<br>개인주주의 의결권을 확보합니다</p>
-        <span class="more">자세히 보기 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
-      </a>
-      <a class="card" href="#institutional">
-        <span class="tag">SERVICE 02</span>
-        <h3>기관주주</h3>
-        <p>실질주주 분석과 검증된 커뮤니케이션 역량으로<br>국내 기관주주의 의결권 확보를 지원합니다</p>
-        <span class="more">자세히 보기 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
-      </a>
-    </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== INDIVIDUAL ========== -->
-<!-- 레이아웃 A-body -->
-<section id="individual" class="ly-a bg-gray">
-  <div class="wrap">
-    <p class="ly-eb">INDIVIDUAL SHAREHOLDERS</p>
-    <h4 class="pageTitle1"><em>개인주주</em> 프록시 서비스</h4>
-    <p class="lead">방문 우선순위를 정하고, 설계된 동선을 따라 위임장을 확보하는 프록시 서비스입니다.</p>
+      <div class="dg-seg" role="tablist" aria-label="주주 유형">
+        <button type="button" class="is-on" data-seg="individual" aria-selected="true"><b>개인주주</b><small>데이터 기반 타겟팅 · 현장 운영</small></button>
+        <button type="button" data-seg="institutional" aria-selected="false"><b>기관주주</b><small>실질주주 분석 · 커뮤니케이션</small></button>
+      </div>
+      <div class="dg-seg-panel" id="individual" data-seg-panel="individual">
+    <h5 class="seg-h"><em>개인주주</em> 프록시 서비스</h5>
+    <p class="seg-lead">방문 우선순위를 정하고, 설계된 동선을 따라 위임장을 확보하는 프록시 서비스입니다.</p>
     <div class="ly-a-body">
       <div class="feats">
       <div class="feat">
@@ -451,18 +432,11 @@
         <span class="p-cap"><b>06</b>위임 완료</span>
       </div>
     </div>
-      <p class="note">화면은 이해를 돕기 위한 예시입니다.</p>
     </div>
   </div>
-</section>
-
-<!-- ========== INSTITUTIONAL ========== -->
-<!-- 레이아웃 A-body -->
-<section id="institutional" class="ly-a">
-  <div class="wrap">
-    <p class="ly-eb">INSTITUTIONAL SHAREHOLDERS</p>
-    <h4 class="pageTitle1"><em>기관주주</em> 프록시 서비스</h4>
-    <p class="lead">IR큐더스는 프록시 서비스의 대상을 개인주주에서 기관주주로 확장합니다.</p>
+      <div class="dg-seg-panel" id="institutional" data-seg-panel="institutional" hidden>
+    <h5 class="seg-h"><em>기관주주</em> 프록시 서비스</h5>
+    <p class="seg-lead">IR큐더스는 프록시 서비스의 대상을 개인주주에서 기관주주로 확장합니다.</p>
     <div class="ly-a-body">
       <p class="approach-h">기관주주는 접근 방식이 다릅니다</p>
       <div class="approach">
@@ -508,10 +482,14 @@
         <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#024F2B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 16v-3M12 16v-6M15 16v-4"/></svg></span>행사내역 추적 및 결과분석 피드백</li>
       </ul>
     </div>
-      <p class="note">화면의 수치는 이해를 돕기 위한 예시입니다.</p>
+    </div>
+  </div>
     </div>
   </div>
 </section>
+
+<!-- 레이아웃 A-body -->
+
 
 <!-- ========== SECURITY ========== -->
 <!-- 레이아웃 A-body -->
@@ -646,7 +624,6 @@
         <div class="row total"><span>합계</span><b>9,000,000</b></div>
       </div>
     </div>
-      <p class="note">화면의 수치는 이해를 돕기 위한 예시입니다.</p>
     </div>
   </div>
 </section>
@@ -678,6 +655,8 @@
   </div>
 </section>
 
+
+<p class="dg-disclaimer"><span class="wrap">페이지의 화면과 수치는 이해를 돕기 위한 예시입니다.</span></p>
 <!-- ========== CTA ========== -->
 <section class="cta-sec">
   <div class="wrap">
@@ -689,6 +668,7 @@
 </section>
 
 </div>
+<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/dg-layout.js?v=20261030" defer></script>
 <script type="text/javascript" src="/irkudos-homepage-preview/js/digital/agm-proxy.js?v=20261026" defer></script>
 </div><!--/contents-->
 	<div class="btnTop"><img src="/irkudos-homepage-preview/images/common/btn_top.png" alt="상단 바로가기"></div>
@@ -730,7 +710,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 12:17</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-10-30 12:27</div>
 </body>
 </html>
 

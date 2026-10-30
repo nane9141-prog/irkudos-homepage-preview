@@ -1,6 +1,20 @@
 /* 신규 페이지 공통 레이아웃 C — 스크롤 롤오버 (2026-10-30)
  * .ly-c 섹션이 화면에 고정된 동안 스크롤 진행도에 따라 .ly-c-item 을 순서대로 활성화
  * 1100px 이하는 CSS 에서 모든 항목 펼침 (스크립트 동작 안 함) */
+/* 세그먼트 탭(.dg-seg) — 버튼 data-seg ↔ 패널 data-seg-panel, 주소 #id 로 바로 열기 (2026-10-30) */
+(function () {
+	[].slice.call(document.querySelectorAll('.dg-seg')).forEach(function (bar) {
+		var btns = [].slice.call(bar.querySelectorAll('[data-seg]'));
+		var scope = bar.parentNode;
+		function sel(k) {
+			btns.forEach(function (b) { var on = b.getAttribute('data-seg') === k; b.classList.toggle('is-on', on); b.setAttribute('aria-selected', on); });
+			[].slice.call(scope.querySelectorAll('[data-seg-panel]')).forEach(function (p) { p.hidden = p.getAttribute('data-seg-panel') !== k; });
+		}
+		btns.forEach(function (b) { b.addEventListener('click', function () { sel(b.getAttribute('data-seg')); }); });
+		function fromHash() { var h = location.hash.slice(1); if (h && scope.querySelector('[data-seg-panel="' + h + '"]')) { sel(h); bar.scrollIntoView({ block: 'start' }); } }
+		window.addEventListener('hashchange', fromHash); fromHash();
+	});
+})();
 (function () {
 	var secs = [].slice.call(document.querySelectorAll('.ly-c'));
 	if (!secs.length) return;
