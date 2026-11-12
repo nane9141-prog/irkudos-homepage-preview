@@ -76,15 +76,23 @@
 		return (range > 0 ? clamp((top - r.top) / range) : 0) * (s.items.length - 1);
 	}
 	function size(s) {
+		/* 2026-11-12: 화면에 다 안 들어오면 목록 전체(zoom)가 아니라 비주얼(.ly-c-vis)만 축소 → 제목·설명 글자 크기 유지 */
 		var stk = s.sec.querySelector('.ly-c-sticky'), list = s.sec.querySelector('.ly-c-list');
-		s.track.style.height = ''; list.style.zoom = 1;
-		/* 가장 큰 단계가 펼쳐졌을 때 화면에 다 들어오도록 목록 축소 (최소 0.72) */
-		var cur = 0, max = 0;
-		s.folds.forEach(function (fs, i) { fs.forEach(function (fd) { var h = fd.firstElementChild.scrollHeight; if (i === 0) cur = Math.max(cur, h); max = Math.max(max, h); }); });
-		var top = parseFloat(getComputedStyle(stk).top) || 0, need = stk.offsetHeight - cur + max, avail = window.innerHeight - top - 16;
-		if (need > avail) list.style.zoom = Math.max(.72, avail / need).toFixed(3);
-		var z = parseFloat(list.style.zoom) || 1;
-		s.track.style.height = Math.round(stk.offsetHeight + (max - cur) * z + (s.items.length - 1) * STEP * window.innerHeight) + 'px';
+		var vis = [].slice.call(s.sec.querySelectorAll('.ly-c-fold--vis .ly-c-vis'));
+		s.track.style.height = ''; list.style.zoom = ''; vis.forEach(function (v) { v.style.zoom = ''; });
+		function meas() {
+			var cur = 0, max = 0;
+			s.folds.forEach(function (fs, i) { fs.forEach(function (fd) { var h = fd.firstElementChild.scrollHeight; if (i === 0) cur = Math.max(cur, h); max = Math.max(max, h); }); });
+			return [cur, max];
+		}
+		var m = meas(), top = parseFloat(getComputedStyle(stk).top) || 0, need = stk.offsetHeight - m[0] + m[1], avail = window.innerHeight - top - 16;
+		if (need > avail && vis.length) {
+			var vh = 0; vis.forEach(function (v) { vh = Math.max(vh, v.offsetHeight); });
+			var z = Math.max(.7, 1 - (need - avail) / vh).toFixed(3);
+			vis.forEach(function (v) { v.style.zoom = z; });
+			m = meas();
+		}
+		s.track.style.height = Math.round(stk.offsetHeight + (m[1] - m[0]) + (s.items.length - 1) * STEP * window.innerHeight) + 'px';
 	}
 	function paint(s) {
 		var n = s.items.length, p = s.cur, i0 = Math.floor(p), f = p - i0, best = 0, bo = -1;
@@ -128,7 +136,7 @@
 	function setup() {
 		st.forEach(function (s) {
 			if (mq.matches) { s.sec.classList.add('is-scrub'); s.cur = s.tgt = 0; paint(s); size(s); s.cur = s.tgt = target(s); paint(s); }
-			else { clear(s); s.track.style.height = ''; s.sec.querySelector('.ly-c-list').style.zoom = ''; }
+			else { clear(s); s.track.style.height = ''; s.sec.querySelector('.ly-c-list').style.zoom = ''; [].slice.call(s.sec.querySelectorAll('.ly-c-vis')).forEach(function (v) { v.style.zoom = ''; }); }
 		});
 	}
 	st.forEach(function (s) {
