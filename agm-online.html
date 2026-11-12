@@ -45,7 +45,7 @@
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_pc.min.css" media="screen and (min-width:1400px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_tablet.min.css" media="screen and (min-width:813px) and (max-width:1399px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_mobile.min.css" media="screen and (max-width:812px)" />
-<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-online.css?v=20261112z" />
+<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-online.css?v=20261112ah" />
 <script language="javascript" src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -266,24 +266,26 @@
 
 <!-- ========== 주주 참여 (구 OVERVIEW 카드 + FOR SHAREHOLDERS 통합, 2026-10-30) ========== -->
 <!-- 레이아웃 A-vis -->
-<section class="ly-a">
+<section class="ly-c ly-c--acc" style="--n:5">
+  <!-- 2026-11-12 탭형 → 아코디언(다른 단계 섹션과 같은 포맷) -->
   <div class="wrap">
-    <h4 class="pageTitle1">온라인으로 출석해<br>주주총회에 참여합니다</h4>
-    <p class="lead">주주는 PC나 모바일로 주주총회에 출석해, 총회장에 있는 주주처럼 질의하고 표결합니다.</p>
-    <div class="ly-a-vis">
-      <div class="tabs" role="tablist" aria-label="주주 참여 화면">
-      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true"><span class="n">1</span>주주총회 입장</button>
-      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="n">2</span>주주총회 시청</button>
-      <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="n">3</span>의안 투표</button>
-      <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="n">4</span>질의</button>
-      <button class="tab" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1"><span class="n">5</span>발언</button>
+    <div class="ly-c-top">
+      <div><h4 class="pageTitle1">온라인으로 출석해<br>주주총회에 참여합니다</h4></div>
+      <div><p class="lead">주주는 PC나 모바일로 주주총회에 출석해, 총회장에 있는 주주처럼 질의하고 표결합니다.</p></div>
     </div>
-      <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
-      <div>
-        <h3>참석할 주주총회를<br>선택해 입장합니다</h3>
-        <p>보유 주식이 있는 주주총회 목록을 확인하고, 진행 중인 주주총회에 바로 입장합니다.</p>
-      </div>
-      <div class="dg-stage"><div class="scr" aria-hidden="true">
+  </div>
+  <div class="ly-c-track">
+    <div class="ly-c-sticky">
+      <div class="wrap">
+        <ol class="ly-c-list">
+          <li class="ly-c-item is-on">
+            <h5 class="ly-c-h"><span class="ly-c-n">01</span>주주총회 입장</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <p class="ly-c-p">보유 주식이 있는 주주총회 목록을 확인하고, 진행 중인 주주총회에 바로 입장합니다.</p>
+              <ul class="ly-c-sub"><li>보유 주주총회 목록 확인</li><li>진행 중인 주주총회 바로 입장</li></ul>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div><div class="ly-c-vis ev-vis on-vis">
+      <div class="scr" aria-hidden="true">
         <div class="scr-top">내 주주총회<span class="user"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7"/></svg>홍길동</span></div>
         <div class="list-body">
           <div class="pills"><span class="on">전체</span><span>진행 중</span><span>진행 예정</span><span>종료</span></div>
@@ -311,18 +313,17 @@
             </div>
           </div>
         </div>
-      </div></div>
-    </div>
-      <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
-      <div>
-        <h3>생중계를 보며<br>의안 진행을 확인합니다</h3>
-        <ul class="spec">
-          <li><strong>생중계 · 실시간 자막</strong>총회장 영상과 자막을 함께 시청</li>
-          <li><strong>의안 진행현황</strong>의안별 투표 중 · 집계 중 · 대기 상태 확인</li>
-          <li><strong>주주총회 정보</strong>참석 정보, 공지사항, 주주총회 자료 확인</li>
-        </ul>
       </div>
-      <div class="dg-stage"><div class="scr" aria-hidden="true" data-shell>
+            </div></div></div>
+          </li>
+          <li class="ly-c-item">
+            <h5 class="ly-c-h"><span class="ly-c-n">02</span>주주총회 시청</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <p class="ly-c-p">생중계와 실시간 자막을 보며 의안 진행 상황을 확인합니다.</p>
+              <ul class="ly-c-sub"><li>생중계 · 실시간 자막</li><li>의안 진행현황</li><li>주주총회 정보</li></ul>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div><div class="ly-c-vis ev-vis on-vis">
+      <div class="scr" aria-hidden="true" data-shell>
         <div class="scr-top">예시홀딩스 <small>제00기 정기 주주총회</small><span class="live">LIVE</span><span class="user">홍길동 · 퇴장하기</span></div>
         <div class="scr-body">
           <div data-left>
@@ -360,14 +361,17 @@
             <div class="box"><h4>주주총회 자료</h4><span class="sk" style="width:70%"></span><span class="sk" style="width:55%"></span></div>
           </div>
         </div>
-      </div></div>
-    </div>
-      <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
-      <div>
-        <h3>의안 상세를 확인하고<br>표결합니다</h3>
-        <p>일반 의안부터 집중투표까지 의안 유형에 맞춰 의결권을 행사합니다.</p>
       </div>
-      <div class="dg-stage"><div class="scr" aria-hidden="true">
+            </div></div></div>
+          </li>
+          <li class="ly-c-item">
+            <h5 class="ly-c-h"><span class="ly-c-n">03</span>의안 투표</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <p class="ly-c-p">일반 의안부터 집중투표까지 의안 유형에 맞춰 의결권을 행사합니다.</p>
+              <ul class="ly-c-sub"><li>일반 의안 찬성·반대·기권</li><li>집중투표 의결권 배분</li></ul>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div><div class="ly-c-vis ev-vis on-vis">
+      <div class="scr" aria-hidden="true">
         <div class="scr-top">예시홀딩스 <small>제00기 정기 주주총회</small><span class="live">LIVE</span><span class="user">홍길동 · 퇴장하기</span></div>
         <div class="scr-body">
           <div data-fill-left></div>
@@ -385,14 +389,17 @@
             </div>
           </div>
         </div>
-      </div></div>
-    </div>
-      <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
-      <div>
-        <h3>궁금한 점을<br>질의로 남깁니다</h3>
-        <p>의안에 대해 궁금한 점을 작성해 질의합니다.</p>
       </div>
-      <div class="dg-stage"><div class="scr" aria-hidden="true">
+            </div></div></div>
+          </li>
+          <li class="ly-c-item">
+            <h5 class="ly-c-h"><span class="ly-c-n">04</span>질의</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <p class="ly-c-p">의안에 대해 궁금한 점을 작성해 질의합니다.</p>
+              <ul class="ly-c-sub"><li>의안별 질의 작성</li><li>답변 확인</li></ul>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div><div class="ly-c-vis ev-vis on-vis">
+      <div class="scr" aria-hidden="true">
         <div class="scr-top">예시홀딩스 <small>제00기 정기 주주총회</small><span class="live">LIVE</span><span class="user">홍길동 · 퇴장하기</span></div>
         <div class="scr-body">
           <div data-fill-left></div>
@@ -411,14 +418,17 @@
             </div>
           </div>
         </div>
-      </div></div>
-    </div>
-      <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
-      <div>
-        <h3>발언을 신청해<br>의견을 전합니다</h3>
-        <p>발언 내용을 작성해 신청한 뒤, 순서에 따라 발언합니다.</p>
       </div>
-      <div class="dg-stage"><div class="scr" aria-hidden="true">
+            </div></div></div>
+          </li>
+          <li class="ly-c-item">
+            <h5 class="ly-c-h"><span class="ly-c-n">05</span>발언</h5>
+            <div class="ly-c-fold ly-c-fold--txt"><div>
+              <p class="ly-c-p">발언 내용을 작성해 신청한 뒤, 순서에 따라 발언합니다.</p>
+              <ul class="ly-c-sub"><li>발언 신청</li><li>순서에 따라 마이크 발언</li></ul>
+            </div></div>
+            <div class="ly-c-fold ly-c-fold--vis"><div><div class="ly-c-vis ev-vis on-vis">
+      <div class="scr" aria-hidden="true">
         <div class="scr-top">예시홀딩스 <small>제00기 정기 주주총회</small><span class="live">LIVE</span><span class="user">홍길동 · 퇴장하기</span></div>
         <div class="scr-body">
           <div data-fill-left></div>
@@ -436,8 +446,11 @@
             </div>
           </div>
         </div>
-      </div></div>
-    </div>
+      </div>
+            </div></div></div>
+          </li>
+        </ol>
+      </div>
     </div>
   </div>
 </section>
@@ -465,7 +478,6 @@
     </template>
       <div class="ipanel" role="tabpanel" id="ip1" aria-labelledby="it1">
       <div>
-        <h3>주주총회 진행을<br>한 화면에서 제어합니다</h3>
         <ul class="fl" data-fl="op">
           <li><button type="button" data-hl="start" aria-pressed="true"><b>주주총회 시작 · 종료</b><span>버튼 하나로 주주총회를 시작하고 종료합니다</span></button></li>
           <li><button type="button" data-hl="video" aria-pressed="false"><b>생중계 화면</b><span>송출 중인 주주총회 영상을 함께 확인합니다</span></button></li>
@@ -475,7 +487,7 @@
           <li><button type="button" data-hl="script" aria-pressed="false"><b>진행 문안</b><span>의장·사회자 문안에 주식수와 의결권 수가 자동 반영됩니다</span></button></li>
         </ul>
       </div>
-      <div class="adm focus" aria-hidden="true" id="op-adm">
+      <div class="dg-stage"><div class="adm focus" aria-hidden="true" id="op-adm">
         <div class="adm-in">
           <div class="adm-bar">
             <span class="t on">실시간 운영</span><span class="t">의결권 행사현황</span><span class="t">표결 관리</span><span class="t">질의·발언 관리</span>
@@ -562,10 +574,10 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
       <div class="ipanel" role="tabpanel" id="ip3" aria-labelledby="it3" hidden>
       <div>
-        <h3>온라인 표결을<br>의안 단위로 진행합니다</h3>
         <p>의안마다 온라인 출석 주주의 행사 여부를 확인하고 집계합니다.</p>
         <ul class="spec">
           <li><strong>의안 상정 · 표결 마감</strong>의안마다 표결을 시작하고 마감</li>
@@ -601,7 +613,6 @@
     </div>
       <div class="ipanel" role="tabpanel" id="ip4" aria-labelledby="it4" hidden>
       <div>
-        <h3>질의 · 발언과<br>전자출석을 관리합니다</h3>
         <ul class="fl" data-fl="mg">
           <li><button type="button" data-sub="q" aria-pressed="true"><b>질의 관리</b><span>답변 여부를 확인하고 답변을 작성해 보냅니다</span></button></li>
           <li><button type="button" data-sub="s" aria-pressed="false"><b>발언 관리</b><span>발언자와 발언 내용을 확인합니다</span></button></li>
@@ -831,7 +842,8 @@
 
 
 </div>
-<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/agm-online.js?v=20261030" defer></script>
+<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/dg-layout.js?v=20261112u" defer></script>
+<script type="text/javascript" src="/irkudos-homepage-preview/js/digital/agm-online.js?v=20261112ag" defer></script>
 </div><!--/contents-->
 	<div class="btnTop"><img src="/irkudos-homepage-preview/images/common/btn_top.png" alt="상단 바로가기"></div>
 </div><!--//container-->
@@ -872,7 +884,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-11-12 19:27</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-11-12 19:37</div>
 </body>
 </html>
 

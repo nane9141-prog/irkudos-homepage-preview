@@ -9,7 +9,7 @@
 	(function(){
 	  const src=document.querySelector('[data-left]');
 	  document.querySelectorAll('[data-fill-left]').forEach(el=>{
-	    el.innerHTML=src.innerHTML.replace(/id="vg"/g,'').replace(/url\(#vg\)/g,'#1F2A52');
+	    el.innerHTML=src.innerHTML.replace(/id="vg"/g,'').replace(/url\(#vg\)/g,'#2B2B2E');
 	  });
 	  const tpl=document.getElementById('kpi-tpl');
 	  document.querySelectorAll('[data-kpi]').forEach(el=>el.appendChild(tpl.content.cloneNode(true)));
