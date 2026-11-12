@@ -46,14 +46,4 @@
 	  if(reduce) return;
 	  setInterval(()=>{ if(!panel.hidden) show((k+1)%screens.length); },3200);
 	})();
-
-	// 행사 현황 화면 전환
-	(function(){
-	  const st=document.getElementById('liveStage'); if(!st) return;
-	  const sc=[...st.querySelectorAll('.live-screen')];
-	  const hs=[...document.querySelectorAll('.live-h')];
-	  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-	  let k=0;
-	  setInterval(()=>{k=1-k;sc.forEach((e,j)=>e.classList.toggle('on',j===k));hs.forEach((e,j)=>e.classList.toggle('on',j===k));},4000);
-	})();
 })();
