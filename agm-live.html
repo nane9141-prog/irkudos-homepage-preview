@@ -45,7 +45,7 @@
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_pc.min.css" media="screen and (min-width:1400px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_tablet.min.css" media="screen and (min-width:813px) and (max-width:1399px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_mobile.min.css" media="screen and (max-width:812px)" />
-<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-live.css?v=20261112ac" />
+<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-live.css?v=20261112af" />
 <script language="javascript" src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -277,9 +277,26 @@
           <p class="lv3-h"><span>01</span>주주총회 현장 촬영</p>
           <div class="lv3-vis" aria-hidden="true">
             <div class="lv3-cam">
+              <svg viewBox="0 0 240 150" width="100%" height="100%" fill="none">
+                <rect width="240" height="150" rx="10" fill="#1B1D22"/>
+                <!-- 무대 배경 · 현수막 -->
+                <rect x="66" y="30" width="108" height="26" rx="4" fill="#2B2E35"/>
+                <text x="120" y="47" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff" font-family="Pretendard,sans-serif">제00기 정기주주총회</text>
+                <!-- 의장석 테이블 · 발언자 -->
+                <circle cx="120" cy="80" r="9" fill="#5B6069"/>
+                <path d="M102 104c2-10 9-15 18-15s16 5 18 15z" fill="#5B6069"/>
+                <rect x="64" y="100" width="112" height="22" rx="3" fill="#3B3F47"/>
+                <rect x="112" y="92" width="16" height="9" rx="2" fill="#80858F"/>
+                <!-- 하단 자막 바 -->
+                <rect x="30" y="122" width="96" height="12" rx="2" fill="#fff"/>
+                <text x="36" y="131" font-size="7" font-weight="700" fill="#16181C" font-family="Pretendard,sans-serif">의장 · 개회 선언</text>
+                <!-- 프레이밍 가이드 -->
+                <path d="M12 26V14h12M228 26V14h-12M12 124v12h12M228 124v12h-12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                <!-- REC · 타임코드 · CAM -->
+                <circle cx="22" cy="10" r="0" />
+                <text x="210" y="12" text-anchor="end" font-size="7" font-weight="700" fill="#A9ADB6" font-family="Pretendard,sans-serif" dy="10">CAM 2 · 01:12:48</text>
+              </svg>
               <span class="rec">REC</span>
-              <div class="stage"><b>제00기 정기주주총회</b><i></i></div>
-              <div class="podium"></div>
             </div>
           </div>
           <p class="lv3-t">전문 촬영 장비와 현장 인력이 의장석과 총회장을 촬영합니다.</p>
@@ -378,31 +395,40 @@
               <ul class="ly-c-sub"><li>총회장 규모에 맞춘 카메라 배치 (CAM 1~3)</li><li>진행 흐름에 따른 화면 전환</li></ul>
             </div></div>
             <div class="ly-c-fold ly-c-fold--vis"><div><div class="ly-c-vis ev-vis lv-vis">
-        <svg class="plan" viewBox="0 0 520 340" fill="none">
-          <rect x="1" y="1" width="518" height="338" rx="18" fill="#fff" stroke="#E3E5EA"/>
-          <!-- 시야 -->
-          <path d="M260 296L170 70H350Z" fill="#16181C" fill-opacity=".08"/>
-          <path d="M54 170L190 50 L240 74Z" fill="#16181C" fill-opacity=".08"/>
-          <path d="M466 128L300 74 L360 44Z" fill="#16181C" fill-opacity=".08"/>
-          <!-- 단상 -->
-          <rect x="150" y="26" width="220" height="44" rx="8" fill="#EDEDED"/>
-          <text x="260" y="53" text-anchor="middle" font-size="13" font-weight="700" fill="#3B3F47">단상 · 의장석</text>
+        <svg class="plan" viewBox="0 0 520 340" fill="none" font-family="Pretendard,sans-serif">
+          <!-- 2026-11-12 리서치 스타일: 흰 바탕 + 1px 선 + 회색 좌석, 카메라는 차콜 마커 + 시야각 -->
+          <rect x=".5" y=".5" width="519" height="339" rx="12" fill="#fff" stroke="#C8CBD2"/>
+          <defs>
+            <linearGradient id="fov" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16181C" stop-opacity=".02"/><stop offset="1" stop-color="#16181C" stop-opacity=".12"/></linearGradient>
+          </defs>
+          <!-- 시야각 -->
+          <path d="M260 292L178 74H342Z" fill="url(#fov)"/>
+          <path d="M62 178L176 60L232 70Z" fill="#16181C" fill-opacity=".06"/>
+          <path d="M470 128L300 70L350 46Z" fill="#16181C" fill-opacity=".06"/>
+          <!-- 단상 · 의장석 -->
+          <rect x="160.5" y="24.5" width="199" height="44" rx="10" fill="#fff" stroke="#16181C"/>
+          <text x="260" y="51" text-anchor="middle" font-size="13" font-weight="700" fill="#16181C">단상 · 의장석</text>
           <!-- 좌석 -->
-          <g fill="#DCE1EC">
-            <g id="row"><rect x="110" y="110" width="14" height="10" rx="2"/><rect x="130" y="110" width="14" height="10" rx="2"/><rect x="150" y="110" width="14" height="10" rx="2"/><rect x="170" y="110" width="14" height="10" rx="2"/><rect x="190" y="110" width="14" height="10" rx="2"/><rect x="210" y="110" width="14" height="10" rx="2"/><rect x="296" y="110" width="14" height="10" rx="2"/><rect x="316" y="110" width="14" height="10" rx="2"/><rect x="336" y="110" width="14" height="10" rx="2"/><rect x="356" y="110" width="14" height="10" rx="2"/><rect x="376" y="110" width="14" height="10" rx="2"/><rect x="396" y="110" width="14" height="10" rx="2"/></g>
-            <use href="#row" y="24"/><use href="#row" y="48"/><use href="#row" y="72"/><use href="#row" y="96"/><use href="#row" y="120"/>
+          <g fill="#E1E3E7">
+            <g id="seatL"><rect x="112" y="104" width="16" height="10" rx="3"/><rect x="132" y="104" width="16" height="10" rx="3"/><rect x="152" y="104" width="16" height="10" rx="3"/><rect x="172" y="104" width="16" height="10" rx="3"/><rect x="192" y="104" width="16" height="10" rx="3"/><rect x="212" y="104" width="16" height="10" rx="3"/></g>
+            <use href="#seatL" x="180"/>
+            <use href="#seatL" y="22"/><use href="#seatL" x="180" y="22"/>
+            <use href="#seatL" y="44"/><use href="#seatL" x="180" y="44"/>
+            <use href="#seatL" y="66"/><use href="#seatL" x="180" y="66"/>
+            <use href="#seatL" y="88"/><use href="#seatL" x="180" y="88"/>
           </g>
-          <text x="260" y="186" text-anchor="middle" font-size="11" font-weight="600" fill="#80858F">객석</text>
-          <!-- 카메라 -->
-          <g font-size="11" font-weight="700" text-anchor="middle">
-            <circle cx="260" cy="296" r="15" fill="#16181C"/><text x="260" y="300" fill="#fff">1</text>
-            <circle cx="54" cy="170" r="15" fill="#16181C"/><text x="54" y="174" fill="#fff">2</text>
-            <circle cx="466" cy="128" r="15" fill="#16181C"/><text x="466" y="132" fill="#fff">3</text>
+          <text x="260" y="168" text-anchor="middle" font-size="11" font-weight="600" fill="#8A8F98">객석</text>
+          <!-- 카메라 마커 -->
+          <g>
+            <circle cx="260" cy="292" r="16" fill="#16181C"/><path d="M252 288h11v8h-11zM263 290.5l4-2v7l-4-2" fill="#fff"/>
+            <circle cx="62" cy="178" r="16" fill="#16181C"/><path d="M54 174h11v8H54zM65 176.5l4-2v7l-4-2" fill="#fff"/>
+            <circle cx="470" cy="128" r="16" fill="#16181C"/><path d="M462 124h11v8h-11zM473 126.5l4-2v7l-4-2" fill="#fff"/>
           </g>
+          <!-- 라벨 -->
           <g font-size="11" font-weight="700" fill="#16181C">
-            <text x="282" y="300">CAM 1 · 전경</text>
-            <text x="30" y="204">CAM 2 · 의장석</text>
-            <text x="490" y="162" text-anchor="end">CAM 3 · 발언</text>
+            <rect x="282.5" y="281.5" width="98" height="22" rx="11" fill="#fff" stroke="#C8CBD2"/><text x="331.5" y="296" text-anchor="middle">CAM 1 · 전경</text>
+            <rect x="28.5" y="203.5" width="104" height="22" rx="11" fill="#fff" stroke="#C8CBD2"/><text x="80.5" y="218" text-anchor="middle">CAM 2 · 의장석</text>
+            <rect x="414.5" y="153.5" width="96" height="22" rx="11" fill="#fff" stroke="#C8CBD2"/><text x="462.5" y="168" text-anchor="middle">CAM 3 · 발언</text>
           </g>
         </svg>
             </div></div></div>
@@ -609,7 +635,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-11-12 19:07</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-11-12 19:27</div>
 </body>
 </html>
 
