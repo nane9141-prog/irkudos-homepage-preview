@@ -170,6 +170,12 @@ $(function(){
 		tabnum = $(".m43 .m43Tabs ul li").index($(this)) + 1;
 		$(this).addClass("on").siblings().removeClass("on");
 
+		/* 2026-11-13: 탭 내용이 페이지에 포함된 경우(careers-jobs.php) 서버 요청 없이 전환 */
+		if ($(".m43Tabconwrap .m43Pane").length) {
+			$(".m43Tabconwrap .m43Pane").each(function(){ this.hidden = $(this).data("tab") != tabnum; });
+			return;
+		}
+
 		$.ajax({
 			type : "GET" //"POST", "GET"
 			, async : true //true, false
