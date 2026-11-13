@@ -45,7 +45,7 @@
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_pc.min.css" media="screen and (min-width:1400px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_tablet.min.css" media="screen and (min-width:813px) and (max-width:1399px)" />
 <link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/style_mobile.min.css" media="screen and (max-width:812px)" />
-<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-evote.css?v=20261113c" />
+<link rel="stylesheet" type="text/css" href="/irkudos-homepage-preview/css/digital/agm-evote.css?v=20261113em" />
 <script language="javascript" src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -488,10 +488,16 @@
             <p style="color:var(--muted);font-size:9.5px;margin:2px 0 6px">임시주주총회</p>
             <p style="font-size:9px;color:var(--body)">행사 기간 20XX.03.21 ~ 03.30</p>
           </div>
+          <div class="ev-card is-end">
+            <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:10.5px">○○화학</b><span class="st" style="font-size:8.5px;background:#F1F2F4;color:#8A8F98">종료</span></div>
+            <p style="font-size:9.5px;margin:2px 0 6px">제○기 정기주주총회</p>
+            <p style="font-size:9px">행사 기간 20XX.03.04 ~ 03.13</p>
+          </div>
+          <div class="ev-tabbar"><span class="on"><i></i>홈</span><span><i></i>행사 내역</span><span><i></i>공지</span><span><i></i>내 정보</span></div>
         </div>
         <div class="step-cap"><span class="n">01</span><b>주주총회 선택</b><p>로그인 후 행사할 수 있는 주주총회 목록이 보입니다.</p></div>
       </div>
-
+      <div class="ev-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg></div>
       <div class="step">
         <div class="phone vphone" aria-hidden="true">
           <div class="vp-head"><span>←</span><b>제 1호 의안</b><span></span></div>
@@ -514,15 +520,22 @@
         </div>
         <div class="step-cap"><span class="n">02</span><b>의안별 의결권 행사</b><p>일반 투표부터 집중투표까지, 의안 종류에 맞게 행사합니다.</p></div>
       </div>
-
+      <div class="ev-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg></div>
       <div class="step">
         <div class="phone vphone" aria-hidden="true">
           <div class="vp-head"><span>←</span><b>행사 완료</b><span></span></div>
-          <div class="vp-done">
-            <b>의결권 행사가<br>완료되었습니다</b>
-            <strong>○○주식회사 제○기 정기주주총회</strong>
-            <span>총 6건 의안에 대해 1,000주 권리행사</span>
+          <div class="ev-done">
+            <div class="ev-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+            <b>의결권 행사가 완료되었습니다</b>
+            <p>○○주식회사 제○기 정기주주총회<br>총 6건 · 1,000주 권리행사</p>
           </div>
+          <ul class="ev-res">
+            <li><span>제1호</span><em>재무제표 승인</em><b>찬성</b></li>
+            <li><span>제2호</span><em>정관 일부 변경</em><b>찬성 700 · 반대 300</b></li>
+            <li><span>제3호</span><em>이사 선임</em><b>집중 1,000</b></li>
+            <li><span>제4호</span><em>감사위원 선임</em><b>찬성</b></li>
+            <li><span>제5호</span><em>이사 보수한도</em><b>반대</b></li>
+          </ul>
           <div class="ph-btns"><div class="ph-btn" style="background:#fff;color:var(--ink);border:1px solid var(--ink)">홈으로</div><div class="ph-btn ghost" style="border-color:var(--blue);color:var(--blue)">투표 철회하기</div></div>
         </div>
         <div class="step-cap"><span class="n">03</span><b>행사 완료</b><p>투표를 마치면 행사 내용을 확인하고, 필요하면 투표를 철회할 수 있습니다.</p></div>
@@ -706,7 +719,7 @@
 	</article></div><!--//footer-->
 </div><!--//wrap-->
 
-<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-11-13 10:47</div>
+<div style="position:fixed;left:12px;bottom:12px;z-index:100000;background:#007AFF;color:#fff;font:600 12px/1 Pretendard,sans-serif;padding:8px 12px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.2);pointer-events:none">미리보기 · 2026-11-13 10:57</div>
 </body>
 </html>
 
