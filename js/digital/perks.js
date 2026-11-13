@@ -17,14 +17,7 @@
 	function topOf() { var h = document.querySelector('#header, header'); var off = (h ? h.getBoundingClientRect().height : 0) + 24; return tabs.getBoundingClientRect().top + window.pageYOffset - off; }
 	function go(k) { sel(k); }
 	btns.forEach(function (b) { b.addEventListener('click', function () { go(b.getAttribute('data-trk')); }); });
-	var names = { mts: '주주우대 MTS', page: '주주우대 Page' };
-	panels.forEach(function (p) {
-		var k = p.getAttribute('data-trk-panel'), other = k === 'mts' ? 'page' : 'mts';
-		var box = document.createElement('div'); box.className = 'trk-next';
-		box.innerHTML = '<span>' + (k === 'mts' ? '기업 홈페이지 기반으로 운영하려면' : '증권사 MTS로 제공하려면') + '</span><button type="button">' + names[other] + ' 보기 <i aria-hidden="true">→</i></button>';
-		box.querySelector('button').addEventListener('click', function () { sel(other); window.scrollTo({ top: topOf(), behavior: 'smooth' }); });
-		p.appendChild(box);
-	});
+	/* 2026-11-13: 탭 끝 '다른 방식 보기' 카드 삭제 (KP) */
 	if (location.hash === '#page') sel('page');
 
 })();
