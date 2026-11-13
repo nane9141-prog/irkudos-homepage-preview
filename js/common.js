@@ -98,7 +98,6 @@ $(function(){
 
 	$(".btnMenu").click(function(){
 
-		console.log('btnMenu')
 		if(btnchk == 0){
 
 			scrollPosition = window.pageYOffset;
